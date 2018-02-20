@@ -1,0 +1,15 @@
+# Ignore default temp mac files
+.DS_Store
+
+# Ignore jekyll _site build folder
+_site
+
+# Don't push these--that would be bad
+.sass-cache
+.jekyll-metadata
+
+# Ignore node modules
+node_modules/
+
+# Ignore gem lock to avoid mac/windows discrepencies
+Gemfile.lock
