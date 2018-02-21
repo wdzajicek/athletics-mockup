@@ -34,3 +34,5 @@ node_modules/
 
 # Ignore gem lock to avoid mac/windows discrepencies
 Gemfile.lock
+
+# Ignore adobe directory containing working illustrator, photoshop, 
