@@ -17,5 +17,6 @@ $(window).resize(function(){
       });
 
 		// do something here
-	}
+		}
+	});
 });
