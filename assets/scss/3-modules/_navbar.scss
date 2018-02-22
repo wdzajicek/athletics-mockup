@@ -79,3 +79,8 @@
     margin-top: 10px;
   }
 }
+
+/* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+ display:block!important;
+}
