@@ -46,6 +46,7 @@ javascript:
   src:
     - "!assets/js/all.js"
     - "assets/js/menuscroll.js"
+    - "assets/js/megamenu.js"
   #  - "assets/js/test.js"
   #  - "assets/js/agency.js"
   #  - "assets/js/app.js"
