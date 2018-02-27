@@ -1,5 +1,5 @@
 #mainNav {
-  background-color: #212529
+  background-color: #212529;
 }
 
 #mainNav .navbar-toggler {
@@ -83,4 +83,18 @@
 /* shows the dropdown menu on hover */
 .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
  display:block!important;
+}
+
+.clear-global {
+  margin-top: 56px;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  min-width: auto;
+  width: 100% !important;
+  margin-left: 0;
+  margin-right: 0;
+  left: 0;
+  right: 0;
 }
