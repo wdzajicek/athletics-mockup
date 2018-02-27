@@ -81,10 +81,13 @@
 }
 
 /* shows the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
- display:block!important;
+.navbar .dropdown:hover .full-dropdown-menu, .navbar .dropdown .full-dropdown-menu:hover {
+ display:block !important;
+ width: 100% !important;
+ min-width: 100% !important;
 }
 
+/* Bumps the local nav down to accomidate for the global nav */
 .clear-global {
   margin-top: 56px;
 }
@@ -97,4 +100,12 @@
   margin-right: 0;
   left: 0;
   right: 0;
+}
+
+.full-dropdown-menu {
+  display: none;
+  position: absolute;
+  width: 100% !important;
+  min-width: 100% !important;
+  background-color: white;
 }
