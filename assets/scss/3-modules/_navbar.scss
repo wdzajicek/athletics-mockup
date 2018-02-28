@@ -1,111 +1,47 @@
-#mainNav {
-  background-color: #212529;
-}
-
-#mainNav .navbar-toggler {
-  font-size: 12px;
-  right: 0;
-  padding: 13px;
-  text-transform: uppercase;
-  color: #fff;
-  border: 0;
-  background-color: $primary-red;
-  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-brand {
-  color: $primary-red;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive
-}
-
-#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: $primary-red;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
-  font-weight: 400;
-  padding: .75em 0;
-  letter-spacing: 1px;
-  color: #fff;
-  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link.active {
-  color: $primary-red;
-  font-weight: 600;
-}
-
-#mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: $primary-red;
-  font-weight: 400;
-}
-
-@media (min-width:992px) {
-  #mainNav {
-    padding-top: 25px;
-    padding-bottom: 5px;
-    -webkit-transition: padding-top .3s, padding-bottom .3s;
-    -moz-transition: padding-top .3s, padding-bottom .3s;
-    transition: padding-top .3s, padding-bottom .3s;
-    border: none;
-    background-color: transparent;
-  }
-  #mainNav .navbar-brand {
-    font-size: 1em;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    transition: all .4s;
-    transform: scale(3.2, 3.2);
-  }
-  #mainNav .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em!important;
-    font-size: 1.22em;
-  }
-  #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em!important;
-    font-size: 1.2em;
-  }
-  #mainNav.navbar-shrink {
-    padding-top: 0;
-    padding-bottom: 0;
-    background-color: #212529;
-    opacity: .92;
-  }
-  #mainNav.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    transform: scale(1.8, 1.8);
-    position: absolute;
-    margin-top: 10px;
-  }
-}
-
-/* shows the dropdown menu on hover */
-.navbar .dropdown:hover .full-dropdown-menu, .navbar .dropdown .full-dropdown-menu:hover {
- display:block !important;
- width: 100% !important;
- min-width: 100% !important;
-}
-
-/* Bumps the local nav down to accomidate for the global nav */
-.clear-global {
-  margin-top: 56px;
+/* adds some margin below the link sets  */
+.navbar .dropdown-menu div[class*="col"] {
+   margin-bottom:1rem;
 }
 
 .navbar .dropdown-menu {
-  border: none;
-  min-width: auto;
-  width: 100% !important;
-  margin-left: 0;
-  margin-right: 0;
-  left: 0;
-  right: 0;
+  border:none;
+  background-color:#0060c8!important;
 }
 
-.full-dropdown-menu {
-  display: none;
-  position: absolute;
-  width: 100% !important;
-  min-width: 100% !important;
-  background-color: white;
+/* breakpoint and up - mega dropdown styles */
+@media screen and (min-width: 992px) {
+
+  /* remove the padding from the navbar so the dropdown hover state is not broken */
+.navbar {
+  padding-top:0px;
+  padding-bottom:0px;
+}
+
+/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+.navbar .nav-item {
+  padding:.5rem .5rem;
+  margin:0 .25rem;
+}
+
+/* makes the dropdown full width  */
+.navbar .dropdown {position:static;}
+
+.navbar .dropdown-menu {
+  width:100%;
+  left:0;
+  right:0;
+/*  height of nav-item  */
+  top:45px;
+}
+
+  /* shows the dropdown menu on hover */
+.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  display:block!important;
+}
+
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    background-color: #fff;
+  }
+
 }

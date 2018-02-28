@@ -1,29 +1,13 @@
-@import "grid";
-@import "fonts";
-@import "app";
-
 /* Font Awesome */
 @import "fonts";
-
-/* Release the Variables */
-@import "0-tools/vars";
-
-/* Global */
-@import "1-base/global";
-
-/* Layout */
-@import "4-layout/topbar";
-@import "4-layout/header";
-@import "4-layout/page";
-@import "4-layout/page-banner";
-@import "4-layout/footer";
 
 /* Components */
 @import "3-modules/navbar";
 @import "3-modules/global-nav";
 
-/* Typography */
-@import "1-base/typography";
+/* Layouts */
+@import "4-layout/header";
 
-/* Page */
-@import "5-pages/home-page";
+body {
+  height: 4000px;
+}

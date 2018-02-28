@@ -1,4 +1,4 @@
-# KCC Athletics Template
+# Mega Nav Testing Template
 
 Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 
@@ -9,7 +9,7 @@ Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 * Gulp - `$ npm install --global gulp-cli` - mac users may need sudo
 
 ##  Installation
-	$ git clone https://github.com/KankakeeCommunityCollege/gulp-yarn-template.git
+	$ git clone https://github.com/wdzajicek/megamenu-test.git
 	$ cd gulp-yarn-template
 	$ npm install
 	$ bundle install
