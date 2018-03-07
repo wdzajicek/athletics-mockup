@@ -1,4 +1,8 @@
-.masthead {
+.jumbotron {
+  width: 100%;
+}
+
+header.masthead {
   text-align: center;
   color: #fff;
   background-image: url(/assets/img/header-bg.jpg);
@@ -8,20 +12,15 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover
 }
 
-.intro-text {
+header.masthead .intro-text {
   padding-top: 150px;
   padding-bottom: 100px
 }
 
-.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px
-}
-
-.masthead .intro-text .intro-lead-in {
+header.masthead .intro-text .intro-lead-in {
   font-size: 22px;
   font-style: italic;
   line-height: 22px;
@@ -29,7 +28,7 @@
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
 
-.masthead .intro-text .intro-heading {
+header.masthead .intro-text .intro-heading {
   font-size: 50px;
   font-weight: 700;
   line-height: 50px;
@@ -38,18 +37,18 @@
 }
 
 @media (min-width:768px) {
-  .masthead .intro-text {
+  header.masthead .intro-text {
     padding-top: 300px;
     padding-bottom: 200px
   }
-  .masthead .intro-text .intro-lead-in {
+  header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
     font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif
   }
-  .masthead .intro-text .intro-heading {
+  header.masthead .intro-text .intro-heading {
     font-size: 75px;
     font-weight: 700;
     line-height: 75px;
