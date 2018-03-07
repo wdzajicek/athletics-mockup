@@ -10,7 +10,7 @@ Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 
 ##  Installation
 	$ git clone https://github.com/wdzajicek/megamenu-test.git
-	$ cd gulp-yarn-template
+	$ cd megamenu-test
 	$ npm install
 	$ bundle install
 
