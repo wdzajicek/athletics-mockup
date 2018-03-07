@@ -1,0 +1,37 @@
+//fall back font stack for site
+$basefont-stack: Arial, "Helvetica Neue", Helvetica, sans-serif;
+$base-font-size: 17px;
+$secondaryfont-stack: 'nexa_rust_slabblack_shadow_01';
+$thirdfont-stack: "ArtBrush Medium";
+
+//Image path for most of global style sheet
+$imagedir:'/assets/img/';
+
+//KCC colors
+$primary-blue: #0f3b63;       // Dark blue
+$primary-red: #c61f48;        // Dark red
+$accent-blue: #005BAC;        // Blue used in all links and link buttons;
+$accent-blue-bright: #227dce; // Blue used in all links hovers and link hovers buttons;
+$accent-brown: #80561B;
+$accent-light-blue: #95a9ca;
+$accent-olive-green: #8d8b00; // Green used in search
+$accent-purple: #8d2187;
+
+$bgcolor: white;               // White backgrounds
+
+//Colors from the Fast Path print document
+$fp-emerald: #148ba9;          // Emerald-green used in Fast Path print document as heading background and accent color
+$fp-orange: #eeab34;           // Orange for "Maximum Students" text warning
+$fp-burgandy: #9d2d60;         // Burgandy for heading on why-fastpath.html page
+$fp-green: #95b246;            // Green for heading on why-fastpath.html page
+
+$whitefont: #FFFFFF;           // Color of font that is on a dark background color/image
+$gradient-btm: #2798ff;        // Bottom blue color for gradient
+$light-visited: #9fbfff;       // Light link color for visited links against dark background Colors
+$hlf-border: black;            // Half border color for .half-border h2 elements on why-fastpath page.
+
+$menuh2: white;                // Full-menu overlay heading links color
+$link-text: #0f3b63;
+$button-color: #0f3b63;
+$btn-hover: #005BAC;
+$btn-visited: #ffffff;
