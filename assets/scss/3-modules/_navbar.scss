@@ -1,3 +1,8 @@
+.navbar {
+  background-color: $primary-blue !important;
+  margin-top: 56px;
+}
+
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {
    margin-bottom:1rem;
@@ -5,7 +10,7 @@
 
 .navbar .dropdown-menu {
   border:none;
-  background-color:#0060c8!important;
+  background-color: #d5d6d6 !important;
 }
 
 /* breakpoint and up - mega dropdown styles */
@@ -44,4 +49,27 @@
     background-color: #fff;
   }
 
+}
+
+@media screen and (min-width: 992px) {
+  .drop-pad {
+    padding-top: 25px;
+  }
+}
+
+.nav-row {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-row {
+    border-bottom: 3px #000000 solid;
+  }
+}
+
+.dark-text {
+  color: #000000!important;
 }
