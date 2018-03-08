@@ -67,6 +67,7 @@
 @media screen and (min-width: 992px) {
   .nav-row {
     border-bottom: 3px #000000 solid;
+    margin-bottom: 8px;
   }
 }
 
@@ -101,4 +102,12 @@
   margin-top: 0;
   padding-bottom: 0;
   padding-top: 0;
+}
+
+.facilities-drop-pad {
+  padding-top: 80px;
+}
+
+.donate-drop-pad {
+  padding-top: 80px;
 }
