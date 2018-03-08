@@ -10,7 +10,7 @@
 
 .navbar .dropdown-menu {
   border:none;
-  background-color: #d5d6d6 !important;
+  background-color: #bfbfbf !important;
 }
 
 /* breakpoint and up - mega dropdown styles */
@@ -29,7 +29,9 @@
 }
 
 /* makes the dropdown full width  */
-.navbar .dropdown {position:static;}
+.navbar .dropdown {
+  position:static;
+}
 
 .navbar .dropdown-menu {
   width:100%;
@@ -46,7 +48,6 @@
 
   .navbar .dropdown-menu {
     border: 1px solid rgba(0,0,0,.15);
-    background-color: #fff;
   }
 
 }
@@ -110,4 +111,28 @@
 
 .donate-drop-pad {
   padding-top: 80px;
+}
+
+.about-drop-pad {
+  padding-top: 50px;
+}
+
+
+.cavs-logo {
+  height: auto;
+  position: absolute;
+  top: 15px;
+  width: 150px;
+}
+@media screen and (min-width: 992px) {
+  .cavs-logo {
+    top: 10px;
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .clear-cavs {
+    margin-left: 15%;
+  }
 }
