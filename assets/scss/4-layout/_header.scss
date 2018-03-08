@@ -1,18 +1,15 @@
-.jumbotron {
-  width: 100%;
-}
-
 header.masthead {
   text-align: center;
   color: #fff;
   background-image: url(/assets/img/header-bg.jpg);
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover
+  background-position: center top;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  margin-top: 112px;
 }
 
 header.masthead .intro-text {
@@ -38,8 +35,8 @@ header.masthead .intro-text .intro-heading {
 
 @media (min-width:768px) {
   header.masthead .intro-text {
+    padding-bottom: 200px;
     padding-top: 300px;
-    padding-bottom: 200px
   }
   header.masthead .intro-text .intro-lead-in {
     font-size: 40px;
