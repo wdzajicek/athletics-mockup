@@ -4,12 +4,17 @@
 /* Font Awesome */
 @import "fonts";
 
+/* Typography */
+@import "1-base/typography";
+
 /* Components */
 @import "3-modules/mega-nav";
 @import "3-modules/global-nav";
 
 /* Layouts */
 @import "4-layout/header";
+
+@import "5-pages/index/index";
 
 body {
   height: 4000px;
