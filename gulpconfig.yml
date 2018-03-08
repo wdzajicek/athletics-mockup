@@ -47,6 +47,7 @@ javascript:
     - "!assets/js/all.js"
     - "!assets/js/megamenu.js"
     - "assets/js/test.js"
+    - "assets/js/athletics.js"
   #  - "assets/js/agency.js"
   #  - "assets/js/app.js"
 
