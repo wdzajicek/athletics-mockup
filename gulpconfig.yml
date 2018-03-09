@@ -31,6 +31,7 @@ sass:
   compatibility:
     - "last 2 versions"
     - "ie >= 9"
+    - "defaults"
   dest:
     jekyllRoot: "assets/css/"
     buildDir: "_site/assets/css/"

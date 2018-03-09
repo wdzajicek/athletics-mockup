@@ -42,7 +42,7 @@ gulp.task('sass', function() {
     return gulp.src(config.sass.src)
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({ browsers: ['IE 6','Chrome 9', 'Firefox 14'], cascade: false}))
+        .pipe(autoprefixer(config.sass.compatibility))
         .pipe(gulpif(PRODUCTION, cssnano()))
         .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
         .pipe(gulp.dest(config.sass.dest.jekyllRoot))
