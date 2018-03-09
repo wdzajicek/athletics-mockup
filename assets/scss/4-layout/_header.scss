@@ -12,7 +12,7 @@ header.masthead {
   text-align: center;
 }
 
-// Hero banner intro text's container:
+// Hero banner intro text & heading's container:
 header.masthead .intro-text {
   padding-bottom: 40px;
   padding-top: 60px;
@@ -27,6 +27,21 @@ header.masthead .intro-text {
   header.masthead .intro-text {
     padding-bottom: 200px;
     padding-top: 200px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header.masthead .intro-text {
+    padding-top: 250px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header.masthead .intro-text {
+    padding-top: 350px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  header.masthead .intro-text {
+    padding-top: 400px;
   }
 }
 
@@ -74,9 +89,12 @@ header.masthead .intro-text .intro-heading {
 @media (min-width:768px) {
   header.masthead .intro-text .intro-heading {
     font-size: 3.4em;
-    font-weight: 700;
-    line-height: 75px;
+    line-height: 2em;
     margin-bottom: 50px;
-    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
+  }
+}
+@media screen and (min-width: 992px) {
+  header.masthead .intro-text .intro-heading {
+    font-size: 4em;
   }
 }
