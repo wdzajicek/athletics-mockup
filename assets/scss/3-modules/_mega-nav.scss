@@ -41,6 +41,10 @@
   width:100%;
 }
 
+@-webkit-keyframes meganav {
+  0%  {opacity: 0;}
+  100%  {opacity: 1;}
+}
 @keyframes meganav {
   0%  {opacity: 0;}
   100%  {opacity: 1;}
@@ -50,8 +54,10 @@
 @media screen and (min-width: 893px) {
   .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
     display:block!important;
+    -webkit-animation-name: meganav;
+    -webkit-animation-duration: .6s;
     animation-name: meganav;
-    animation-duration: .5s;
+    animation-duration: .6s;
   }
 }
   .navbar .dropdown-menu {
