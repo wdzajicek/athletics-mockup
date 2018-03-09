@@ -2,6 +2,8 @@
 
 Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 
+## [Live Github Pages example](https://wdzajicek.github.io/megamenu-test/): https://wdzajicek.github.io/megamenu-test/
+
 ## Requirements
 * Jekyll - `$ gem install jekyll bundler`
 * Bundler - `$ gem install bundler`
@@ -18,4 +20,4 @@ Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 	$ gulp
 
 ## Production
-	$ gulp build --production
+	$ gulp --production
