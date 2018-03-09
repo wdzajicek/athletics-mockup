@@ -123,6 +123,7 @@
   position: absolute;
   top: 15px;
   width: 150px;
+  z-index: 9999;
 }
 @media screen and (min-width: 992px) {
   .cavs-logo {
@@ -131,6 +132,7 @@
   }
 }
 
+// Push the Navigation links to the right to clear the Cavaliers logo (for non mobile/tablet devices):
 @media screen and (min-width: 992px) {
   .clear-cavs {
     margin-left: 15%;
