@@ -2,7 +2,9 @@
 
 Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 
-## [Live Github Pages example](https://wdzajicek.github.io/megamenu-test/): https://wdzajicek.github.io/megamenu-test/
+## [Live Github Pages example](https://wdzajicek.github.io/megamenu-test/):
+
+### https://wdzajicek.github.io/megamenu-test/
 
 ## Requirements
 * Jekyll - `$ gem install jekyll bundler`
