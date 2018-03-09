@@ -34,18 +34,26 @@
 }
 
 .navbar .dropdown-menu {
-  width:100%;
   left:0;
   right:0;
 /*  height of nav-item  */
-  top:45px;
+  top:50px;
+  width:100%;
+}
+
+@keyframes meganav {
+  0%  {opacity: 0;}
+  100%  {opacity: 1;}
 }
 
   /* shows the dropdown menu on hover */
-.navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
-  display:block!important;
+@media screen and (min-width: 893px) {
+  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+    display:block!important;
+    animation-name: meganav;
+    animation-duration: .5s;
+  }
 }
-
   .navbar .dropdown-menu {
     border: 1px solid rgba(0,0,0,.15);
   }
