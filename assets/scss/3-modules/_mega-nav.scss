@@ -1,3 +1,7 @@
+/*  Mega Nav displays expanded at 992px and larger
+    991px and lower displays the "hamburger" mobile-style menu
+===================================================  */
+
 .navbar {
   background-color: $primary-blue !important;
   margin-top: 56px;
@@ -16,38 +20,40 @@
 /* breakpoint and up - mega dropdown styles */
 @media screen and (min-width: 992px) {
 
-  /* remove the padding from the navbar so the dropdown hover state is not broken */
-.navbar {
-  padding-top:0px;
-  padding-bottom:0px;
-}
+    /* remove the padding from the navbar so the dropdown hover state is not broken */
+  .navbar {
+    padding-top:0px;
+    padding-bottom:0px;
+  }
 
-/* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
-.navbar .nav-item {
-  padding:.5rem .5rem;
-  margin:0 .25rem;
-}
+  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  .navbar .nav-item {
+    padding:.5rem .5rem;
+    margin:0 .25rem;
+  }
 
-/* makes the dropdown full width  */
-.navbar .dropdown {
-  position:static;
-}
+  /* makes the dropdown full width  */
+  .navbar .dropdown {
+    position:static;
+  }
 
-.navbar .dropdown-menu {
-  left:0;
-  right:0;
-/*  height of nav-item  */
-  top:50px;
-  width:100%;
-}
+  .navbar .dropdown-menu {
+    border: 1px solid rgba(0,0,0,.15);
+    left:0;
+    right:0;
+  /*  height of nav-item  */
+    top:50px;
+    width:100%;
+  }
 
-@-webkit-keyframes meganav {
-  0%  {opacity: 0;}
-  100%  {opacity: 1;}
-}
-@keyframes meganav {
-  0%  {opacity: 0;}
-  100%  {opacity: 1;}
+  @-webkit-keyframes meganav {
+    0%  {opacity: 0;}
+    100%  {opacity: 1;}
+  }
+  @keyframes meganav {
+    0%  {opacity: 0;}
+    100%  {opacity: 1;}
+  }
 }
 
   /* shows the dropdown menu on hover */
@@ -59,11 +65,6 @@
     animation-name: meganav;
     animation-duration: .6s;
   }
-}
-  .navbar .dropdown-menu {
-    border: 1px solid rgba(0,0,0,.15);
-  }
-
 }
 
 @media screen and (min-width: 992px) {
@@ -150,5 +151,20 @@
 @media screen and (min-width: 992px) {
   .clear-cavs {
     margin-left: 15%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .vertical-divider {
+    background-color: #ffffff;
+    border-left-color: #ffffff;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #ffffff;
+    border-right-style: solid;
+    border-right-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 1px;
   }
 }
