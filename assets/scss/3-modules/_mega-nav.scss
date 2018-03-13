@@ -3,13 +3,16 @@
 ===================================================  */
 
 .navbar {
-  background-color: $primary-blue !important;
-  margin-top: 56px;
+  background-image: url(../../assets/img/menu-bg.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 3840px;
+  min-height: 112px;
 }
 
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {
-   margin-bottom:1rem;
+   margin-bottom: 1rem;
 }
 
 .navbar .dropdown-menu {
@@ -57,7 +60,7 @@
 }
 
   /* shows the dropdown menu on hover */
-@media screen and (min-width: 893px) {
+@media screen and (min-width: 992px) {
   .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
     display:block!important;
     -webkit-animation-name: meganav;
