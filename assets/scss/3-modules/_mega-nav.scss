@@ -2,14 +2,22 @@
     991px and lower displays the "hamburger" mobile-style menu
 ===================================================  */
 
-.navbar {
-  background-image: url(../../assets/img/menu-bg.png);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: 3840px;
-  min-height: 112px;
+@media screen and (min-width: 992px) {
+  .navbar {
+    background-image: url(../../assets/img/menu-bg.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 3840px;
+    min-height: 251px;
+    height: 251px;
+  }
 }
 
+@media screen and (min-width:992px) {
+  .navbar-nav {
+  margin-top: -20px 
+  }
+}
 /* adds some margin below the link sets  */
 .navbar .dropdown-menu div[class*="col"] {
    margin-bottom: 1rem;
@@ -147,13 +155,6 @@
   .cavs-logo {
     top: 10px;
     width: 15%;
-  }
-}
-
-// Push the Navigation links to the right to clear the Cavaliers logo (for non mobile/tablet devices):
-@media screen and (min-width: 992px) {
-  .clear-cavs {
-    margin-left: 15%;
   }
 }
 

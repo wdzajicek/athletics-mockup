@@ -2,9 +2,9 @@
 
 Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 
-## [Live Github Pages example](https://wdzajicek.github.io/megamenu-test/):
+## [Live Github Pages example](https://wdzajicek.github.io/athletics-mockup/):
 
-### https://wdzajicek.github.io/megamenu-test/
+### https://wdzajicek.github.io/athletics-mockup/
 
 ## Requirements
 * Jekyll - `$ gem install jekyll bundler`
@@ -15,8 +15,8 @@ Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
 * Gulp - `$ npm install --global gulp-cli` - mac users may need sudo
 
 ##  Installation
-	$ git clone https://github.com/wdzajicek/megamenu-test.git
-	$ cd megamenu-test
+	$ git clone https://github.com/wdzajicek/athletics-mockup.git
+	$ cd athletics-mockup
 	$ npm install		// May need to prefix command with sudo (if not using NVM)
 	$ bundle install
 
