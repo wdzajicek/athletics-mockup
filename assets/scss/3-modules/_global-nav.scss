@@ -1,20 +1,19 @@
 .global-nav {
-  background-color: $primary-red;
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
   min-width: 100%;
   padding-bottom: 10px;
-  padding-left: 20px;
-  padding-top: 10px;
+  padding-left: 140px;
+  padding-top: 25px;
   width: 100%;
   height: 56px;
   position: fixed;
-  z-index: 1000;
+  z-index: 1040;
 }
 
 .kcc-logo {
-  max-width: 100%;
+  width: 340px;
 }
 
 .form-inline {
