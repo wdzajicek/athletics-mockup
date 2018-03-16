@@ -15,7 +15,7 @@
 
 @media screen and (min-width:992px) {
   .navbar-nav {
-  margin-top: -20px 
+  margin-top: -100px
   }
 }
 /* adds some margin below the link sets  */
@@ -151,6 +151,7 @@
   width: 150px;
   z-index: 9999;
 }
+
 @media screen and (min-width: 992px) {
   .cavs-logo {
     top: 10px;
@@ -158,17 +159,6 @@
   }
 }
 
-@media screen and (min-width: 992px) {
-  .vertical-divider {
-    background-color: #ffffff;
-    border-left-color: #ffffff;
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-right-color: #ffffff;
-    border-right-style: solid;
-    border-right-width: 1px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 1px;
-  }
+.nav-split {
+  margin-right: 340px !important;
 }
