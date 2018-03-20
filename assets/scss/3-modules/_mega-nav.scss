@@ -32,7 +32,9 @@
 
 .navbar .dropdown-menu {
   border:none;
-  background-color: #bfbfbf !important;
+  background-color: #f5f6f8 !important;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* breakpoint and up - mega dropdown styles */
@@ -61,7 +63,7 @@
     right:0;
   /*  height of nav-item  */
     top:50px;
-    width:100%;
+    width:80%;
   }
 
   @-webkit-keyframes meganav {
@@ -173,7 +175,7 @@
 .center-logo {
   left: 50%; // center the absolutely positioned item
   margin-left: -105px; // offset the width of the item to make true center
-  margin-top: -115px; // position it vertically 
+  margin-top: -115px; // position it vertically
   position: absolute;
   width: 210px;
 }
