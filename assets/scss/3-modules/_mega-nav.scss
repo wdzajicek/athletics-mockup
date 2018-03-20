@@ -173,7 +173,7 @@
 .center-logo {
   left: 50%; // center the absolutely positioned item
   margin-left: -105px; // offset the width of the item to make true center
-  margin-top: -115px;
+  margin-top: -115px; // position it vertically 
   position: absolute;
   width: 210px;
 }
