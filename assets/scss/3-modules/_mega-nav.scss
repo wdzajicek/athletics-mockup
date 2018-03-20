@@ -169,3 +169,11 @@
 .nav-split {
   margin-right: 340px !important;
 }
+
+.center-logo {
+  left: 50%; // center the absolutely positioned item
+  margin-left: -105px; // offset the width of the item to make true center
+  margin-top: -115px;
+  position: absolute;
+  width: 210px;
+}
