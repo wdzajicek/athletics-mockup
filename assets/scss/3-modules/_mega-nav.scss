@@ -2,12 +2,19 @@
     991px and lower displays the "hamburger" mobile-style menu
 ===================================================  */
 
+.navbar {
+  background-color: $primary-blue;
+  margin-top: 56px; // make room for the global-nav in mobile view
+}
+
 @media screen and (min-width: 992px) {
   .navbar {
+    background-color: transparent;
     background-image: url(../../assets/img/menu-bg.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 3840px;
+    margin-top: 0;
     min-height: 251px;
     height: 251px;
   }
