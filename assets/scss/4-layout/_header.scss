@@ -3,13 +3,20 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
-  -webkit-background-size: 100% auto;
-  -moz-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
+  -webkit-background-size: 95% auto;
+  -moz-background-size: 95% auto;
+  -o-background-size: 95% auto;
+  background-size: 95% auto;
   color: #fff;
-  margin-top: 110px; // margin-top for clearing the sticky nav
+  margin-top: 140px; // margin-top for clearing the sticky nav
+  padding-left: 20px;
   text-align: center;
+}
+
+@media screen and (min-width: 992) {
+  header.masthead {
+    margin-top: 410px; // margin-top for clearing the sticky nav
+  }
 }
 
 // Hero banner intro text & heading's container:
