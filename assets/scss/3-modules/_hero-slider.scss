@@ -1,0 +1,19 @@
+.slide-img {
+  position: relative;
+  width: 100%;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.slick-prev {
+  left: 25px;
+  z-index: 4;
+}
+
+.slick-next, .slick-prev {
+  height: 40px;
+  top: 80%;
+  width: 40px;
+}
