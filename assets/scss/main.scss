@@ -1,15 +1,13 @@
 /* Variables */
 @import "0-tools/vars";
 
-/* Font Awesome */
-@import "fonts";
-
 /* Typography */
 @import "1-base/typography";
 
 /* Components */
 @import "3-modules/mega-nav";
 @import "3-modules/global-nav";
+@import "3-modules/hero-slider";
 
 /* Layouts */
 @import "4-layout/header";
