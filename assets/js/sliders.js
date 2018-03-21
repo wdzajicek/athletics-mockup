@@ -1,3 +1,4 @@
+// DO NOT PLACE IN A DOCUMENT READY FUNTION - it will break
 $('.heroSlider').slick({
   dots: true,
   slidesToShow: 1,
