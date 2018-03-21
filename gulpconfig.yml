@@ -47,7 +47,7 @@ javascript:
   src:
     - "!assets/js/all.js"
     - "!assets/js/megamenu.js"
-    - "assets/js/test.js"
+    - "!assets/js/test.js"
     - "assets/js/athletics.js"
     - "assets/js/sliders.js"
   #  - "assets/js/agency.js"
