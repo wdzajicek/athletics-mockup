@@ -35,6 +35,7 @@
   background-color: #f5f6f8 !important;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 60px;
 }
 
 /* breakpoint and up - mega dropdown styles */
@@ -52,13 +53,20 @@
     margin:0 .25rem;
   }
 
+@media screen and (min-width: 992px) {
+    .navbar .nav-item {
+      margin-top: 12px;
+      padding-bottom: 12px;
+    }
+}
+
   /* makes the dropdown full width  */
   .navbar .dropdown {
     position:static;
   }
 
   .navbar .dropdown-menu {
-    border: 1px solid rgba(0,0,0,.15);
+    border: none;
     left:0;
     right:0;
   /*  height of nav-item  */
@@ -85,6 +93,15 @@
     animation-name: meganav;
     animation-duration: .6s;
   }
+}
+
+.dropdown:hover, .dropdown:hover a.nav-link {
+  color: $primary-blue !important;
+  background-color: #f5f6f8;
+}
+
+.nav-link:hover {
+  color: $primary-blue;
 }
 
 @media screen and (min-width: 992px) {
@@ -178,4 +195,9 @@
   margin-top: -115px; // position it vertically
   position: absolute;
   width: 210px;
+}
+
+// Don't display the dropdown carrots for menu items
+.dropdown-toggle::after {
+    display:none
 }
