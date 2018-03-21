@@ -16,7 +16,7 @@
 @media screen and (min-width: 992px) {
   .global-nav {
     background-color: transparent !important;
-    padding-top: 25px;
+    padding-top: 28px;
   }
 }
 
@@ -30,4 +30,19 @@
 
 .local-search {
   border-radius: 1.5em;
+}
+
+.search {
+  font-size: 1.2em;
+  margin-right: 40%;
+}
+
+.clearSearch {
+  padding-top: 72px;
+  background-position: center 72px;
+}
+
+.search-row {
+  background-color: green;
+  height: 46px;
 }
