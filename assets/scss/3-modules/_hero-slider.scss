@@ -17,3 +17,32 @@
   top: 80%;
   width: 40px;
 }
+
+.slick-dots li button:before {
+  line-height: 30px;
+  color: $landing-bg;
+  font-size: 12px;
+  opacity: 1;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $primary-blue;
+  opacity: 1;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.slick-dots li {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 1px;
+  margin-right: 1px;
+}
