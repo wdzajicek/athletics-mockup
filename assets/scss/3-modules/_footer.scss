@@ -1,0 +1,37 @@
+// Footer Styles
+.footer {
+  background-color: $footer-bg;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+// Footer's "athletics.kcc.edu link"
+a.footer-link {
+  color: $primary-blue;
+  &:hover {
+    text-decoration: none !important;
+    color: $primary-red;
+  }
+}
+
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-icons {
+  background-color: $primary-red;
+  border-radius: 50%;
+  height: 50px;
+  margin:5px;
+  padding: 2px;
+  width: 50px;
+}
+
+a.footer-social-links, a.footer-social-links .footer-icons {
+  text-decoration: none !important; // Get rid of default link-underline on hover
+}
+
+a.footer-social-links:hover .footer-icons {
+  text-decoration: none !important;
+  background-color: $primary-blue;
+}
