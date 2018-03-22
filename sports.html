@@ -1,5 +1,6 @@
 ---
 layout: sports
+baseurl: ../
 ---
 
 <section class="sports-section" id="sports">
@@ -12,13 +13,13 @@ layout: sports
     </div>
     <div class="row">
       <div class="col-md-4 col-sm-6 sports-item">
-        <a class="sports-link" href="">
+        <a class="sports-link" href="http://athletics.kcc.edu/baseball">
           <div class="thumb-caption">
             Baseball
           </div>
           <div class="sports-hover">
           </div>
-          <img class="img-fluid" src="../assets/img/baseball-thumb.jpg" alt="2017 NJCAA Division 2 National Champions photo, link to baseball page">
+          <img class="img-fluid" src="{{page.baseurl}}assets/img/baseball-thumb.jpg" alt="2017 NJCAA Division 2 National Champions photo, link to baseball page">
         </a>
         <div class="sports-caption">
           <p class="text-muted">
@@ -29,17 +30,20 @@ layout: sports
         </div>
       </div>
       <div class="col-md-4 col-sm-6 sports-item">
-        <a class="sports-link" data-toggle="modal" href="#sportsModal2">
-          <div class="sports-hover-content">
-            Basketball
+        <a class="sports-link" href="">
+          <div class="thumb-caption">
+            Men's Basketball
           </div>
           <div class="sports-hover">
           </div>
-          <img class="img-fluid" src="../assets/img/basketball-thumb.jpg" alt="">
+          <img class="img-fluid" src="{{page.baseurl}}assets/img/basketball-thumb.jpg" alt="Photo of Dante Emerson #23 of the KCC men's basketball team, link to men's basketball page">
         </a>
         <div class="sports-caption">
-          <h4>Explore</h4>
-          <p class="text-muted">Graphic Design</p>
+          <p class="text-muted">
+            <span class="jump-link-span"><a href="" class="jump-links">Schedule</a></span>
+            <span class="jump-link-span"><a href="" class="jump-links">Roster</a></span>
+            <span class="jump-link-span"><a href="" class="jump-links">News</a></span>
+          </p>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 sports-item">
