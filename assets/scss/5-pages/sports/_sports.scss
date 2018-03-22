@@ -1,5 +1,5 @@
 .sports-section {
-  margin-top: 400px;    // Clear the mega-nav
+  margin-top: 200px;    // Clear the mega-nav
 }
 
 .sports-item {
@@ -16,19 +16,23 @@
 }
 
 .sports-hover {
-  position: absolute;
-  width: 100%;
+  background: $primary-blue;
+  border-color: $primary-red;
+  border-style: solid;
+  border-width: 5px;
   height: 100%;
+  opacity: 0;
+  position: absolute;
   -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
   transition: all ease .5s;
-  opacity: 0;
-  background: $primary-blue;
+  width: 100%;
   z-index: 2;
 }
 
-.sports-hover:hover {
-  opacity: .9
+.sports-hover:hover,
+.thumb-caption:hover + .sports-hover { // Needed to make hover affect work when hovering the thumbnail caption
+  opacity: .85
 }
 
 .thumb-caption {
@@ -51,10 +55,8 @@
   background-color: #fff
 }
 
-.sports-item .sports-caption p {
-  font-size: 16px;
-  margin: 0;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif
+.sports-blurb {
+  text-align: left;
 }
 
 @media (min-width:767px) {
