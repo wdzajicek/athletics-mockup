@@ -15,7 +15,6 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
-var rsync = require('gulp-rsync');
 
 var PRODUCTION = !!(yargs.argv.production);
 
@@ -83,21 +82,6 @@ gulp.task('browser-sync', function() {
         xip: config.browsersync.xip,
         browser: config.browsersync.browser
     });
-});
-
-gulp.task('rsync', function() {
-  return gulp.src('_site/**')
-    .pipe(rsync({
-      root: '_site/',
-      hostname: config.deploy.hostname,
-      destination: config.deploy.destination,
-      username: config.deploy.username,
-      incremental: true,
-    }));
-});
-
-gulp.task('deploy', function(done){
-    sequence('build', 'rsync', done);
 });
 
 gulp.task('default', function(done) {
