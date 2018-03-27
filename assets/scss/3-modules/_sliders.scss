@@ -1,3 +1,6 @@
+/* Styles for both the .heroSlider and .baseballSlider
+   slick carousels
+============================================== */
 .slider-container {
   margin-top: 142px;
   padding-left: 0;
@@ -15,27 +18,34 @@
   margin-right: 0;
 }
 
-.slide-img {
+.heroSlider .slide-img,
+.baseballSlider .slide-img {
   position: relative;
   width: 100%;
 }
 
-.slick-next {
+.heroSlider .slick-next,
+.baseballSlider .slick-next {
   right: 25px;
 }
 
-.slick-prev {
+.heroSlider .slick-prev,
+.baseballSlider .slick-prev {
   left: 25px;
   z-index: 4;
 }
 
-.slick-next, .slick-prev {
+.heroSlider .slick-next,
+.heroSlider .slick-prev,
+.baseballSlider .slick-next,
+.baseballSlider .slick-prev {
   height: 40px;
   top: 80%;
   width: 40px;
 }
 
-.slick-dots li button:before {
+.heroSlider .slick-dots li button:before,
+.baseballSlider .slick-dots li button:before {
   line-height: 30px;
   color: $landing-bg;
   font-size: 12px;
@@ -47,7 +57,8 @@
     1px 1px 0 #000;
 }
 
-.slick-dots li.slick-active button:before {
+.heroSlider .slick-dots li.slick-active button:before,
+.baseballSlider .slick-dots li.slick-active button:before {
   color: $primary-blue;
   opacity: 1;
   text-shadow:
@@ -57,7 +68,8 @@
     1px 1px 0 #000;
 }
 
-.slick-dots li {
+.heroSlider .slick-dots li,
+.baseballSlider .slick-dots li  {
   padding-left: 0;
   padding-right: 0;
   margin-left: 1px;

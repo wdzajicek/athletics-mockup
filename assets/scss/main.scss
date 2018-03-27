@@ -7,13 +7,18 @@
 /* Modular components */
 @import "3-modules/mega-nav";
 @import "3-modules/global-nav";
-@import "3-modules/hero-slider";
+@import "3-modules/sliders";
 @import "3-modules/footer";
 
 /* Layout items */
 @import "4-layout/header";
 
 /* Page specific styling */
+/* Home/index page */
 @import "5-pages/index/home";
+@import "5-pages/index/schedule";
+@import "5-pages/index/videos";
+/* Sports page */
 @import "5-pages/sports/sports";
+/* Baseball page */
 @import "5-pages/baseball/coaches";
