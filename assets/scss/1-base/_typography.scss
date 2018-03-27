@@ -1,9 +1,9 @@
 /*  TO USE GOOGLE FONTS FOR SITE:
 ==============================================
-    for Open Sans font use:
+    Non-bold items use Open Sans font:
     font-family: 'Open Sans', sans-serif;
 
-    for Roboto for bold items:
+    for Roboto for bold items and headings:
     font-family: 'Roboto', sans-serif;
 ============================================== */
 h3 {
@@ -29,5 +29,29 @@ h3 {
 .footer-heading {
   font-family: 'Roboto', sans-serif;
   font-size: 2.6em;
+  font-weight: 900;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Typography for Coaches sections on pages
+=========================================== */
+.coaches-heading {
+  color: $grey-heading;
+}
+
+.coach-name {
+  color: $primary-red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.coach-title {
+  color: $grey-heading;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
   font-weight: 900;
 }
