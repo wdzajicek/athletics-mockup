@@ -36,6 +36,11 @@ p {
   font-family: 'Open Sans', sans-serif;
 }
 
+// Sets color for FontAwesome icons
+.f-color {
+  color: $fa-color;
+}
+
 /* Typography for Coaches sections on pages
 =========================================== */
 .coaches-heading {
