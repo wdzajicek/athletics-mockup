@@ -1,0 +1,22 @@
+.hero-container {
+  margin-top: 142px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media screen and (min-width: 1400px) {
+  .hero-container {
+    max-width: 1300px;
+  }
+}
+
+.hero-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
