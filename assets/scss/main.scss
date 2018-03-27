@@ -4,16 +4,16 @@
 /* Typography */
 @import "1-base/typography";
 
-/* Components */
+/* Modular components */
 @import "3-modules/mega-nav";
 @import "3-modules/global-nav";
 @import "3-modules/hero-slider";
 @import "3-modules/footer";
 
-/* Layouts */
+/* Layout items */
 @import "4-layout/header";
-@import "4-layout/coaches";
 
 /* Page specific styling */
 @import "5-pages/index/home";
 @import "5-pages/sports/sports";
+@import "5-pages/baseball/coaches";
