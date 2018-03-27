@@ -48,11 +48,11 @@ javascript:
     - "!assets/js/all.js"
     - "!assets/js/megamenu.js"
     - "!assets/js/test.js"
-    - "assets/js/athletics.js"
+    - "!assets/js/athletics.js"
     - "assets/js/sliders.js"
-  #  - "assets/js/agency.js"
-  #  - "assets/js/app.js"
-
+    - "assets/js/schedule.js"
+    - "assets/js/youtube-carousel.js"
+    - "assets/js/init.js"
 
 jekyll:
   notification: "Running jekyll"
