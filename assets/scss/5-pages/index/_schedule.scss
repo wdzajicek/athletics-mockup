@@ -4,7 +4,7 @@
 
 .slick.games {
   background-color: white;
-  width: 100%;
+  width: 98%;
   margin: 0 auto;
   display: block;
 }
@@ -54,4 +54,20 @@
 }
 .schedule-carousel__date-day{
   font-size: 25px;
+}
+
+.slick.games .slick-next,
+.slick.games .slick-prev,
+#yt_list .slick-next,
+#yt_list .slick-prev {
+  height: 30px;
+  width: 30px;
+}
+
+.slick.games .slick-next {
+  right: -45px;
+}
+
+.slick.games .slick-prev {
+  left: -45px;
 }
