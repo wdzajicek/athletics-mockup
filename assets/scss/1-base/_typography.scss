@@ -35,13 +35,37 @@ h3 {
   font-weight: 900;
 }
 
+.sub-heading {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .01em;
+  text-transform: uppercase;
+}
+
+.slide-heading {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
 p {
   font-family: 'Open Sans', sans-serif;
 }
 
-// Sets color for FontAwesome icons
+.blue-heading {
+  color: $primary-blue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
 .f-color {
-  color: $fa-color;
+  color: $fa-color;  // Sets color for FontAwesome icons
 }
 
 /* Typography for Coaches sections on pages
@@ -62,11 +86,4 @@ p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   font-weight: 900;
-}
-
-.blue-heading {
-  color: $primary-blue;
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
-  font-weight: 700;
 }
