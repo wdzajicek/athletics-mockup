@@ -40,3 +40,11 @@ $default-bg: #ffffff;        // Background color for non-landing pages
 $footer-bg: #ffffff;         // Footer's background color
 $grey-heading: #666666;      // Grey headings used within page content
 $fa-color: $primary-red;
+
+body.landing {
+  background-color: $landing-bg;
+}
+
+body.page {
+  background-color: $default-bg;
+}
