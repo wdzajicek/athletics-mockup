@@ -1,21 +1,33 @@
 /* Variables */
 @import "0-tools/vars";
 
-/* Font Awesome */
-@import "fonts";
-
-/* Typography */
+/* Base items */
 @import "1-base/typography";
+@import "1-base/links";
 
-/* Components */
+/* Modular components */
 @import "3-modules/mega-nav";
 @import "3-modules/global-nav";
+@import "3-modules/sliders";
+@import "3-modules/footer";
+@import "3-modules/hero-banner";
+@import "3-modules/img-hover";
 
-/* Layouts */
-@import "4-layout/header";
+/* Layout items */
+// @import "4-layout/header";
+@import "4-layout/positioning";
 
-@import "5-pages/index/index";
-
-body {
-  height: 4000px;
-}
+/* Page specific styling */
+/* Home/index page */
+@import "5-pages/index/home";
+@import "5-pages/index/schedule";
+@import "5-pages/index/videos";
+/* Sports page */
+@import "5-pages/sports/sports";
+/* Baseball page */
+@import "5-pages/baseball/coaches";
+@import "5-pages/baseball/modals";
+/* Facilities page */
+@import "5-pages/facilities/facilities";
+/* Sports facilities */
+@import "5-pages/sports-facilities/sports-facilities";
