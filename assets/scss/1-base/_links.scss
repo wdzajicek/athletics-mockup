@@ -1,0 +1,11 @@
+.blue-link {
+  color: $primary-blue;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.blue-link:hover {
+  color: $primary-red;
+  text-decoration: none;
+}
