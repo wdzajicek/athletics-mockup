@@ -68,7 +68,7 @@ function getVideos(yt_id, next_page) {
             }
             for (var i = 0; i < limit; i++) {
                 var title = $("<h3 class='video-carousel__title'>").append(data.items[i].snippet.title),
-                    thumb = $("<img>").attr("src", data.items[i].snippet.thumbnails.medium.url),
+                    thumb = $("<img class='img-fluid' src='http://fastpath.kcc.edu/assets/img/placeholder.png'>").attr("data-src", data.items[i].snippet.thumbnails.default.url),
                     video_id = data.items[i].snippet.resourceId.videoId,
                     link = $("<a class='video-link' data-toggle='modal' data-target='#exampleModalCenter' href='#'>")
                       .data("videoid", video_id)
@@ -78,13 +78,12 @@ function getVideos(yt_id, next_page) {
             }
             $("#yt_list").append(more);
             $('#yt_list').slick({
-                dots: true,
-                infinite: true,
-                autoplay: true,
-                autoplaySpeed: 6000,
-                speed: 800,
+                dots: false,
+                infinite: false,
+                autoplay: false,
                 slidesToShow: 3,
-                adaptiveHeight: true,
+                slidesToScroll: 1,
+                adaptiveHeight: false,
                 prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/img/blue-prev.svg'>",
                 nextArrow:"<img class='a-right control-c next slick-next' src='assets/img/blue-next.svg'>",
 							  responsive: [
@@ -92,33 +91,22 @@ function getVideos(yt_id, next_page) {
 										breakpoint: 1024,
 										settings: {
 											slidesToShow: 3,
-											slidesToScroll: 3,
-											infinite: true,
-											dots: true
+											slidesToScroll: 3
 										}
 									},
 									{
-										breakpoint: 600,
+										breakpoint: 992,
 										settings: {
 											slidesToShow: 1,
 											slidesToScroll: 1
 										}
 									},
-									{
-										breakpoint: 480,
-										settings: {
-											slidesToShow: 1,
-											slidesToScroll: 1
-										}
-									}
-
 								]
             });
         }
     });
-    console.dir(xhr);
 }
-/* load more*/
+/* load more */
 $("#yt_list").on("click", "#load-more", function () {
     $(this)
         .animate({
