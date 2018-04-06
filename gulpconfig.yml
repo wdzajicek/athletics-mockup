@@ -53,6 +53,7 @@ javascript:
     - "assets/js/schedule.js"
     - "assets/js/youtube-carousel.js"
     - "assets/js/init.js"
+    - "assets/js/lazyload.js"
 
 jekyll:
   notification: "Running jekyll"
@@ -66,5 +67,7 @@ watch:
   pages:
     - "*.{md,html,yml,xml}"
     - "{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
+    - "_news/*.*"
+    - "_news/**/*.*"
     - "!_site/**/*.*"
     - "!assets/**/*.*"

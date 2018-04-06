@@ -36,8 +36,8 @@ var Schedule = (function scheduleLoading() {
           initialSlide: 0,
           arrows: true,
           buttons: true,
-          prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/img/blue-prev.svg'>",
-          nextArrow:"<img class='a-right control-c next slick-next' src='assets/img/blue-next.svg'>",
+          prevArrow:"<img class='a-left control-c prev slick-prev' src='http://athletics.kcc.edu/assets/img/blue-prev.svg'>",
+          nextArrow:"<img class='a-right control-c next slick-next' src='http://athletics.kcc.edu/assets/img/blue-next.svg'>",
           responsive: [
             {
               breakpoint: 1024,

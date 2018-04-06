@@ -68,7 +68,7 @@ function getVideos(yt_id, next_page) {
             }
             for (var i = 0; i < limit; i++) {
                 var title = $("<h3 class='video-carousel__title'>").append(data.items[i].snippet.title),
-                    thumb = $("<img class='img-fluid' src='http://fastpath.kcc.edu/assets/img/placeholder.png'>").attr("data-src", data.items[i].snippet.thumbnails.default.url),
+                    thumb = $("<img class='img-fluid' src='assets/img/yt-loading.png'>").attr("data-src", data.items[i].snippet.thumbnails.medium.url),
                     video_id = data.items[i].snippet.resourceId.videoId,
                     link = $("<a class='video-link' data-toggle='modal' data-target='#exampleModalCenter' href='#'>")
                       .data("videoid", video_id)
@@ -84,8 +84,8 @@ function getVideos(yt_id, next_page) {
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 adaptiveHeight: false,
-                prevArrow:"<img class='a-left control-c prev slick-prev' src='assets/img/blue-prev.svg'>",
-                nextArrow:"<img class='a-right control-c next slick-next' src='assets/img/blue-next.svg'>",
+                prevArrow:"<img class='a-left control-c prev slick-prev' src='http://athletics.kcc.edu/assets/img/blue-prev.svg'>",
+                nextArrow:"<img class='a-right control-c next slick-next' src='http://athletics.kcc.edu/assets/img/blue-next.svg'>",
 							  responsive: [
 									{
 										breakpoint: 1024,
@@ -103,6 +103,7 @@ function getVideos(yt_id, next_page) {
 									},
 								]
             });
+            lzfunction();   // Lazy load function
         }
     });
 }
