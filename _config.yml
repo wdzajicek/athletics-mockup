@@ -1,10 +1,7 @@
 title: KCC Athletics
 collections:
-  posts:
-    title: Posts
-    output: true
-  releases:
-    title: Releases
+  news:
+    title: News
     output: true
   uploads:
     title: Uploads
