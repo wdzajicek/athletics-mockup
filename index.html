@@ -1,130 +1,35 @@
 ---
-layout: landing
+layout: landing-fb
 baseurl:
 ---
-
-<!--[if lt IE 8]>
-<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-<![endif]-->
-
-<!-- Portfolio Grid From template
-===================================
-<section class="bg-light" id="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading text-uppercase editable">Portfolio</h2>
-        <h3 class="section-subheading text-muted editable">Lorem ipsum dolor sit amet consectetur.</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i><br>
-              Insert appropriate hover text here.
-            </div>
-          </div>
-          <img class="img-fluid" src="{{site.baseurl}}/assets/img/01-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Threads</h4>
-          <p class="text-muted">Illustration</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i><br>
-              Insert appropriate hover text here.
-            </div>
-          </div>
-          <img class="img-fluid" src="{{site.baseurl}}/assets/img/02-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Explore</h4>
-          <p class="text-muted">Graphic Design</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i><br>
-              Insert appropriate hover text here.
-            </div>
-          </div>
-          <img class="img-fluid" src="{{site.baseurl}}/assets/img/03-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Finish</h4>
-          <p class="text-muted">Identity</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i><br>
-              Insert appropriate hover text here.
-            </div>
-          </div>
-          <img class="img-fluid" src="{{site.baseurl}}/assets/img/04-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Lines</h4>
-          <p class="text-muted">Branding</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i><br>
-              Insert appropriate hover text here.
-            </div>
-          </div>
-          <img class="img-fluid" src="{{site.baseurl}}/assets/img/05-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Southwest</h4>
-          <p class="text-muted">Website Design</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6 portfolio-item">
-        <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-          <div class="portfolio-hover">
-            <div class="portfolio-hover-content">
-              <i class="fa fa-plus fa-3x"></i><br>
-              Insert appropriate hover text here.
-            </div>
-          </div>
-          <img class="img-fluid" src="{{site.baseurl}}/assets/img/06-thumbnail.jpg" alt="">
-        </a>
-        <div class="portfolio-caption">
-          <h4>Window</h4>
-          <p class="text-muted">Photography</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>  -->
 
 {% include hero-slider.html %}
 
 <section class="container content-marg">
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2><i class="fas fa-calendar-alt f-color"></i> Upcoming Games</h2>
+        <h2><i class="fas fa-calendar-alt f-color"></i>&#160;Upcoming Games</h2>
         <div id="track" class="slick games" ></div>
+      </div>
+    </div>
+    <div class="row news-social-row">
+      <div class="col-md-8 news-feed">
+        <h2 class="grey-bg"><i class="far fa-newspaper f-color"></i>&#160;News</h2>
+          {% for item in site.news %}
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+          <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+          {% endfor %}
+      </div>
+      <div class="col-md-4">
+        <h2><i class="far fa-images f-color"></i>&#160;Social Media</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2><i class="fas fa-video f-color"></i> Videos</h2>
+          <h2><i class="fas fa-video f-color"></i>&#160;Videos</h2>
         	<div id="yt_list" class="yt_list">
         	</div>
         		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>

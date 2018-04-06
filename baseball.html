@@ -1,5 +1,5 @@
 ---
-layout: sub-nav-landing
+layout: landing-fb
 baseurl: ../
 slides:
   - image: assets/img/header-bg2.jpg
@@ -18,32 +18,49 @@ slides:
 {% include baseball-slider.html %}
 <!--  Content  -->
 <section class="container content-marg">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-header text-center text-white"><h2>Upcoming Games</h2></div>
-          <div class="card-body scroll-table">
-            <table id="results" class="table table-responsive text-centered"></table>
-          </div>
-        </div>
+    <div class="row schedule-row">
+      <div class="col-md-12">
+        <h2><i class="fas fa-calendar-alt f-color"></i>&#160;Upcoming Games</h2>
+        <div id="track" class="baseball slick games" ></div>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header text-center text-white"><h2>News</h2></div>
-              <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="row news-social-row">
+      <div class="col-md-8 news-feed">
+        <h2 class="grey-bg"><i class="far fa-newspaper f-color"></i>&#160;News</h2>
+          {% for item in site.news %}
+          <h2>{{ item.title }}</h2>
+          <p>{{ item.description }}</p>
+          <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+          {% endfor %}
+      </div>
+      <div class="col-md-4">
+        <h2><i class="far fa-images f-color"></i>&#160;Social Media</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="wrapper">
+          <h2><i class="fas fa-video f-color"></i>&#160;Videos</h2>
+        	<div id="yt_list_bb" class="yt_list_bb">
+        	</div>
+        		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>
+        	</div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card">
-              <div class="card-header text-center text-white">Social Media</div>
-              <div class="card-body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <div class="modal-body">
+                		<iframe id="yt_player"></iframe>
+              </div>
+              <div class="modal-footer">
               </div>
             </div>
           </div>
