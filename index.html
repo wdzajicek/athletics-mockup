@@ -8,18 +8,20 @@ baseurl:
 <section class="container content-marg">
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2><i class="fas fa-calendar-alt f-color"></i>&#160;Upcoming Games</h2>
+        <h2><img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
         <div id="track" class="slick games" ></div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
         <h2 class="grey-bg"><i class="far fa-newspaper f-color"></i>&#160;News</h2>
-          {% for item in site.news %}
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.description }}</p>
-          <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-          {% endfor %}
+        <div class="news-scroll">
+            {% for item in site.news %}
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+            {% endfor %}
+        </div>
       </div>
       <div class="col-md-4">
         <h2><i class="far fa-images f-color"></i>&#160;Social Media</h2>
@@ -29,7 +31,7 @@ baseurl:
     <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2><i class="fas fa-video f-color"></i>&#160;Videos</h2>
+          <h2><img src="assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
         	<div id="yt_list" class="yt_list">
         	</div>
         		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>
