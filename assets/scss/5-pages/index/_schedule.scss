@@ -3,13 +3,14 @@
 }
 
 .games {
-  background-color: white;
-  width: 75%;
+  // background-color: white;
+  width: 99%;
   margin: 0 auto;
   display: block;
 }
 
 .slick.slide {
+  background-color: $slide-bg;
   margin: 10px;
 }
 
@@ -33,7 +34,7 @@
   background-color: #0f3b63;
   color: #ffffff;
   float: left;
-  height: 100px;
+  height: 120px;
   width: auto;
   Text-align: center;
   margin-right: 10px;
@@ -44,7 +45,7 @@
   background-color: #c61f48;
   color: #ffffff;
   float: left;
-  height: 100px;
+  height: 120px;
   width: auto;
   Text-align: center;
   margin-right: 10px;
@@ -54,7 +55,8 @@
 
 .schedule-carousel__date-month{
   margin-bottom: 0;
+  //font-size: 1em;
 }
 .schedule-carousel__date-day{
-  font-size: 25px;
+  //font-size: 2em;
 }
