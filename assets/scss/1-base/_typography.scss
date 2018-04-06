@@ -68,10 +68,20 @@ p {
   color: $fa-color;  // Sets color for FontAwesome icons
 }
 
+.main-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: $grey-heading;
+  font-size: 1.4em;
+}
+
 /* Typography for Coaches sections on pages
 =========================================== */
 .coaches-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   color: $grey-heading;
+  font-size: 1.4em;
 }
 
 .coach-name {
