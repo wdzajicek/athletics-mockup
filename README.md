@@ -1,7 +1,6 @@
 # KCC Athletics Site Development
 
 #### Jekyll + Gulp + Sass + Yarn + BrowserSync + ...
----
 
 Development of the new KCC Athletics site based off of design mockups
 
