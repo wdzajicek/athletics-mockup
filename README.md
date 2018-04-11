@@ -4,9 +4,10 @@
 
 Development of the new KCC Athletics site based off of design mockups
 
+
 ## [Live Github Pages example](https://kankakeecommunitycollege.github.io/athletics-mockup/):
 
-### <https://kankakeecommunitycollege.github.io/athletics-mockup/>
+#### <https://kankakeecommunitycollege.github.io/athletics-mockup/>
 
 ## Requirements
 	- Jekyll - `$ gem install jekyll bundler`
