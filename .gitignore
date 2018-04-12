@@ -40,3 +40,6 @@ assets/adobe/
 assets/adobe/*
 /adobe/
 adobe/*
+
+# Yarn error log
+yarn-error.log
