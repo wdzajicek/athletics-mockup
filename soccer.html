@@ -1,0 +1,178 @@
+---
+layout: sub-nav-landing-fb
+baseurl: ../
+title: "Soccer"
+base: soccer
+sport: 5
+slides:
+  - image: uploads/soccer-team-2_D51_3805.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/soccer-slide-2_D72_9565.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/soccer-slide-3_D72_0245.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/soccer-team_D51_3818.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/soccer-slide-5_D51_3186.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+---
+
+<div class="container slider-container">
+  <a href="http://region4sports.com/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
+  <div class="row slider-row">
+    <div class="col-md-12 baseballSlider">
+    {% for slide in page.slides %}
+      <div>
+        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="">
+        <div class="heading-container">
+          <h3 class="sub-heading">{{slide.text1}}</h3>
+          <h3 class="slide-heading">{{slide.text2}}</h3>
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!--  Content  -->
+<section class="container content-marg">
+    <div class="row schedule-row">
+      <div class="col-md-12">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+        <div id="track" class="baseball slick games" ></div>
+      </div>
+    </div>
+    <div class="row news-social-row">
+      <div class="col-md-8 news-feed">
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
+          <div class="news-scroll">
+            {% for item in site.news %}
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+            {% endfor %}
+          </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="wrapper">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
+        	<div id="yt_list" class="yt_list">
+        	</div>
+        		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>
+        	</div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                		<iframe id="yt_player"></iframe>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Coaches Section -->
+<section class="coach-section">
+  <div class="container">
+    <div class="row text-left">
+      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="{{page.baseurl}}uploads/chris-gardner.jpg" alt="Photo of Chris Gardner" class="img-fluid coach-img modal-link"></a></div>
+          <div class="col-6 float-right">
+            <a data-toggle="modal" href="#modalCoach1" class="modal-link"><h5 class="coach-name">Chris Gardner</h5>
+            <h6 class="coach-title">Head Coach</h6></a>
+            <p>815&#8209;802&#8209;8609<br>
+            cgardner@kcc.edu</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach2"><img src="{{page.baseurl}}uploads/dgardnersr.jpg" alt="Photo of Assistant Coach Donnie Gardner Sr." class="img-fluid coach-img modal-link"></a></div>
+          <div class="col-6 float-right">
+            <a data-toggle="modal" href="#modalCoach2" class="modal-link"><h5 class="coach-name">Donnie Gardner Sr.</h5>
+            <h6 class="coach-title">Assistant Coach</h6></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+  <!-- Coach Modals -->
+<div class="modal fade" id="modalCoach1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{page.baseurl}}uploads/chris-gardner.jpg" alt="Photo of Head Coach Chris Gardner" class="img-fluid float-left coach-modal-img">
+        <h5 class="coach-name editable">Chris Gardner</h5>
+        <h6 class="coach-title editable">Head Coach</h6>
+        <p>815&#8209;802&#8209;8609<br>
+        cgardner@kcc.edu</p><br>
+        <div class="editable">
+          <p>Chris Gardner is in his second season as head coach for the Cavaliers. In his first season, he led the Cavaliers to a 22-10 record, along with breaking two school records in three pointers made in a single game (17) and three pointers in a single season (294).</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalCoach2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{page.baseurl}}uploads/dgardnersr.jpg" alt="Photo of Assistant Coach Donnie Gardner Sr." class="img-fluid float-left coach-modal-img">
+        <h5 class="coach-name editable">Donnie Gardner Sr.</h5>
+        <h6 class="coach-title editable">Assistant Coach</h6>
+        <div class="editable">
+          <p>Assistant Coach Donnie Gardner Sr. is in his first season with the Cavaliers. Gardner has an extensive background working with youth in multiple sports. He coached and mentored youth from ages 5-18 in the Youth Basketball Association from 1986-99, he was an assistant at Beasley Academic Center from 1994-96, and he coached Little League Baseball from 1987-1996 with South Side Little League and Jackie Robinson West. Coach Gardner also served as attendance coordinator at Whitney Young High School from 1996-2001.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
