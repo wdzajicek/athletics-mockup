@@ -1,0 +1,179 @@
+---
+layout: sub-nav-landing-fb
+baseurl: ../
+title: "Softball"
+base: softball
+sport: 3
+slides:
+  - image: uploads/softball-team_D51_2702.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/softball-slide-2_D51_3562.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/softball-slide-3_D51_3377.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/softball-slide-4_D51_3301.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/softball-slide-5_D51_3077.jpg
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+---
+
+<div class="container slider-container">
+  <a href="http://region4sports.com/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
+  <div class="row slider-row">
+    <div class="col-md-12 baseballSlider">
+    {% for slide in page.slides %}
+      <div>
+        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="">
+        <div class="heading-container">
+          <h3 class="sub-heading">{{slide.text1}}</h3>
+          <h3 class="slide-heading">{{slide.text2}}</h3>
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!--  Content  -->
+<section class="container content-marg">
+    <div class="row schedule-row">
+      <div class="col-md-12">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+        <div id="track" class="baseball slick games" ></div>
+      </div>
+    </div>
+    <div class="row news-social-row">
+      <div class="col-md-8 news-feed">
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
+          <div class="news-scroll">
+            {% for item in site.news %}
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+            {% endfor %}
+          </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="wrapper">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
+        	<div id="yt_list" class="yt_list">
+        	</div>
+        		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>
+        	</div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                		<iframe id="yt_player"></iframe>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Coaches Section -->
+<section class="coach-section">
+  <div class="container">
+    <div class="row text-left">
+      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="{{page.baseurl}}uploads/18-kcooper-coach.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid coach-img modal-link"></a></div>
+          <div class="col-6 float-right">
+            <a data-toggle="modal" href="#modalCoach1" class="modal-link"><h5 class="coach-name">Keith Cooper</h5>
+            <h6 class="coach-title">Head Coach</h6></a>
+            <p>815&#8209;802&#8209;8606<br>
+            kcooper@kcc.edu</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"></div>
+          <div class="col-6 float-right">
+            <h5 class="coach-name">Heidi Senor</h5>
+            <h6 class="coach-title">Assistant Coach</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"></div>
+          <div class="col-6 float-right">
+            <h5 class="coach-name">Joe Powers</h5>
+            <h6 class="coach-title">Assistant Coach</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row coach-row-marg">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"></div>
+          <div class="col-6 float-right">
+            <h5 class="coach-name">Charlie Riner</h5>
+            <h6 class="coach-title">Assistant Coach</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Coach Modals -->
+<div class="modal fade" id="modalCoach1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{page.baseurl}}uploads/18-kcooper-coach.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img">
+        <h5 class="coach-name editable">Keith Cooper</h5>
+        <h6 class="coach-title editable">Head Coach</h6>
+        <p>815&#8209;802&#8209;8606<br>
+        kcooper@kcc.edu</p><br>
+        <div class="editable">
+          <p>Head Coach Keith Cooper is in his first season coaching the Lady Cavaliers softball program after taking over for retired Hall of Fame Coach Dennis Clark.</p>
+          <p>Coach Cooper has been coaching various levels of players in youth sports for 23 years. He held multiple positions on local league boards of directors, as well as being president of the Kankakee Knights of Columbus Little League, Knights of Columbus Bronco League, Kankakee Elks Pony League and the Kankakee Valley Colt and Palomino League. He has been a coach at tournaments at Illinois State University in Normal and Central Michigan University in Mt. Pleasant, Mich. He also has coached teams in three NSA State Fast Pitch Softball Tournaments in Illinois.</p>
+          <p>Prior to becoming the Lady Cavs' head softball coach, he was the official scorekeeper at home games for KCC's women's basketball, and often traveled with the team.</p>
+          <p>Cooper was born in Kankakee and raised in Limestone. He graduated from Kankakee High School and also studied law enforcement at KCC. He worked at AT&T for 18 years.</p>
+          <p>Coach Cooper and his wife, Lisa, reside in Kankakee. They have four children, Doug (Traci), Brittany, Jordan, and Austin. They have one granddaughter, Autumn, and a grandson on the way.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
