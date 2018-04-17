@@ -10,7 +10,7 @@
     Black =     font-weight: 900
 ============================================== */
 
-.page-heading {
+.page-heading { // This class is applied to h1 level headings
   color: $sub-nav-heading;
   font-family: 'Roboto', sans-serif;
   font-size: 1.8em;
@@ -31,7 +31,7 @@ h3 {
   text-transform: uppercase;
 }
 
-.nav-link-main {
+.nav-link-main { //styles for Main links in mega-nav
   color: $nav-link !important;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
@@ -44,6 +44,14 @@ h3 {
   .nav-link-main {
     font-size: .9em;
     }
+}
+
+.sub-nav-link {
+  color: $sub-nav-heading;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: .06em;
 }
 
 .footer-heading {
