@@ -27,4 +27,9 @@ Development of the new KCC Athletics site based off of design mockups
 	$ gulp
 
 ## Production
+
+Production build minifies CSS and JavaScript and compresses image files.
+
+A gulp production build should be run before committing and pushing any CSS, JS, or images to the Github repository.
+
 	$ gulp --production
