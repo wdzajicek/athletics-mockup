@@ -1,6 +1,10 @@
 // Custom JavaScript to pull in YouTube playlist:
 var Youtube_carousel = (function youtube_carousel_module(){
 
+  var $apiK = $('meta[name=yt-api-k]').attr('value'),
+    $ytList = $('#yt_list'),
+    $ytPlayer = $('#yt_player');
+
   function init(){
     var default_user_name = 'KankakeeCommCollege';
     selectChannel(default_user_name);
@@ -14,10 +18,10 @@ var Youtube_carousel = (function youtube_carousel_module(){
       data: {
         part: 'contentDetails',
         forUsername: user_name,
-        key: $('meta[name=yt-api-k]').attr('value')
+        key: $apiK
       },
       success: function (d) {
-        $('#yt_list').html('');
+        $ytList.html('');
         if (d.pageInfo.totalResults > 0) {
           for (var _i = 0, _a = d.items; _i < _a.length; _i++) {
             var item = _a[_i];
@@ -50,7 +54,7 @@ var Youtube_carousel = (function youtube_carousel_module(){
         playlistId: yt_id,
         maxResults: limit,
         pageToken: next_page,
-        key: $('meta[name=yt-api-k]').attr('value')
+        key: $apiK
       },
       success: function (data) {
         if (data.nextPageToken) {
@@ -62,7 +66,7 @@ var Youtube_carousel = (function youtube_carousel_module(){
                         '">More...</button>';
         }
         if (next_page === '') {
-          $('#yt_player').attr('src', 'https://youtube.com/embed/' +
+          $ytPlayer.attr('src', 'https://youtube.com/embed/' +
                     data.items[0].snippet.resourceId.videoId +
                     '?controls=0&showinfo=0&rel=0');
         }
@@ -74,10 +78,10 @@ var Youtube_carousel = (function youtube_carousel_module(){
               .data('videoid', video_id)
               .append(thumb),
             holder = $('<div class="item">').append(link, title);
-          $('#yt_list').append(holder);
+          $ytList.append(holder);
         }
-        $('#yt_list').append(more);
-        $('#yt_list').slick({
+        $ytList.append(more);
+        $ytList.slick({
           dots: false,
           infinite: false,
           autoplay: false,
@@ -108,20 +112,21 @@ var Youtube_carousel = (function youtube_carousel_module(){
     });
   }
   /* load more */
-  $('#yt_list').on('click', '#load-more', function () {
+  $ytList.on('click', '#load-more', function () {
     $(this)
       .animate({
         'transform': 'scaleX(4)',
         'opacity': '0.1'
       }, function () {
-        getVideos($(this).data('yt-id'), $(this).data('next-page'));
-        $(this).remove();
+        var that = $(this);
+        getVideos(that.data('yt-id'), that.data('next-page'));
+        that.remove();
       });
   });
   /* embeds */
-  $('#yt_list').on('click', 'a.video-link', function () {
+  $ytList.on('click', 'a.video-link', function () {
     var video_id = $(this).data('videoid');
-    $('#yt_player').attr(
+    $ytPlayer.attr(
       'src',
       'https://youtube.com/embed/' +
       video_id +
@@ -131,12 +136,12 @@ var Youtube_carousel = (function youtube_carousel_module(){
 
   $('#exampleModalCenter').on('hide.bs.modal', function (e) {
     var video_id = $(this).data('videoid');
-    var leg=$('#yt_player').attr(
+    var leg=$ytPlayer.attr(
       'src',
       'https://youtube.com/embed/' +
       video_id +
       '?controls=0&showinfo=0&rel=0&autoplay=0');
-    $('#yt_player').attr('src',leg);
+    $ytPlayer.attr('src',leg);
   });
 
   return {
