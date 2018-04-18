@@ -22,7 +22,7 @@ var Schedule = (function scheduleLoading() {
   //Decide if it is a home or away game and set color
   function whereIsGame(at){
     var locationColor, located;
-    (at.indexOf('at ') >= 0) ? (locationColor='schedule-carousel__date-blue',located=at) : (locationColor='schedule-carousel__date-red',located='at Kankakee');
+    (at.indexOf('at ') >= 0) ? (locationColor='schedule-carousel__date-blue',located=at) : (locationColor='schedule-carousel__date-red',located='at Home');
     return [locationColor, located];
   }
 
@@ -74,8 +74,9 @@ var Schedule = (function scheduleLoading() {
       if(dateOfGame > d) { //If the entry's date is greater than the date then setup the track with a new div
         var arr = (dateOfGame).split('-'),
           at = that.gsx$vs.$t,
+          vsSchool = (at.indexOf('at ') >= 0) ? (that.gsx$title.$t).split('vs. ')[1]:(that.gsx$title.$t).split('vs. ')[0],
           scheduledGame = whereIsGame(at);
-        slideString.push('<div class="slick slide"><div id="carousel_date" class="'+ scheduledGame[0] +'"><span class="schedule-carousel__date-month">'+months[-1+parseInt(arr[1],10)]+'</span><br><span class="schedule-carousel__date-day">'+arr[2].slice(0,2)+'</span></div><div><h3 class="schedule-carousel__sport"> ' + that.gsx$sport.$t + '</h3><p><span class="video-carousel__title">vs. ' + (that.gsx$title.$t).split('vs. ')[1] + '</span><br>'+ scheduledGame[1] +'<br>'+ ((that.gsx$summary.$t).split('M: ')[0]).split('at ')[1] + 'M</p></div></div>');
+        slideString.push('<div class="slick slide"><div id="carousel_date" class="'+ scheduledGame[0] +'"><span class="schedule-carousel__date-month">'+months[-1+parseInt(arr[1],10)]+'</span><br><span class="schedule-carousel__date-day">'+arr[2].slice(0,2)+'</span></div><div><h3 class="schedule-carousel__sport"> ' + that.gsx$sport.$t + '</h3><p><span class="video-carousel__title">vs. ' + vsSchool + '</span><br>'+ scheduledGame[1] +'<br>'+ ((that.gsx$summary.$t).split('M: ')[0]).split('at ')[1] + 'M</p></div></div>');
       }
     });
     document.querySelector('#track').innerHTML = slideString.join('');
