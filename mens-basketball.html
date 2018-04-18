@@ -6,34 +6,39 @@ base: mens-basketball
 sport: 7
 slides:
   - image: uploads/basketball-team_D51_4006.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-slide-5_DSC_2602.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-slide-4_DSC_3172.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-slide-3_DSC_2595.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-3_DSC_2889.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
 ---
 
 <div class="container slider-container">
-  <a href="http://region4sports.com/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
+  <a href="http://www.njcaa.org/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
   <div class="row slider-row">
     <div class="col-md-12 baseballSlider">
     {% for slide in page.slides %}
       <div>
-        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="">
+        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
         <div class="heading-container">
           <h3 class="sub-heading">{{slide.text1}}</h3>
           <h3 class="slide-heading">{{slide.text2}}</h3>

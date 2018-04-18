@@ -6,34 +6,39 @@ base: softball
 sport: 3
 slides:
   - image: uploads/softball-team_D51_2702.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/softball-slide-2_D51_3562.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/softball-slide-3_D51_3377.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/softball-slide-4_D51_3301.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/softball-slide-5_D51_3077.jpg
+    alt-text: ""
     url: 'http://www.kcc.edu'
     text1: Apply here
     text2: Ipsum Lorem
 ---
 
 <div class="container slider-container">
-  <a href="http://region4sports.com/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
+  <a href="http://www.njcaa.org/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
   <div class="row slider-row">
     <div class="col-md-12 baseballSlider">
     {% for slide in page.slides %}
       <div>
-        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="">
+        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
         <div class="heading-container">
           <h3 class="sub-heading">{{slide.text1}}</h3>
           <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -102,7 +107,7 @@ slides:
 <section class="coach-section">
   <div class="container">
     <div class="row text-left">
-      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
+      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
     </div>
     <div class="row">
       <div class="col-md-4">
