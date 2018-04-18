@@ -1,0 +1,194 @@
+---
+layout: sub-nav-landing-fb
+baseurl: ../
+title: "Volleyball"
+base: volleyball
+sport: 4
+slides:
+  - image: uploads/volleyball-team2.jpg
+    alt-text: ""
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/volleyball-slide-2_D4S_6468.jpg
+    alt-text: ""
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/volleyball-slide-3_D4S_6473.jpg
+    alt-text: ""
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/volleyball-slide-4D4S_6693.jpg
+    alt-text: ""
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+  - image: uploads/volleyball-slide-5_D4S_6992.jpg
+    alt-text: ""
+    url: 'http://www.kcc.edu'
+    text1: Apply here
+    text2: Ipsum Lorem
+---
+
+<div class="container slider-container">
+  <a href="http://www.njcaa.org/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
+  <div class="row slider-row">
+    <div class="col-md-12 baseballSlider">
+    {% for slide in page.slides %}
+      <div>
+        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+        <div class="heading-container">
+          <h3 class="sub-heading">{{slide.text1}}</h3>
+          <h3 class="slide-heading">{{slide.text2}}</h3>
+        </div>
+      </div>
+     {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!--  Content  -->
+<section class="container content-marg">
+    <div class="row schedule-row">
+      <div class="col-md-12">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+        <div id="track" class="baseball slick games" ></div>
+      </div>
+    </div>
+    <div class="row news-social-row">
+      <div class="col-md-8 news-feed">
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
+          <div class="news-scroll">
+            {% for item in site.news %}
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.description }}</p>
+            <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+            {% endfor %}
+          </div>
+      </div>
+      <div class="col-md-4">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
+        <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="wrapper">
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
+        	<div id="yt_list" class="yt_list">
+        	</div>
+        		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>
+        	</div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                		<iframe id="yt_player"></iframe>
+              </div>
+              <div class="modal-footer">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- Coaches Section -->
+<section class="coach-section">
+  <div class="container">
+    <div class="row text-left">
+      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/volleyball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="{{page.baseurl}}uploads/17-syancy-coach.jpg" alt="Photo of Head Coach Stephenee Yancy" class="img-fluid coach-img modal-link"></a></div>
+          <div class="col-6 float-right">
+            <a data-toggle="modal" href="#modalCoach1" class="modal-link"><h5 class="coach-name">Stephenee Yancy</h5>
+            <h6 class="coach-title">Head Coach</h6></a>
+            <p>815&#8209;802&#8209;8608<br>
+            syancy@kcc.edu</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="row">
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach2"><img src="{{page.baseurl}}uploads/17-acampbell-asst.jpg" alt="Photo of Assistant Coach Alexia Campbell" class="img-fluid coach-img modal-link"></a></div>
+          <div class="col-6 float-right">
+            <h5 class="coach-name">Alexia Campbell</h5>
+            <h6 class="coach-title">Assistant Coach</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Coach Modals -->
+<div class="modal fade" id="modalCoach1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{page.baseurl}}uploads/17-syancy-coach.jpg" alt="Photo of Head Stephenee Yancy" class="img-fluid float-left coach-modal-img">
+        <h5 class="coach-name editable">Stephenee Yancy</h5>
+        <h6 class="coach-title editable">Head Coach</h6>
+        <p>815&#8209;802&#8209;8608<br>
+        syancy@kcc.edu</p><br>
+        <div class="editable">
+          <p>Stephenee Yancy is in her first season as Head Coach of the Cavaliers.</p>
+          <p>A four-year letter winner at Kankakee High School, Yancy still holds school records for kills, blocks, and points. She was a two-time All-Conference honoree, two-time All-Area selection and selected as an AAU (Amateur Athletic Union) All-American at the 18 Club level, where she played for Ultimate VBC.</p>
+          <p>Coach Yancy started in college at Western Michigan University, where she was Mid-American Conference Freshman of the Year and on the MAC All-Freshman Team. During that time, Yancy also was named to the 2013 USA Volleyball Junior National A1 Team.</p>
+          <p>Her junior and senior seasons, Yancy played for University of Illinois at Chicago. As a junior, she was an American Volleyball Coaches Association All-Region Honorable Mention. Yancy finished the year with national rankings for kills (24th, with 512), kills per set (20th, with 4.38) and attack percentage (56th, with .358). The same season, Yancy put down double-digit kills in all 31 matches.</p>
+          <p>Her senior season, Yancy was a team captain and led UIC and the Horizon League in kills per set (4.37). She ranked second in the conference in hitting percentage (.366) and ninth in blocks per set (0.89).</p>
+          <p>For both of her seasons at UIC, the Horizon League named Yancy Player of the Year or Co-Player of the year in addition to placement on the All-Conference first team.  The UIC record books list Yancy’s accomplishments 16 times, including single season records in kills (no. 3 & 6, with 544 and 512), hitting percentage (no. 1 & 2 with .371 and .358), solo blocks (no. 10 with 27); a career record in hitting percentage (no. 1 with .365), and a single match record in kills (33). She has the 13th most kills in Flames history (1,056), and led the team in kills and blocks each season.</p>
+          <p>Yancy finished her college career in 2015. She was selected by her peers as UIC female athlete of the Year and was one of only 36 players in the nation picked by USA Volleyball to participate in the U.S. Collegiate National Team program.</p>
+          <p>Yancy holds a bachelor’s degree in criminal justice from UIC. She also played professionally in the Prerov Czech Republic for one season.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalCoach2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="{{page.baseurl}}uploads/17-acampbell-asst.jpg" alt="Photo of Assistant Coach Alexia Campbell" class="img-fluid float-left coach-modal-img">
+        <h5 class="coach-name editable">Alexia Campbell</h5>
+        <h6 class="coach-title editable">Assistant Coach</h6>
+        <div class="editable">
+          <p>Starting her first year coaching college level volleyball, Assistant Coach Alexia Campbell comes to the Cavaliers with a passion to lead and apply her prior playing experience.</p>
+          <p>Campbell is a three-year varsity veteran from Kankakee High School where she continues to hold multiple records. While on the Kays, Campbell also was a two-time MVP and team leader, serving as  captain for two seasons.</p>
+          <p>Campbell chose to be a coach because of her passion for volleyball. She is able to foster the growth of her players through the numerous opportunities she is fortunate to provide. Her goal is to help lead the Cavaliers to many wins and build a strong foundation of young women.</p>
+          <p>"I will mold a group of individuals to communicate, to be responsible, and to hold themselves accountable," Coach Campbell said. "I developed my coaching philosophy based on what is important to me and what I have learned about myself."</p>
+          <p>Campbell is currently studying medical sonography and working as a nursing assistant. She is the mother of two children.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
