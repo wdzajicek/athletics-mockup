@@ -49,6 +49,8 @@ javascript:
     - "!assets/js/megamenu.js"
     - "!assets/js/test.js"
     - "!assets/js/athletics.js"
+    - "!assets/js/schedule-pages.js"
+    - "!assets/js/initSchedulePage.js"
     - "assets/js/sliders.js"
     - "assets/js/schedule.js"
     - "assets/js/youtube-carousel.js"
