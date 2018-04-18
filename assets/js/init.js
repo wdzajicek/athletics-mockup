@@ -1,4 +1,4 @@
 // GO!
 $(document).ready(function() {
-Schedule.init();
+  Schedule.init();
 });

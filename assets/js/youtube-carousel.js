@@ -107,7 +107,7 @@ var Youtube_carousel = (function youtube_carousel_module(){
             },
           ]
         });
-        lzfunction();   // Lazy load function
+        lzFunction();   // Lazy load function
       }
     });
   }
