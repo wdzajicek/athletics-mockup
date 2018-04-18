@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kankakee Community College</title>
+    <description>KCC offers intercollegiate men's basketball, women's basketball, baseball, softball, men's soccer and volleyball. The Cavaliers compete in Region IV of the NJCAA.
+</description>
+    <link>http://yourdomain.com/</link>
+    <atom:link href="http://yourdomain.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 18 Apr 2018 16:31:45 -0500</pubDate>
+    <lastBuildDate>Wed, 18 Apr 2018 16:31:45 -0500</lastBuildDate>
+    <generator>Jekyll v3.7.3</generator>
+    
+  </channel>
+</rss>
