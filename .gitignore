@@ -23,7 +23,7 @@ Temporary Items
 .apdisk
 
 # Ignore jekyll _site build folder
-_site
+# _site
 
 # Don't push these--that would be bad
 .sass-cache
