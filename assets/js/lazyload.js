@@ -7,6 +7,6 @@ function lzFunction(){
       img.onload = function() {
         img.removeAttribute('data-src');
       };
-    })
+    });
   })();
 }
