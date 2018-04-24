@@ -6,3 +6,4 @@ descrition: >-
 layout: news-page
 ---
 
+Our very own Wes has created an award winning website. That has exceeded everyone's wildest dreams and redefined web design as we know it.
