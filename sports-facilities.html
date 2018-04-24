@@ -1,8 +1,32 @@
 ---
 layout: sub-nav
-baseurl: ../
+baseurl: ../../
+base: facilities
 title: Sports Facilities
 ---
+<!-- Facilities-specific sub-nav -->
+<div class="container-fluid sub-nav">
+  <div class="row filler">&#160;</div>
+  <div class="row sub-nav-row mx-auto">
+    <div class="col-md-6 text-center">
+      <h1 class="page-heading">{{ page.base }}</h1>
+    </div>
+    <div class="col-md-6">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="{{page.baseurl}}/{{page.base}}/student-athletes" class="nav-link sub-nav-link">Membership</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}/{{page.base}}/equity" class="nav-link sub-nav-link">Personal Trainers</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}/{{page.base}}/staff" class="nav-link sub-nav-link">Testimonials</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <main class="sports-facilities-container">
   <div class="container">
     <div class="row row-marg">
