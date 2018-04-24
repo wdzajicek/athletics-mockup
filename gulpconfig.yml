@@ -71,5 +71,7 @@ watch:
     - "{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
     - "_news/*.*"
     - "_news/**/*.*"
+    - "about/**/*.*"
+    - "support/**/*.*"
     - "!_site/**/*.*"
     - "!assets/**/*.*"
