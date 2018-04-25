@@ -4,9 +4,17 @@ collections:
     title: News
     output: true
 defaults:
-- type: 'assets'
+- scope:
+    path: ''
+    type: "news"
   values:
-    _hide_content: true
+    layout: "news-page"
+    baseurl: "../../"
+    description:
+    news-release_date:
+    release_thumb_path: "/siteicon.png"
+    for_media: true
+    expires_date:
 - scope:
     path: ''
     type: posts
@@ -53,4 +61,3 @@ exclude:
   - "/docs/"
   - "yarn.lock"
   - "/assets/adobe/"
- 
