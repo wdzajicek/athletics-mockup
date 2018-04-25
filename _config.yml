@@ -51,8 +51,4 @@ exclude:
   - "yarn.lock"
   - "/assets/adobe/"
   # cloudcannon options:
-_options:
-  image: # Specify images uploads dir/
-    uploads_dir: "uploads/"
-  content: # Content Editor and block Editable Regions
-    uploads_dir: "uploads/"
+uploads_dir: "uploads/"
