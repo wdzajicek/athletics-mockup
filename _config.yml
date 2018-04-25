@@ -3,9 +3,6 @@ collections:
   news:
     title: News
     output: true
-  uploads:
-    title: Uploads
-    output: true
 defaults:
 - scope:
     path: ''
@@ -37,7 +34,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-# include:
+include:
+  - "_uploads"
 #   - "_pages"
 #   - "_posts"
 exclude:
