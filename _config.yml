@@ -4,6 +4,9 @@ collections:
     title: News
     output: true
 defaults:
+- type: 'assets'
+  values:
+    _hide_content: true
 - scope:
     path: ''
     type: posts
@@ -50,5 +53,4 @@ exclude:
   - "/docs/"
   - "yarn.lock"
   - "/assets/adobe/"
-  # cloudcannon options:
-uploads_dir: "uploads/"
+ 
