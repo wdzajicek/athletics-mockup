@@ -1,5 +1,5 @@
 ---
-title: Roger won the lotery
+title: Roger won the lottery
 descrition: KCC Cavs win first DII World Series
 layout: news-page
 ---
