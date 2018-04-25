@@ -34,8 +34,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-include:
-  - "_uploads"
+# include:
 #   - "_pages"
 #   - "_posts"
 exclude:
@@ -51,3 +50,9 @@ exclude:
   - "/docs/"
   - "yarn.lock"
   - "/assets/adobe/"
+  # cloudcannon options:
+_options:
+  image: # Specify images uploads dir/
+    uploads_dir: "uploads/"
+  content: # Content Editor and block Editable Regions
+    uploads_dir: "uploads/"
