@@ -3,6 +3,9 @@ collections:
   news:
     title: News
     output: true
+  baseball_new:
+    title: News
+    output: true
 defaults:
 - scope:
     path: ''

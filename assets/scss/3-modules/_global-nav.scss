@@ -10,12 +10,12 @@
   width: 100%;
   height: 56px;
   position: fixed;
-  z-index: 1040;
+  z-index: 1031 !important;
 }
 
 @media screen and (min-width: 992px) {
   .global-nav {
-    background-color: transparent !important;
+    background-color: transparent;
     padding-top: 28px;
   }
 }
