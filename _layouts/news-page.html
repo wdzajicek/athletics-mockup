@@ -2,41 +2,49 @@
 layout: page
 ---
 
-<h1>
-<!--Title field-->
-{{ page.title }}
-</h1>
-<p>Date:
-<!--Article Date-->
-{{ page.news-release_date | date: "%m/%d/%Y" }}</p>
+<section class="sub-nav-marg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>
+        <!--Title field-->
+        {{ page.title }}
+        </h1>
+        <p>Date:
+        <!--Article Date-->
+        {{ page.news-release_date | date: "%m/%d/%Y" }}</p>
 
-<div class="editable">
-{{ content }}
-</div>
+        <div class="editable">
+        {{ content }}
+        </div>
 
-{% if page.for_media == true %}
-<p style="text-align:center;">-30-</p>
-<p>Kankakee Community College is an accredited two-year college which awards
-associate degrees and certificates of completion. KCC prepares students both to
-transfer to four-year colleges and to enter the workforce. The college also
-offers continuing education courses and certification training, literacy
-programs, English as a Second Language and GED preparation. The KCC mission is
-“Enhancing quality of life through learning.” The college has a Riverfront
-Campus in Kankakee, South Extension Center in Watseka, North Extension Center in
-Bradley and Manufacturing and Industrial Technology Center in Kankakee.</p>
-<p style="text-align:center;">###</p>
-<p>
-More KCC news and photos are available at our <a href="default.aspx.html">
-Newsroom</a>, and on <a href="http://www.facebook.com/kankakeecommunitycollege">
-Facebook</a>, <a href="http://www.twitter.com/kccedu">Twitter</a> and <a href="https://www.youtube.com/user/KankakeeCommCollege">
-YouTube</a>. Official <a href="http://www.kcc.edu/FacultyStaff/departments/marketing/Pages/logos.aspx">
-college logos</a> are available online.
-</p>
-<p>Contact:<br />
-Kari Nugent<br />
-Director of marketing and public relations<br />
-815-802-8256<br />
-<a href="mailto:knugent@kcc.edu">knugent@kcc.edu</a>
-</p>
+        {% if page.for_media == true %}
+        <p style="text-align:center;">-30-</p>
+        <p>Kankakee Community College is an accredited two-year college which awards
+        associate degrees and certificates of completion. KCC prepares students both to
+        transfer to four-year colleges and to enter the workforce. The college also
+        offers continuing education courses and certification training, literacy
+        programs, English as a Second Language and GED preparation. The KCC mission is
+        “Enhancing quality of life through learning.” The college has a Riverfront
+        Campus in Kankakee, South Extension Center in Watseka, North Extension Center in
+        Bradley and Manufacturing and Industrial Technology Center in Kankakee.</p>
+        <p style="text-align:center;">###</p>
+        <p>
+        More KCC news and photos are available at our <a href="default.aspx.html">
+        Newsroom</a>, and on <a href="http://www.facebook.com/kankakeecommunitycollege">
+        Facebook</a>, <a href="http://www.twitter.com/kccedu">Twitter</a> and <a href="https://www.youtube.com/user/KankakeeCommCollege">
+        YouTube</a>. Official <a href="http://www.kcc.edu/FacultyStaff/departments/marketing/Pages/logos.aspx">
+        college logos</a> are available online.
+        </p>
+        <p>Contact:<br />
+        Kari Nugent<br />
+        Director of marketing and public relations<br />
+        815-802-8256<br />
+        <a href="mailto:knugent@kcc.edu">knugent@kcc.edu</a>
+        </p>
 
-    {% endif %}
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
