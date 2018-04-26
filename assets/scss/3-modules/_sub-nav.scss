@@ -1,5 +1,8 @@
 .sub-nav {
   background-color: $primary-red;
+  position: fixed;
+  top: -5px;
+  z-index: 1029;
 }
 
 .sub-nav-row {
