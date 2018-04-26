@@ -4,9 +4,29 @@ baseurl: ../
 base: support
 title: Support Athletics
 ---
-{% include about-nav.html %}
+
+<!-- About-specific sub-nav -->
+<div class="container-fluid sub-nav">
+  <div class="row filler">&#160;</div>
+  <div class="row sub-nav-row mx-auto">
+    <div class="col-md-4 text-center">
+      <h1 class="page-heading long-heading">Support KCC Athetics</h1>
+    </div>
+    <div class="col-md-8">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a href="{{page.baseurl}}/{{page.base}}/cash-bash" class="nav-link sub-nav-link">Cash Bash</a>
+        </li>
+        <li class="nav-item">
+          <a href="{{page.baseurl}}/{{page.base}}/cavalier-classic" class="nav-link sub-nav-link">Cavalier Classic</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 <!-- About content -->
-<main class="about-main">
+<main class="about-main sub-nav-marg">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
