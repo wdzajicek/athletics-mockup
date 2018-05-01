@@ -35,7 +35,6 @@ slides:
 ---
 
 <div class="container slider-container sub-nav-marg">
-  <a href="http://www.njcaa.org/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings" /></a>
   <div class="row slider-row">
     <div class="col-md-12 baseballSlider">
     {% for slide in page.slides %}
@@ -63,11 +62,14 @@ slides:
       <div class="col-md-8 news-feed">
         <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News</h2>
           <div class="news-scroll">
-            {% for item in site.news %}
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.description }}</p>
-            <p><a href="{{ item.url }}">{{ item.title }}</a></p>
-            {% endfor %}
+            <ul>
+              {% for post in site.posts %}
+              <li class="no-bullet">
+                <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2>&#160;{{ post.title }}<h2></a>
+                <p>{{ post.description }}</p>
+              </li>
+              {% endfor %}
+            </ul>
           </div>
       </div>
       <div class="col-md-4">

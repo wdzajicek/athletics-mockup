@@ -42,7 +42,6 @@ slides:
 ---
 
 <div class="container slider-container nav-marg">
-  <a href="http://www.njcaa.org/landing/index" class="njcaa-link" target="_blank" rel="noopener"><img src="{{page.baseurl}}assets/img/njcaa-shieldlogo_150.png" class="njcaa-logo" alt="NJCAA logo, link to region 4 standings"></a>
   <div class="row slider-row">
     <div class="col-md-12 baseballSlider">
     {% for slide in page.slides %}
@@ -71,8 +70,8 @@ slides:
         <div class="news-scroll">
           <ul>
             {% for post in site.posts %}
-            <li>
-              <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <li class="no-bullet">
+              <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2>&#160;{{ post.title }}<h2></a>
               <p>{{ post.description }}</p>
             </li>
             {% endfor %}
@@ -90,7 +89,7 @@ slides:
           <h2 class="main-heading"><img src="assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
         	<div id="yt_list" class="yt_list">
         	</div>
-        		<a class="btn btn-primary yt-button" href="http://youtube.com">More Athletics Videos</a>
+        		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege">More Athletics Videos</a>
         	</div>
 
         <!-- Modal -->
