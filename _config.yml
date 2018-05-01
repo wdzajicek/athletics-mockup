@@ -1,35 +1,17 @@
 title: "Kankakee Community College"
 collections:
-  news:
-    title: News
+  posts:
     output: true
     _hide_content: true
-  baseball_new:
-    title: News
-    output: true
 defaults:
-- scope:
-    path: ''
-    type: "news"
-  values:
-    layout: "news-page"
-    baseurl: "../../"
-    description:
-    news-release_date:
-    release_thumb_path: "/siteicon.png"
-    for_media: true
-    expires_date:
 - scope:
     path: ''
     type: posts
   values:
     layout: post
-    permalink: "/posts/:title/"
-- scope:
-    path: ''
-    type: pages
-  values:
-    layout: page
+    title: ''
+    permalink: /:categories/:title/
+    baseurl: ../../../
 - scope:
     path: ''
     type: releases
@@ -52,6 +34,14 @@ github_username:  jekyll
 # include:
 #   - "_pages"
 #   - "_posts"
+
+future: true
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
 exclude:
   - "gulpfile.js"
   - "node_modules"
