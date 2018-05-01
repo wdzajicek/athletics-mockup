@@ -3,6 +3,7 @@ collections:
   news:
     title: News
     output: true
+    _hide_content: true
   baseball_new:
     title: News
     output: true
