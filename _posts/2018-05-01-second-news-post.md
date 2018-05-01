@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Baseball News Posts!"
+title:  "Softball News Posts!"
 date:   2018-05-01 16:16:01 -0600
-categories: baseball news
+categories: softball news
 permalink: /:categories/:title/
 baseurl: ../../../
 news_thumb: /siteicon.png
