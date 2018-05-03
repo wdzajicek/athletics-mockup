@@ -37,7 +37,7 @@ slides:
     <div class="col-md-12 baseballSlider">
     {% for slide in page.slides %}
       <div>
-        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+        <img data-lazy="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
         <div class="heading-container">
           <h3 class="sub-heading">{{slide.text1}}</h3>
           <h3 class="slide-heading">{{slide.text2}}</h3>
