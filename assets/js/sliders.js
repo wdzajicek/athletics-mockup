@@ -2,7 +2,6 @@
 
 // Main Athletics carousel
 $('.heroSlider').slick({
-  lazyLoad: 'ondemand',
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -13,7 +12,6 @@ $('.heroSlider').slick({
 });
 // Baseball carousel
 $('.baseballSlider').slick({
-  lazyLoad: 'ondemand',
   dots: true,
   slidesToShow: 1,
   slidesToScroll: 1,
