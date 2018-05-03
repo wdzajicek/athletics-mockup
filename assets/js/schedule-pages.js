@@ -19,13 +19,49 @@ var SchedulePage = (function scheduleLoading() {
 
   }
 
-  //Decide if it is a home or away game and set color
-  function whereIsGame(at) {
+  function playing(player) {
+    var gamePlayer;
+    if(player.indexOf('at ') == -1 && player.indexOf('vs. ') == -1){
+      gamePlayer = player;
+    } else if (player.indexOf('at') >=0){
+      gamePlayer = player.split('at ')[1];
+    } else if (player.indexOf('vs') >=0){
+      gamePlayer = player.split('vs. ')[1].split('@')[0];
+    }
+    return gamePlayer;
+  }
+  
+  function HomeOrAway(opponent) {
     var locationColor, located;
-    (at.indexOf('at ') >= 0) ? (locationColor = 'schedule__date-blue', located = at) : (locationColor = 'schedule__date-red', located = 'Home');
+    (opponent.indexOf('at ') >= 0 || opponent.indexOf('vs. ') >= 0 ) ? (locationColor = 'schedule__date-blue', located = opponent) : (locationColor = 'schedule__date-red', located = 'Home');
     return [locationColor, located];
   }
+  
+  function whereIsGame(at) {
+    var located;
+    if(at.indexOf('at ') == -1 && at.indexOf('@ ') == -1){
+      located = 'Home';
+    } else if (at.indexOf('at') >=0){
+      located = at.split('at ')[1];
+    } else if (at.indexOf('@') >=0){
+      located = at.split('@ ')[1];
+    }
+    return [located];
+  }
 
+  function status(stand) {
+    var s;
+    if (stand.indexOf('Final') >=0){
+      s = 'Final' + stand.split('Final')[1].split(',')[0];
+    } else if (stand.indexOf('Postponed') >=0){
+      s = 'Postponed' + stand.split('Postponed')[1].split(',')[0];
+    } else if (stand.indexOf('Cancelled') >=0){
+      s = 'Cancelled' + stand.split('Cancelled')[1].split(',')[0];
+    } else {
+      s = '';
+    }
+    return s;
+  }
   //Only list games as long as they have not been played
   //Sort each item returned by the date
   function sortedSports(sortGames) {
@@ -38,15 +74,15 @@ var SchedulePage = (function scheduleLoading() {
       var that = this;
       dateOfGame = that.gsx$datecreated.$t;
 
-      if (dateOfGame > d) { //If the entry's date is greater than the date then setup the track with a new div
-        var arr = (dateOfGame).split('-'),
-          at = that.gsx$vs.$t,
-          vsSchool = (at.indexOf('at ') >= 0) ? (that.gsx$title.$t).split('vs. ')[1]:(that.gsx$title.$t).split('vs. ')[0],
-          scheduledGame = whereIsGame(at);
+      var arr = (dateOfGame).split('-'),
+        opponent = that.gsx$vs.$t,
+        stand = that.gsx$summary.$t,
+        scheduledGame = HomeOrAway(opponent),
+        where = whereIsGame(opponent),
+        stat = status(stand),
+        ply = playing(opponent);
+      slideString.push('<tr><td class="' + scheduledGame[0] + '">' + months[-1 + parseInt(arr[1], 10)] + ' / ' + arr[2].slice(0, 2) + '</td><td>' + ply + '</td><td class="text-right">' + ((that.gsx$summary.$t).split('M: ')[0]).split(' at ')[1] + 'M </td><td>' + where + '</td><td>' + stat + '</td><td>' + that.gsx$gamesummary.$t + '</td></tr>');
 
-        slideString.push('<tr><td class="' + scheduledGame[0] + '">' + months[-1 + parseInt(arr[1], 10)] + ' / ' + arr[2].slice(0, 2) + '</td><td>vs. ' + vsSchool + '</td><td class="text-right">' + ((that.gsx$summary.$t).split('M: ')[0]).split(' at ')[1] + 'M </td><td>' + scheduledGame[1] + '</td></tr>');
-
-      }
     });
     document.querySelector('#track-table').innerHTML = slideString.join('');
   }
