@@ -37,15 +37,25 @@ slides:
 <div class="container slider-container sub-nav-marg">
   <div class="row slider-row">
     <div class="col-md-12 baseballSlider">
-    {% for slide in page.slides %}
-      <div>
-        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
-        <div class="heading-container">
-          <h3 class="sub-heading">{{slide.text1}}</h3>
-          <h3 class="slide-heading">{{slide.text2}}</h3>
+      {% for slide in page.slides %}
+        {% if forloop.first == true %}
+        <div>
+          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          <div class="heading-container">
+            <h3 class="sub-heading">{{slide.text1}}</h3>
+            <h3 class="slide-heading">{{slide.text2}}</h3>
+          </div>
         </div>
-      </div>
-     {% endfor %}
+        {% else %}
+        <div>
+          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          <div class="heading-container">
+            <h3 class="sub-heading">{{slide.text1}}</h3>
+            <h3 class="slide-heading">{{slide.text2}}</h3>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
     </div>
   </div>
 </div>
