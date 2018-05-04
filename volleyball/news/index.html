@@ -1,0 +1,26 @@
+---
+layout: sub-nav
+baseurl: ../../
+title: Volleyball News
+base: volleyball
+---
+
+<section class="container sub-nav-marg">
+  <div class="row">
+      <div class="col-md-12">
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News</h2>
+          <div>
+            <ul>
+              {% for post in site.posts %}
+              {% if post.categories contains 'mens-basketball' or post.categories contains 'general' %}
+              <li class="no-bullet">
+                <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2> {{ post.title }} <h2></a>
+                <p class="general-p">{{ post.description }}</p>
+              </li>
+              {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+      </div>
+  </div>
+</section>
