@@ -2,7 +2,7 @@
 layout: post
 title:  "General Athletics News Posts!"
 date:   2018-05-01 16:16:01 -0600
-categories: news
+categories: news general
 permalink: /:categories/:title/
 baseurl: ../../../
 news_thumb: /siteicon.png
