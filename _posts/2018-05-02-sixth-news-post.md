@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Volleyball Basketball News Posts!"
+title:  "Volleyball News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: volleyball news
 permalink: /:categories/:title/
