@@ -74,7 +74,7 @@ slides:
           <div class="news-scroll">
             <ul>
               {% for post in site.posts %}
-              {% if post.categories contains 'baseball' or post.categories == "news" %}
+              {% if post.categories contains 'baseball' or post.categories contains 'general' %}
               <li class="no-bullet">
                 <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2>&#160;{{ post.title }}<h2></a>
                 <p>{{ post.description }}</p>

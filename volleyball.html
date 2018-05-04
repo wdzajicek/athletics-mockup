@@ -70,10 +70,13 @@ slides:
       <div class="col-md-8 news-feed">
         <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
           <div class="news-scroll">
-            {% for item in site.news %}
-            <h2>{{ item.title }}</h2>
-            <p>{{ item.description }}</p>
-            <p><a href="{{ item.url }}">{{ item.title }}</a></p>
+            {% for post in site.posts %}
+            {% if post.categories contains 'volleyball' or post.categories contains 'general' %}
+            <li class="no-bullet">
+              <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2>&#160;{{ post.title }}<h2></a>
+              <p>{{ post.description }}</p>
+            </li>
+            {% endif %}
             {% endfor %}
           </div>
       </div>
