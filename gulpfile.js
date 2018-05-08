@@ -42,7 +42,7 @@ gulp.task('sass', function() {
         .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
         .pipe(autoprefixer(config.sass.compatibility))
-        .pipe(gulpif(PRODUCTION, cssnano()))
+        .pipe(gulpif(PRODUCTION, cssnano({ zindex: false })))
         .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
         .pipe(gulp.dest(config.sass.dest.jekyllRoot))
         .pipe(gulp.dest(config.sass.dest.buildDir))
