@@ -3,5 +3,11 @@
 }
 
 .nav-marg {
-  margin-top: 200px;
+  margin-top: 140px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-marg {
+    margin-top: 200px;
+  }
 }
