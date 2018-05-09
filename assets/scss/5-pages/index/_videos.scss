@@ -6,12 +6,50 @@
 }
 
 #yt_list {
- height: 290px;
+ height: 260px;
  top: 0;
  right: 0;
  list-style: none;
  margin-bottom: 10px;
 }
+
+@media screen and (min-width: 375px) {
+  #yt_list {
+    min-height: 280px;
+  }
+}
+
+
+@media screen and (min-width: 412px) {
+  #yt_list {
+    min-height: 320px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  #yt_list {
+    min-height: 350px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #yt_list {
+    min-height: 460px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #yt_list {
+    min-height: 260px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #yt_list {
+    min-height: 300px;
+  }
+}
+
 #yt_list_bb {
  height: 290px;
  top: 0;
@@ -27,7 +65,21 @@
  float: left;
  padding: 15px;
  margin: 10px;
+ min-height: 0;
 }
+
+@media screen and (min-width: 992px) {
+  .item {
+    min-height: 235px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item {
+    min-height: 270px;
+  }
+}
+
 .item > a > img {
  width: 100%;
 }
@@ -42,6 +94,7 @@
 	color: #c61f48;
 	font-size: 17px;
 	font-weight: bold;
+  padding-top: 10px;
 }
 
 div#channel_input > input#user_name.error {
