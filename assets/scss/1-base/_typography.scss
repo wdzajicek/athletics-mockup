@@ -28,6 +28,7 @@ h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   font-weight: 700;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -63,19 +64,63 @@ h3 {
 .sub-heading {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: .7em;
   font-weight: 400;
   letter-spacing: .01em;
+  margin-bottom: 2px;
+  padding-top: 5px;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .sub-heading {
+    font-size: .9em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .sub-heading {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .sub-heading {
+    font-size: 1.2em;
+  }
 }
 
 .slide-heading {
   color: white;
   font-family: 'Roboto', sans-serif;
-  font-size: 2em;
+  font-size: 1em;
   font-weight: 700;
   letter-spacing: .02em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 360px) {
+  .slide-heading {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slide-heading {
+    font-size: 2.1em;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .slide-heading {
+    font-size: 2.8em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slide-heading {
+    font-size: 3em;
+  }
 }
 
 p {
