@@ -100,8 +100,8 @@
   background-color: #f5f6f8;
 }
 
-.nav-link:hover {
-  color: $primary-blue;
+a.nav-link:hover {
+  color: $primary-red;
 }
 
 @media screen and (min-width: 992px) {
@@ -119,17 +119,18 @@
 
 @media screen and (min-width: 992px) {
   .nav-row {
-    border-bottom: 3px #000000 solid;
-    margin-bottom: 8px;
+    border-bottom: 2px $primary-blue solid;
+    line-height: .5em;
+    margin-bottom: 10px;
   }
 }
 
 .dark-text {
-  color: #000000 !important;
+  color: $primary-blue !important;
 }
 
 .dark-text:hover {
-  color: #818181 !important;
+  color: $primary-red !important;
 }
 
 .nav-img {
