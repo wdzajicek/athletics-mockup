@@ -23,6 +23,48 @@
   margin-right: 0;
 }
 
+.heading-container {   // div container for slide headings
+  border-left-color: white;
+  border-left-style: solid;
+  border-left-width: 2px;
+  margin-left: .9%;
+  padding-left: 5px;
+  position: absolute;
+  top: 55%;
+  width: 7%;
+  z-index: 4444;
+}
+
+@media screen and (min-width: 488px) {
+  .heading-container {
+    top: 60%;
+    width: 6%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heading-container {
+    margin-left: .7%;
+    padding-left: 10px;
+    top: 61%;
+    width: 6%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .heading-container {
+    margin-left: .6%;
+    padding-left: 20px;
+    top: 67%
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .heading-container {
+    top: 69%;
+  }
+}
+
 .heroSlider .slide-img,
 .baseballSlider .slide-img {
   position: relative;
@@ -31,22 +73,46 @@
 
 .heroSlider .slick-next,
 .baseballSlider .slick-next {
-  right: 25px;
+  right: 20px;
 }
 
 .heroSlider .slick-prev,
 .baseballSlider .slick-prev {
-  left: 25px;
+  left: 20px;
   z-index: 4;
+}
+
+@media screen and (min-width: 576px) {
+  .heroSlider .slick-next,
+  .baseballSlider .slick-next {
+    right: 25px;
+  }
+
+  .heroSlider .slick-prev,
+  .baseballSlider .slick-prev {
+    left: 25px;
+    z-index: 4;
+  }
 }
 
 .heroSlider .slick-next,
 .heroSlider .slick-prev,
 .baseballSlider .slick-next,
 .baseballSlider .slick-prev {
-  height: 40px;
-  top: 80%;
-  width: 40px;
+  height: 25px;
+  top: 75%;
+  width: 25px;
+}
+
+@media screen and (min-width: 992px) {
+  .heroSlider .slick-next,
+  .heroSlider .slick-prev,
+  .baseballSlider .slick-next,
+  .baseballSlider .slick-prev {
+    height: 40px;
+    top: 80%;
+    width: 40px;
+  }
 }
 
 .heroSlider .slick-dots li button:before,
@@ -115,4 +181,12 @@
 #track {
   background: #f1f2f7;
     height: 140px;
+}
+
+.baseballSlider {   // prevents all slides from displaying vertically before slick has initialized
+  visibility: hidden;
+}
+
+.slick-initialized {   // makes slides visible again once slick has initialized
+  visibility: visible;
 }
