@@ -43,7 +43,7 @@ var Youtube_carousel = (function youtube_carousel_module(){
   }
   function getVideos(yt_id, next_page) {
     if (next_page === void 0) { next_page = ''; }
-    var limit = 7;
+    var limit = 8;
     var more = '';
     var xhr = $.ajax({
       url: 'https://www.googleapis.com/youtube/v3/playlistItems',
@@ -58,12 +58,7 @@ var Youtube_carousel = (function youtube_carousel_module(){
       },
       success: function (data) {
         if (data.nextPageToken) {
-          more =
-                    '<button id="load-more" data-next-page="' +
-                        data.nextPageToken +
-                        '" data-yt-id="' +
-                        yt_id +
-                        '">More...</button>';
+          more = ''
         }
         if (next_page === '') {
           $ytPlayer.attr('src', 'https://youtube.com/embed/' +
