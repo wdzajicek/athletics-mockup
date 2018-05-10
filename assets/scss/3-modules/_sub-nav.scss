@@ -1,8 +1,14 @@
 .sub-nav {
   background-color: $primary-red;
-  position: fixed;
+  position: relative;
   top: -5px;
   z-index: 1029;
+}
+
+@media screen and (min-width: 992px) {
+  .sub-nav {
+    position: fixed;
+  }
 }
 
 .sub-nav-row {
