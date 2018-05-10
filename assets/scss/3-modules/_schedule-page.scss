@@ -1,5 +1,11 @@
 .schedule-container {
-  margin-top: 190px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .schedule-container {
+    margin-top: 190px;
+  }
 }
 
 .schedule__date-red,
