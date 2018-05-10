@@ -1,5 +1,11 @@
 .sub-nav-marg {
-  margin-top: 200px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .sub-nav-marg {
+    margin-top: 200px;
+  }
 }
 
 .nav-marg {
