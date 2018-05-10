@@ -18,10 +18,17 @@ a.footer-link {
 .footer-icons {
   background-color: $primary-red;
   border-radius: 50%;
-  height: 50px;
+  height: 40px;
   margin:5px;
   padding: 2px;
-  width: 50px;
+  width: 40px;
+}
+
+@media screen and (min-width: 412px) {
+  .footer-icons {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 a.footer-social-links, a.footer-social-links .footer-icons {
