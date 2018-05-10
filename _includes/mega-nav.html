@@ -1,6 +1,9 @@
 <nav id="navBar" class="navbar navbar-expand-lg navbar-dark fixed-top">
   <div class="clickable">
-    <a href="{{page.baseurl}}"><img src="{{page.baseurl}}assets/img/cavaliers-logo.png" class="center-logo" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="{{page.baseurl}}"><img src="{{page.baseurl}}assets/img/cavaliers-logo.png" class="center-logo d-none d-lg-inline" alt="KCC Cavaliers logo link to main athletics page"><img src="{{page.baseurl}}assets/img/cavaliers-logo_white.png" class="center-logo d-xs-inline d-lg-none" alt="KCC Cavaliers logo link to main athletics page"></a>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mx-auto">
         <!--  Sports  -->
@@ -130,7 +133,7 @@
           <div class="container">
             <div class="row">
               <div class="col-md-4 d-none d-md-block">
-                <a href="">
+                <a href="{{site.baseurl}}/facilities">
                   <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}assets/img/fitness-center-thumb.jpg" alt="Photo of the various equipment in the fitness center" class="img-fluid nav-img">
                 </a>
               </div>
@@ -160,8 +163,67 @@
         <!--  End of Facilities menu dropdown  -->
       </li>
       <!--  Recruitment  -->
-      <li class="nav-item nav-split">
-        <a class="nav-link nav-link-main" href="{{site.baseurl}}/recruitment">Recruitment</a>
+      <li class="nav-item dropdown active-nav nav-split">
+        <a class="nav-link nav-link-main dropdown-toggle" href="{{site.baseurl}}/recruitment" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">Recruitment</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 d-none d-md-block">
+                <a href="{{site.baseurl}}/recruitment">
+                  <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}assets/img/cavaliers-16x9-thumb.png" alt="Photo of the various equipment in the fitness center" class="img-fluid nav-img">
+                </a>
+              </div>
+              <!-- /.col-md-4  -->
+              <div class="col-md-8">
+                <ul class="nav flex-column">
+                <li class="nav-list">
+                  <div class="row nav-row recruit-pad">
+                    <div class="col-md-12">
+                      <a class="nav-link nav-link-main no-pad dark-text" href="https://form.jotform.com/72396568714974"><strong>Baseball Form</strong></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="row nav-row">
+                    <div class="col-md-12">
+                      <a class="nav-link nav-link-main no-pad dark-text" href="https://form.jotform.com/72495899814982"><strong>Men's Basketball From</strong></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="row nav-row">
+                    <div class="col-md-12">
+                      <a class="nav-link nav-link-main no-pad dark-text" href="https://form.jotform.com/72536200679963"><strong>Women's Basketball  Form</strong></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="row nav-row">
+                    <div class="col-md-12">
+                      <a class="nav-link nav-link-main no-pad dark-text" href="https://form.jotform.com/72476618714969"><strong>Soccer Form</strong></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="row nav-row">
+                    <div class="col-md-12">
+                      <a class="nav-link nav-link-main no-pad dark-text" href="https://form.jotform.com/72396278214967"><strong>Softball Form</strong></a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-list">
+                  <div class="row nav-row">
+                    <div class="col-md-12">
+                      <a class="nav-link nav-link-main no-pad dark-text" href="https://form.jotform.com/72396296514970"><strong>Volleyball Form</strong></a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              </div>
+              <!-- /.col-md-8  -->
+            </div>
+          </div>
+        </div>
       </li>
 
       <!--  Support Athletics  -->
@@ -172,7 +234,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 d-none d-md-block">
-              <a href="">
+              <a href="{{site.baseurl}}/support">
                 <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}assets/img/support-thumb.jpg" alt="Photo of a Cavaliers jersey" class="img-fluid nav-img">
               </a>
             </div>
@@ -210,7 +272,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 d-none d-md-block">
-              <a href="">
+              <a href="{{site.baseurl}}/about">
                 <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}assets/img/njcaa-region4-logo.png" alt="" class="img-fluid nav-img">
               </a>
             </div>
@@ -257,7 +319,4 @@
       </ul>
     </div>
   </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
 </nav>
