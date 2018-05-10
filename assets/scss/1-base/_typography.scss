@@ -13,10 +13,16 @@
 .page-heading { // This class is applied to h1 level headings
   color: $sub-nav-heading;
   font-family: 'Roboto', sans-serif;
-  font-size: 1.8em;
+  font-size: 1.1em;
   font-weight: 700;
   letter-spacing: .06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+  .page-heading {
+    font-size: 1.8em;
+  }
 }
 
 h3 {
@@ -50,9 +56,15 @@ h3 {
 .sub-nav-link {
   color: $sub-nav-heading;
   font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 400;
   letter-spacing: .06em;
+}
+
+@media screen and (min-width: 992px) {
+  .sub-nav-link {
+    font-size: 1em;
+  }
 }
 
 .footer-heading {
