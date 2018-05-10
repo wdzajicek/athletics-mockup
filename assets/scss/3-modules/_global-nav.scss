@@ -21,12 +21,38 @@
 }
 
 .kcc-logo {
-  width: 340px;
+  width: 190px;
+  margin-left: -5px
+}
+
+@media screen and (min-width: 360px) {
+  .kcc-logo {
+    width: 220px;
+  }
+}
+
+@media screen and (min-width: 488px) {
+  .kcc-logo {
+    width: 260px;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .kcc-logo {
+    width: 300px;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1100px) {
   .kcc-logo {
     width: 310px;
+    margin-left: -25px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .kcc-logo {
+    width: 340px;
     margin-left: -25px;
   }
 }
