@@ -1,6 +1,12 @@
 // Sport facilities page specific styles
 .sports-facilities-container {
-  margin-top: 220px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 992px) {
+  .sports-facilities-container {
+    margin-top: 220px;
+  }
 }
 
 .row-marg {
