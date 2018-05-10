@@ -46,11 +46,9 @@ javascript:
   notification: "Running JavaScript"
   src:
     - "!assets/js/all.js"
-    - "!assets/js/megamenu.js"
-    - "!assets/js/test.js"
-    - "!assets/js/athletics.js"
-    - "!assets/js/schedule-pages.js"
-    - "!assets/js/initSchedulePage.js"
+    - "!assets/js/schedule-pages.js" # needed for schedule pages only
+    - "!assets/js/initSchedulePage.js" # needed to initiate schedules (used in schedule-page-script.html)
+    - "!assets/js/lazyLoadOnly.js" # needed to lazyload on pages with no youtube slider
     - "assets/js/sliders.js"
     - "assets/js/schedule.js"
     - "assets/js/youtube-carousel.js"
