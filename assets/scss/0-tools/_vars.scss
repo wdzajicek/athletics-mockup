@@ -2,7 +2,7 @@
 $basefont-stack: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $base-font-size: 17px;
 $secondaryfont-stack: 'nexa_rust_slabblack_shadow_01';
-$thirdfont-stack: "ArtBrush Medium";
+$thirdfont-stack: 'ArtBrush Medium';
 
 //Image path for most of global style sheet
 $imagedir:'/assets/img/';
@@ -10,14 +10,14 @@ $imagedir:'/assets/img/';
 //KCC colors
 $primary-blue: #0f3b63;       // Dark blue
 $primary-red: #c61f48;        // Dark red
-$accent-blue: #005BAC;        // Blue used in all links and link buttons;
+$accent-blue: #005bac;        // Blue used in all links and link buttons;
 $accent-blue-bright: #227dce; // Blue used in all links hovers and link hovers buttons;
-$accent-brown: #80561B;
+$accent-brown: #80561b;
 $accent-light-blue: #95a9ca;
 $accent-olive-green: #8d8b00; // Green used in search
 $accent-purple: #8d2187;
 
-$bgcolor: white;               // White backgrounds
+$bgcolor: #fff;               // White backgrounds
 
 //Colors from the Fast Path print document
 $fp-emerald: #148ba9;          // Emerald-green used in Fast Path print document as heading background and accent color
@@ -25,24 +25,24 @@ $fp-orange: #eeab34;           // Orange for "Maximum Students" text warning
 $fp-burgandy: #9d2d60;         // Burgandy for heading on why-fastpath.html page
 $fp-green: #95b246;            // Green for heading on why-fastpath.html page
 
-$whitefont: #FFFFFF;           // Color of font that is on a dark background color/image
+$whitefont: #fff;           // Color of font that is on a dark background color/image
 $gradient-btm: #2798ff;        // Bottom blue color for gradient
 $light-visited: #9fbfff;       // Light link color for visited links against dark background Colors
-$hlf-border: black;            // Half border color for .half-border h2 elements on why-fastpath page.
+$hlf-border: #000;            // Half border color for .half-border h2 elements on why-fastpath page.
 
-$menuh2: white;                // Full-menu overlay heading links color
+$menuh2: #fff;                // Full-menu overlay heading links color
 $link-text: #0f3b63;
 $button-color: #0f3b63;
-$btn-hover: #005BAC;
-$btn-visited: #ffffff;
+$btn-hover: #005bac;
+$btn-visited: #fff;
 $landing-bg: #e5e8ed;        // Landing page's background-color
-$default-bg: #ffffff;        // Background color for non-landing pages
-$footer-bg: #ffffff;         // Footer's background color
-$grey-heading: #666666;      // Grey headings used within page content
+$default-bg: #fff;        // Background color for non-landing pages
+$footer-bg: #fff;         // Footer's background color
+$grey-heading: #666;      // Grey headings used within page content
 $fa-color: $primary-red;
-$slide-bg: white;            // Background color for the upcoming games slick slides
-$sub-nav-heading: white;     // Font color for h1.page-heading heading of sub-nav
-$nav-link: white;            // Color for nav-link-main links in mega-nav
+$slide-bg: #fff;            // Background color for the upcoming games slick slides
+$sub-nav-heading: #fff;     // Font color for h1.page-heading heading of sub-nav
+$nav-link: #fff;            // Color for nav-link-main links in mega-nav
 
 body.landing {
   background-color: $landing-bg;

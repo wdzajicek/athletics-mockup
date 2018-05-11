@@ -7,6 +7,6 @@ $(document).ready(function(){
       img.onload = function() {
         img.removeAttribute('data-src');
       };
-    })
+    });
   })();
 });

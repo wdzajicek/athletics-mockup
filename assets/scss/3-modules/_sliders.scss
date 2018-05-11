@@ -24,7 +24,7 @@
 }
 
 .heading-container {   // div container for slide headings
-  border-left-color: white;
+  border-left-color: #fff;
   border-left-style: solid;
   border-left-width: 2px;
   margin-left: .9%;
@@ -55,7 +55,7 @@
   .heading-container {
     margin-left: .6%;
     padding-left: 20px;
-    top: 67%
+    top: 67%;
   }
 }
 
@@ -117,9 +117,9 @@
 
 .heroSlider .slick-dots li button:before,
 .baseballSlider .slick-dots li button:before {
-  line-height: 30px;
   color: $landing-bg;
   font-size: 12px;
+  line-height: 30px;
   opacity: 1;
   text-shadow:
     -1px -1px 0 #000,
@@ -141,17 +141,17 @@
 
 .heroSlider .slick-dots li,
 .baseballSlider .slick-dots li  {
-  padding-left: 0;
-  padding-right: 0;
   margin-left: 1px;
   margin-right: 1px;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .njcaa-link {
-  position: absolute;
-  z-index: 1000;
-  right: 15%;
   margin-top: 30px;
+  position: absolute;
+  right: 15%;
+  z-index: 1000;
 }
 
 @media screen and (min-width:1600px) {
@@ -180,7 +180,7 @@
 
 #track {
   background: #f1f2f7;
-    height: 140px;
+  height: 140px;
 }
 
 .baseballSlider {   // prevents all slides from displaying vertically before slick has initialized
