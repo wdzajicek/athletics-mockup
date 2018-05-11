@@ -1,6 +1,6 @@
 browsersync:
   notify: true
-  open:   false
+  open:   false # set to true to open localhost:3000 in chrome browser upon execution of gulp command.
   port:   3000
   server:
     basedir: "_site/"
@@ -9,16 +9,19 @@ browsersync:
 
 clean:
   # The jekyll build dir
-  - "_site"
+  - "_site" # clean these folders on execution of gulp command
 #  - "_posts/*"
 
 copy:
   # Paths to static assets that aren't (S)CSS or JavaScript
   # because these are completely handled by the sass and javascript tasks
+  # The two comments above this one came from the template.
+  # We copy all JS and SCSS because Google Chrome Inspect will tell you where the style is located within the sass structure.
   assets:
     # all files below the assets dir
+    # everything gets copied to site build becuase some JS files are linked directly into pages and not compiled into all.min.js)
     - "assets/**/*"
-    # exclusions:
+    # exclusions: (Don't copy these items because they are handled by other gulp tasks)
     - "!assets/{js,scss,css}/**/*"   # js, scss and css files
     - "!assets/css{,/**}"            # css dir
     - "!assets/js{,/**}"             # js dir
@@ -28,7 +31,7 @@ copy:
 
 sass:
   # Autoprefixer will make sure your CSS works with these browsers
-  compatibility:
+  compatibility:    # These are pretty standard autoprefixer compatibility settings
     - "last 2 versions"
     - "ie >= 9"
     - "defaults"
@@ -45,20 +48,22 @@ javascript:
   filename: "all.min.js"
   notification: "Running JavaScript"
   src:
+    # Exclusions: (!exclaim to exclude)
     - "!assets/js/all.js"
     - "!assets/js/schedule-pages.js" # needed for schedule pages only
     - "!assets/js/initSchedulePage.js" # needed to initiate schedules (used in schedule-page-script.html)
-    - "!assets/js/lazyLoadOnly.js" # needed to lazyload on pages with no youtube slider
-    - "assets/js/sliders.js"
-    - "assets/js/schedule.js"
-    - "assets/js/youtube-carousel.js"
-    - "assets/js/init.js"
-    - "assets/js/lazyload.js"
+    - "!assets/js/lazyLoadOnly.js" # needed to lazyload on pages with no youtube slider (youtube-carousel.js calls the lazyload function on those pages)
+    # These are buit into all.min.js:
+    - "assets/js/sliders.js" # custom slick slider JS
+    - "assets/js/schedule.js" # Custom JS for schedule pages
+    - "assets/js/youtube-carousel.js" # Custom JS for YouTube video carousel
+    - "assets/js/init.js" # Initiate the schedule.js
+    - "assets/js/lazyload.js" # lazload.js called within youtube-carousel.js
 
 jekyll:
   notification: "Running jekyll"
 
-watch:
+watch: # 'Watch' for changes in all the following:
   images: "assets/img/**/*"
   javascript:
     - "assets/js/all.js"
@@ -67,8 +72,7 @@ watch:
   pages:
     - "*.{md,html,yml,xml}"
     - "{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
-    - "_news/*.*"
-    - "_news/**/*.*"
+    # All these subfolders are added because the watch task was not looking deep enough
     - "about/**/*.*"
     - "baseball/**/*.*"
     - "facilities/**/*.*"
@@ -78,5 +82,6 @@ watch:
     - "support/**/*.*"
     - "volleyball/**/*.*"
     - "womens-basketball/**/*.*"
+    # !exlclusions:
     - "!_site/**/*.*"
     - "!assets/**/*.*"

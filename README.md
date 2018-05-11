@@ -35,3 +35,7 @@ A gulp production build should be run before committing and pushing any CSS, JS,
 Trying to push non-minified CSS and JS may result in merge conflicts.  If you have a merge conflict, especially on main.css or all.min.js, try running `$ gulp --production` before trying to push again
 
 	$ gulp --production
+
+## The gulpfile.js and gulpconfig.yml
+
+See the comments within gulpfile.js and gulpconfig.yml for detailed explanation of what happens on running `$ gulp` or `$ gulp --production`
