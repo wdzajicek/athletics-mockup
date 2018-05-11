@@ -3,9 +3,9 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center top;
-  -webkit-background-size: 95% auto;
   -moz-background-size: 95% auto;
   -o-background-size: 95% auto;
+  -webkit-background-size: 95% auto;
   background-size: 95% auto;
   color: #fff;
   margin-top: 140px; // margin-top for clearing the sticky nav
@@ -59,40 +59,45 @@ header.masthead .intro-text .intro-lead-in {
   font-style: italic;
   line-height: 1.2em;
 }
+
 @media screen and (min-width: 480px) {
   header.masthead .intro-text .intro-lead-in {
     font-size: 1.4em;
   }
 }
+
 @media screen and (min-width: 768px) {
   header.masthead .intro-text .intro-lead-in {
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 40px;
     font-style: italic;
     line-height: 40px;
     margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif
   }
 }
 
 // Hero banner's main heading text:
 header.masthead .intro-text .intro-heading {
+  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.4em;
   font-weight: 700;
   line-height: 1.2em;
   margin-bottom: 25px;
   margin-top: 15px;
-  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
 }
+
 @media screen and (min-width: 480px) {
   header.masthead .intro-text .intro-heading {
     font-size: 2em;
   }
 }
+
 @media screen and (min-width: 600px) {
   header.masthead .intro-text .intro-heading {
     font-size: 2.4em;
   }
 }
+
 @media (min-width:768px) {
   header.masthead .intro-text .intro-heading {
     font-size: 3.4em;
@@ -100,6 +105,7 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 50px;
   }
 }
+
 @media screen and (min-width: 992px) {
   header.masthead .intro-text .intro-heading {
     font-size: 4em;

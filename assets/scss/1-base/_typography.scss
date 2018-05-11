@@ -74,7 +74,7 @@ h3 {
 }
 
 .sub-heading {
-  color: white;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: .7em;
   font-weight: 400;
@@ -103,7 +103,7 @@ h3 {
 }
 
 .slide-heading {
-  color: white;
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   font-weight: 700;
@@ -151,19 +151,19 @@ p {
 }
 
 .main-heading {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   color: $grey-heading;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
+  font-weight: 500;
 }
 
 /* Typography for Coaches sections on pages
 =========================================== */
 .coaches-heading {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
   color: $grey-heading;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.4em;
+  font-weight: 500;
 }
 
 .coach-name {

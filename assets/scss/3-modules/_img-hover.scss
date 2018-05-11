@@ -1,12 +1,12 @@
 // Styles defining image hover effects:
 .img-wrapper {
+  margin: 0 0 15px;
   right: 0;
-  margin: 0 0 15px
 }
 
 @media (min-width:767px) {
   .img-wrapper {
-    margin: 0 0 30px
+    margin: 0 0 30px;
   }
 }
 
@@ -14,8 +14,8 @@
   border-radius: 5px;
   cursor: pointer;
   display: block;
-  max-width: 400px;
   margin: 0 auto;
+  max-width: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -29,8 +29,8 @@
   height: 100%;
   opacity: 0;
   position: absolute;
-  -webkit-transition: all ease .5s;
   -moz-transition: all ease .5s;
+  -webkit-transition: all ease .5s;
   transition: all ease .5s;
   width: 100%;
   z-index: 2;
@@ -38,24 +38,25 @@
 
 .img-hover:hover,
 .thumb-caption:hover + .img-hover { // Needed to make hover affect work when hovering the thumbnail caption
-  opacity: .85
+  opacity: .85;
 }
 
 .img-ease {
   transition: all 1s ease-in-out;
 }
-.img-link:hover img.img-ease{
+
+.img-link:hover img.img-ease {
   transform: scale(1.2, 1.2);
 }
 
 .thumb-caption {
+  color: #fff;
   font-size: 20px;
-  position: absolute;
-  top: 50%;
-  width: 100%;
   height: 20px;
   margin-top: -12px;
+  position: absolute;
   text-align: center;
-  color: #fff;
+  top: 50%;
+  width: 100%;
   z-index: 3;
 }

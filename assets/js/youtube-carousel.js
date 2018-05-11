@@ -58,7 +58,7 @@ var Youtube_carousel = (function youtube_carousel_module(){
       },
       success: function (data) {
         if (data.nextPageToken) {
-          more = ''
+          more = '';
         }
         if (next_page === '') {
           $ytPlayer.attr('src', 'https://youtube.com/embed/' +
