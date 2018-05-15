@@ -13,3 +13,7 @@
 .schedule-link {
   margin-left: -20px;
 }
+
+.news__link {
+  text-decoration: none !important; // IMPORTANT NEEDED TO PREVENT UNDERLINE ON LINK HOVER
+}
