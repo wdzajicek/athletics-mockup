@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Roger gets a DMCA warning for scraping
-date: 2018-05-18 09:00:00
+date: 2018-05-19 09:00:00
 categories:
   - general
   - news
