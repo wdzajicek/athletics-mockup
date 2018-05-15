@@ -1,0 +1,48 @@
+// News Rollup Styles
+// =====================================
+
+.news__list {
+  padding-left: 0;
+}
+
+.news__list-item {
+  margin-bottom: 10px;
+}
+
+.news__cell-left {
+  display: table-cell;
+  padding-right: 10px;
+  vertical-align: top;
+}
+
+.news__cell-right {
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+}
+
+.news__thumb {
+  clear: both;
+  float: left;
+  max-width: 200px;
+  vertical-align: baseline;
+}
+
+.news__scroll {
+  background-color: $white;
+  height: 488px;
+  margin-right: -15px;
+  max-height: 488px;
+  overflow-y: scroll;
+}
+
+.news__sub-heading--spacing {
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.news__date {
+  text-transform: none;
+}
