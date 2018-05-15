@@ -12,6 +12,7 @@ defaults:
     title: ''
     permalink: /:categories/:title/
     baseurl: ../../../
+    categories: news
 - scope:
     path: ''
     type: releases
