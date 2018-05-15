@@ -7,3 +7,5 @@ permalink: '/:categories/:title/'
 baseurl: ../../../
 news_thumb: /siteicon.png
 ---
+
+This is a test post
