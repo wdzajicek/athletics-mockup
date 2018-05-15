@@ -88,7 +88,8 @@
 
 // shows the dropdown menu on hover
 @media screen and (min-width: 992px) {
-  .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
+  .navbar .dropdown:hover .dropdown-menu,
+  .navbar .dropdown .dropdown-menu:hover {
     -webkit-animation-duration: .6s;
     animation-duration: .6s;
     -webkit-animation-name: meganav;
@@ -97,7 +98,8 @@
   }
 }
 
-.dropdown:hover, .dropdown:hover a.nav-link {
+.dropdown:hover,
+.dropdown:hover a.nav-link {
   background-color: #f5f6f8;
   color: $primary-blue !important;
 }
