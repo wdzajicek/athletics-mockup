@@ -11,27 +11,27 @@ slides:
     text2: '2017 NJCAA DIVISION II NATIONAL&#160;CHAMPIONS'
   - image: uploads/header-bg.jpg
     alt-text:
-    url: 'http://www.kcc.edu'
+    url: 'http://athletics.kcc.edu/womens-basketball'
     text1: Women's Basketball
     text2: KCC Women's Basketball <br>vs Joliet Junior College
   - image: uploads/header-bg3.jpg
     alt-text:
-    url: 'http://www.kcc.edu'
+    url: 'http://athletics.kcc.edu/soccer'
     text1: Soccer
     text2: KCC Cavaliers Soccer <br>vs Joliet Junior College
   - image: uploads/softball-slide-5_D51_3077.jpg
     alt-text:
-    url: 'http://www.kcc.edu'
+    url: 'http://athletics.kcc.edu/softball'
     text1: Softball
     text2: 'KCC Softball 2018 team <br>Lindsey Andrews &#35;11'
   - image: uploads/volleyball-slide-3_D4S_6473.jpg
     alt-text:
-    url: 'http://www.kcc.edu'
+    url: 'http://athletics.kcc.edu/volleyball'
     text1: Volleyball
     text2: KCC Volleyball vs <br>Olivet Nazarene
   - image: uploads/basketball-slide-4_DSC_3172.jpg
     alt-text:
-    url: 'http://www.kcc.edu'
+    url: 'http://athletics.kcc.edu/mens-basketball'
     text1: Men's Basketball
     text2: Men's Basketball <br>vs Kennedy-King
 ---
@@ -42,7 +42,7 @@ slides:
     {% for slide in page.slides %}
       {% if forloop.first == true %}
       <div>
-        <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+        <a href="{{ slide.url }}"><img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
         <div class="heading-container">
           <h3 class="sub-heading">{{slide.text1}}</h3>
           <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -50,7 +50,7 @@ slides:
       </div>
       {% else %}
       <div>
-        <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+        <a href="{{ slide.url }}"><img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}"></a>
         <div class="heading-container">
           <h3 class="sub-heading">{{slide.text1}}</h3>
           <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -65,19 +65,29 @@ slides:
 <section class="container content-marg">
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+        <h2 class="main-heading"><img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <button href="#" type="button" class="btn btn-primary">Primary</button></h2>
         <div id="track" class="slick games" ></div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 col-xs-12 news-feed">
         <h2 class="main-heading grey-bg"><img src="assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
-        <div class="news-scroll">
-          <ul>
+        <div class="news__scroll">
+          <ul class="news__list">
             {% for post in site.posts %}
-            <li class="no-bullet">
-              <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2>&#160;{{ post.title }}<h2></a>
-              <p>{{ post.description }}</p>
+            <li class="no-bullet news__list-item">
+              <div class="news__cell-left">
+                <a href="{{ post.url }}" class="news__link">
+                  <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="">
+                </a>
+              </div>
+              <div class="news__cell-right">
+                <a href="{{ post.url }}" class="news__link">
+                  <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
+                  <h4 class="news__heading">{{ post.title }}<h4>
+                  <p class="news__paragraph">{{ post.description }}</p>
+                </a>
+              </div>
             </li>
             {% endfor %}
           </ul>
