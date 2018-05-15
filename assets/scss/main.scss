@@ -1,11 +1,11 @@
-/* Variables */
+// Variables
 @import '0-tools/vars';
 
-/* Base items */
+// Base items
 @import '1-base/typography';
 @import '1-base/links';
 
-/* Modular components */
+// Modular components
 @import '3-modules/mega-nav';
 @import '3-modules/global-nav';
 @import '3-modules/sliders';
@@ -16,23 +16,27 @@
 @import '3-modules/roster';
 @import '3-modules/schedule-page';
 
-/* Layout items */
+// Layout items
 // @import "4-layout/header";
 @import '4-layout/positioning';
 @import '4-layout/banners';
 
-/* Page specific styling */
-/* Home/index page */
+// Page specific styling
+// Home/index page
 @import '5-pages/index/home';
 @import '5-pages/index/schedule';
 @import '5-pages/index/videos';
-/* Sports page */
+
+// Sports page
 @import '5-pages/sports/sports';
-/* Baseball page */
+
+// Baseball page
 @import '5-pages/baseball/coaches';
 @import '5-pages/baseball/modals';
-/* Facilities page */
+
+// Facilities page
 @import '5-pages/facilities/facilities';
-/* Sports facilities */
+
+// Sports facilities
 @import '5-pages/sports-facilities/sports-facilities';
 @import '5-pages/recruitment/recruitment';

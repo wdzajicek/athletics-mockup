@@ -3,7 +3,7 @@
 }
 
 .games {
-  // background-color: #fff;
+  // background-color: $white;
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -27,12 +27,12 @@
 }
 
 .schedule-carousel__sport-icon {
-  color: #c61f48;
+  color: $primary-red;
 }
 
 .schedule-carousel__date-blue {
-  background-color: #0f3b63;
-  color: #ffffff;
+  background-color: $primary-blue;
+  color: $white;
   float: left;
   height: 120px;
   line-height: 1;
@@ -43,8 +43,8 @@
 }
 
 .schedule-carousel__date-red {
-  background-color: #c61f48;
-  color: #ffffff;
+  background-color: $primary-red;
+  color: $white;
   float: left;
   height: 120px;
   line-height: 1;

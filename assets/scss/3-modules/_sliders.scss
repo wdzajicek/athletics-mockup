@@ -1,6 +1,6 @@
-/* Styles for both the .heroSlider and .baseballSlider
-   slick carousels
-============================================== */
+// Styles for both the .heroSlider and .baseballSlider
+// slick carousels
+//==============================================
 .slider-container {
   padding-left: 0;
   padding-right: 0;
@@ -24,7 +24,7 @@
 }
 
 .heading-container {   // div container for slide headings
-  border-left-color: #fff;
+  border-left-color: $white;
   border-left-style: solid;
   border-left-width: 2px;
   margin-left: .9%;
@@ -122,10 +122,10 @@
   line-height: 30px;
   opacity: 1;
   text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    -1px -1px 0 $black,
+    1px -1px 0 $black,
+    -1px 1px 0 $black,
+    1px 1px 0 $black;
 }
 
 .heroSlider .slick-dots li.slick-active button:before,
@@ -133,10 +133,10 @@
   color: $primary-blue;
   opacity: 1;
   text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
+    -1px -1px 0 $black,
+    1px -1px 0 $black,
+    -1px 1px 0 $black,
+    1px 1px 0 $black;
 }
 
 .heroSlider .slick-dots li,

@@ -1,20 +1,8 @@
-/*  TO USE GOOGLE FONTS FOR SITE:
-==============================================
-    Non-bold items use Open Sans font:
-    font-family: 'Open Sans', sans-serif;
-
-    for Roboto for bold items and headings:
-    font-family: 'Roboto', sans-serif;
-    Regular =   font-weight: 400
-    Bold =      font-weight: 700
-    Black =     font-weight: 900
-============================================== */
-
 .page-heading { // This class is applied to h1 level headings
   color: $sub-nav-heading;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: $secondaryfont-weight-bold;
   letter-spacing: .06em;
   text-transform: uppercase;
 }
@@ -31,18 +19,18 @@ h3 {
 
 .menu-heading {
   color: $primary-red;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.2em;
-  font-weight: 700;
+  font-weight: $secondaryfont-weight-bold;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .nav-link-main { //styles for Main links in mega-nav
   color: $nav-link !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: $secondaryfont-weight-regular;
   letter-spacing: .06em;
   text-transform: uppercase;
 }
@@ -55,9 +43,9 @@ h3 {
 
 .sub-nav-link {
   color: $sub-nav-heading;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: .8em;
-  font-weight: 400;
+  font-weight: $secondaryfont-weight-regular;
   letter-spacing: .06em;
 }
 
@@ -68,16 +56,16 @@ h3 {
 }
 
 .footer-heading {
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 2.6em;
-  font-weight: 900;
+  font-weight: $secondaryfont-weight-black;
 }
 
 .sub-heading {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
+  color: $white;
+  font-family: $secondaryfont-stack;
   font-size: .7em;
-  font-weight: 400;
+  font-weight: $secondaryfont-weight-regular;
   letter-spacing: .01em;
   margin-bottom: 2px;
   padding-top: 5px;
@@ -103,10 +91,10 @@ h3 {
 }
 
 .slide-heading {
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
+  color: $white;
+  font-family: $secondaryfont-stack;
   font-size: 1em;
-  font-weight: 700;
+  font-weight: $secondaryfont-weight-bold;
   letter-spacing: .02em;
   text-transform: uppercase;
 }
@@ -136,14 +124,14 @@ h3 {
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $basefont-stack;
 }
 
 .blue-heading {
   color: $primary-blue;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: $secondaryfont-weight-bold;
 }
 
 .f-color {
@@ -152,35 +140,35 @@ p {
 
 .main-heading {
   color: $grey-heading;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.4em;
-  font-weight: 500;
+  font-weight: $secondaryfont-weight-regular;
 }
 
 /* Typography for Coaches sections on pages
 =========================================== */
 .coaches-heading {
   color: $grey-heading;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.4em;
-  font-weight: 500;
+  font-weight: $secondaryfont-weight-regular;
 }
 
 .coach-name {
   color: $primary-red;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: $secondaryfont-weight-bold;
 }
 
 .coach-title {
   color: $grey-heading;
-  font-family: 'Roboto', sans-serif;
+  font-family: $secondaryfont-stack;
   font-size: 1.2em;
-  font-weight: 900;
+  font-weight: $secondaryfont-weight-black;
 }
 
 p.general-p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: $basefont-stack;
   font-size: 1rem;
 }
