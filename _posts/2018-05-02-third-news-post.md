@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "Soccer News Posts!"
-date:   2018-05-01 16:16:01 -0600
-categories: soccer news
-permalink: /:categories/:title/
+title: Soccer News Posts!
+date: 2018-04-01 22:16:00
+categories:
+  - soccer
+  - news
+permalink: '/:categories/:title/'
 baseurl: ../../../
 news_thumb: /siteicon.png
 ---
