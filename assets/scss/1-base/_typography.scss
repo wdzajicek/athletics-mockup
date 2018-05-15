@@ -145,8 +145,8 @@ p {
   font-weight: $secondaryfont-weight-regular;
 }
 
-/* Typography for Coaches sections on pages
-=========================================== */
+// Typography for Coaches sections on pages
+// ===========================================
 .coaches-heading {
   color: $grey-heading;
   font-family: $secondaryfont-stack;
@@ -171,4 +171,24 @@ p {
 p.general-p {
   font-family: $basefont-stack;
   font-size: 1rem;
+}
+
+.news__heading {
+  color: $primary-red;
+  font-family: $secondaryfont-stack;
+  font-size: 1.2em;
+}
+
+.news__sub-heading {
+  color: #666;
+  font-family: $secondaryfont-stack;
+  font-size: .9em;
+  font-weight: $secondaryfont-weight-boldish;
+  text-transform: uppercase;
+}
+
+.news__paragraph {
+  color: #666;
+  font-family: $basefont-stack;
+  font-size: .6em;
 }
