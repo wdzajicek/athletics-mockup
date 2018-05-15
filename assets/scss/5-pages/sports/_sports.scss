@@ -3,7 +3,7 @@
 }
 
 .sports-caption {
-  background-color: #fff;
+  background-color: $white;
   margin: 0 auto;
   max-width: 400px;
   padding: 25px;
@@ -24,6 +24,7 @@ a.jump-links {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1em;
   text-decoration: none !important;
+
   &:hover {
     color: $primary-red;
   }

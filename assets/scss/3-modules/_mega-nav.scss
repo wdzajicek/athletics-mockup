@@ -1,11 +1,11 @@
-/*  Mega Nav displays expanded at 992px and larger
-    991px and lower displays the "hamburger" mobile-style menu
-===================================================  */
+// Mega Nav displays expanded at 992px and larger
+// 991px and lower displays the "hamburger" mobile-style menu
+//===================================================
 
 .navbar {
   background-color: $primary-blue;
   margin-top: 56px; // make room for the global-nav in mobile view
-  z-index: 1032
+  z-index: 1032;
 }
 
 @media screen and (min-width: 992px) {
@@ -28,7 +28,7 @@
     margin-top: -100px;
   }
 }
-/* adds some margin below the link sets  */
+// adds some margin below the link sets
 .navbar .dropdown-menu div[class*="col"] {
   margin-bottom: 1rem;
 }
@@ -41,15 +41,15 @@
   margin-top: 60px;
 }
 
-/* breakpoint and up - mega dropdown styles */
+// breakpoint and up - mega dropdown styles
 @media screen and (min-width: 992px) {
 
-    /* remove the padding from the navbar so the dropdown hover state is not broken */
+  // remove the padding from the navbar so the dropdown hover state is not broken
   .navbar {
     padding-bottom: 0;
   }
 
-  /* remove the padding from the nav-item and add some margin to give some breathing room on hovers */
+  // remove the padding from the nav-item and add some margin to give some breathing room on hovers
   .navbar .nav-item {
     margin: 0 .25rem;
     padding: .5rem .5rem;
@@ -62,7 +62,7 @@
     }
 }
 
-  /* makes the dropdown full width  */
+  // makes the dropdown full width
   .navbar .dropdown {
     position: static;
   }
@@ -71,7 +71,7 @@
     border: none;
     left: 0;
     right: 0;
-  /*  height of nav-item  */
+  // height of nav-item
     top: 50px;
     width: 90%;
   }
@@ -86,7 +86,7 @@
   }
 }
 
-  /* shows the dropdown menu on hover */
+// shows the dropdown menu on hover
 @media screen and (min-width: 992px) {
   .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover {
     -webkit-animation-duration: .6s;

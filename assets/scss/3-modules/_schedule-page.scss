@@ -10,13 +10,13 @@
 
 .schedule__date-red,
 .schedule__date-blue {
-  color: #fff;
+  color: $black;
 }
 
 .schedule__date-red {
-  background-color: #c61f48;
+  background-color: $primary-red;
 }
 
 .schedule__date-blue {
-  background-color: #0f3b63;
+  background-color: $primary-blue;
 }
