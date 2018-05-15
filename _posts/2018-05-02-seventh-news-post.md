@@ -3,9 +3,11 @@ layout: post
 title:  "General Athletics News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: news general
+sport-category: Sports News
 permalink: /:categories/:title/
 baseurl: ../../../
-news_thumb: /siteicon.png
+news_thumb_image: /assets/img/16-9_thumb.png
+description: Curabitur fermentum elit sapien, ac mollis mauris finibus et.
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
