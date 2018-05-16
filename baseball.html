@@ -71,15 +71,25 @@ slides:
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
         <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News</h2>
-          <div class="news-scroll">
-            <ul>
+          <div class="news__scroll">
+            <ul class="news__list">
               {% for post in site.posts %}
-              {% if post.categories contains 'baseball' or post.categories contains 'general' %}
-              <li class="no-bullet">
-                <a href="{{ post.url }}"><img src="{{ post.news_thumb }}" class="news-thumb" alt=""><h2>&#160;{{ post.title }}<h2></a>
-                <p>{{ post.description }}</p>
-              </li>
-              {% endif %}
+                {% if post.categories contains 'baseball' or post.categories contains 'general' %}
+                  <li class="no-bullet news__list-item">
+                    <div class="news__cell-left">
+                      <a href="{{ post.url }}" class="news__link">
+                        <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="">
+                      </a>
+                    </div>
+                    <div class="news__cell-right">
+                      <a href="{{ post.url }}" class="news__link">
+                        <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
+                        <h4 class="news__heading">{{ post.title }}<h4>
+                        <p class="news__paragraph">{{ post.description }}</p>
+                      </a>
+                    </div>
+                  </li>
+                {% endif %}
               {% endfor %}
             </ul>
           </div>
