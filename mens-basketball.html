@@ -38,7 +38,7 @@ slides:
       {% for slide in page.slides %}
         {% if forloop.first == true %}
         <div>
-          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           <div class="heading-container">
             <h3 class="sub-heading">{{slide.text1}}</h3>
             <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -46,7 +46,7 @@ slides:
         </div>
         {% else %}
         <div>
-          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           <div class="heading-container">
             <h3 class="sub-heading">{{slide.text1}}</h3>
             <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -62,13 +62,13 @@ slides:
 <section class="container content-marg">
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
-        <div id="track" class="baseball slick games" ></div>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games</h2>
+        <div id="track" class="baseball slick games"></div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News</h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% for post in site.posts %}
@@ -76,7 +76,7 @@ slides:
                 <li class="no-bullet news__list-item">
                   <div class="news__cell-left">
                     <a href="{{ post.url }}" class="news__link">
-                      <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="">
+                      <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="" />
                     </a>
                   </div>
                   <div class="news__cell-right">
@@ -84,7 +84,7 @@ slides:
                       <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
                       <h4 class="news__heading">{{ post.title }}<h4>
                       <p class="news__paragraph">{{ post.description }}</p>
-                    </a>
+                    </h4></h4></a>
                   </div>
                 </li>
                 {% endif %}
@@ -93,14 +93,14 @@ slides:
           </div>
       </div>
       <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
         <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon" />&#160;Videos</h2>
         	<div id="yt_list" class="yt_list">
         	</div>
         		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
@@ -131,16 +131,16 @@ slides:
 <section class="coach-section">
   <div class="container">
     <div class="row text-left">
-      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
+      <h4 class="coaches-heading"><img src="{{page.baseurl}}assets/img/basketball.svg" class="icon-middle" alt="" />&#160;&#160;Coaches</h4>
     </div>
     <div class="row">
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach2"><img src="//d1qmdf3vop2l07.cloudfront.net/chic-sunshine.cloudvent.net/compressed/bd948daf8e05f0933423f9e9ea325c28.jpg" alt="Photo of Head Coach" class="img-fluid coach-img modal-link editable" data-cms-source="" data-cms-index="4" data-cms-original-src="../uploads/bryce-shafer.jpg" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach2"><img alt="Photo of Head Coach" class="img-fluid coach-img modal-link editable" src="/uploads/blank-male-avatar-1.jpg" width="300" height="400" /></a></div>
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach1" class="modal-link"><h5 class="coach-name editable">Alex Thorson</h5>
             <h6 class="coach-title editable">Head Coach</h6></a>
-            <p>815&#8209;802&#8209;8609<br>
+            <p>815&#8209;802&#8209;8609<br />
             athorson@kcc.edu</p>
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach1">View Bio</a>
           </div>
@@ -162,8 +162,8 @@ slides:
       <div class="modal-body">
         <h5 class="coach-name editable">Alex Thorson</h5>
         <h6 class="coach-title editable">Head Coach</h6>
-        <p>815&#8209;802&#8209;8609<br>
-        athorson@kcc.edu</p><br>
+        <p>815&#8209;802&#8209;8609<br />
+        athorson@kcc.edu</p><br />
         <div class="editable">
           <p>Head Coach Alex Thorson is in his first year as head coach of the Cavaliers. He comes to KCC after serving two years as a graduate assistant men’s basketball coach at Olivet Nazarene University. Coach Thorson brings a great passion and tremendous knowledge for the game to the Cavaliers.</p>
           <p>At Olivet, Thorson was mentored by Illinois Basketball Coaches Association, Chicagoland Collegiate Athletic Conference Athletics, and National Association of Intercollegiate Athletics Hall of Fame Coach Ralph Hodge who is entering his 40th season as head coach of the Tigers.</p>
@@ -188,7 +188,7 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/dgardnersr.jpg" alt="Photo of Assistant Coach Donnie Gardner Sr." class="img-fluid float-left coach-modal-img">
+        <img src="{{page.baseurl}}uploads/dgardnersr.jpg" alt="Photo of Assistant Coach Donnie Gardner Sr." class="img-fluid float-left coach-modal-img" />
         <h5 class="coach-name editable">Donnie Gardner Sr.</h5>
         <h6 class="coach-title editable">Assistant Coach</h6>
         <div class="editable">
