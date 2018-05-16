@@ -7,27 +7,27 @@ sport: 4
 slides:
   - image: uploads/volleyball-team2.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/volleyball-slide-2_D4S_6468.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/volleyball-slide-3_D4S_6473.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/volleyball-slide-4D4S_6693.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/volleyball-slide-5_D4S_6992.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
 ---
@@ -38,19 +38,27 @@ slides:
       {% for slide in page.slides %}
         {% if forloop.first == true %}
         <div>
-          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
-          <div class="heading-container">
-            <h3 class="sub-heading">{{slide.text1}}</h3>
-            <h3 class="slide-heading">{{slide.text2}}</h3>
-          </div>
+          <a href="{{ slide.url }}">
+            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          </a>
+          <a href="{{ slide.url }}">
+            <div class="heading-container">
+              <h3 class="sub-heading">{{slide.text1}}</h3>
+              <h3 class="slide-heading">{{slide.text2}}</h3>
+            </div>
+          </a>
         </div>
         {% else %}
         <div>
-          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
-          <div class="heading-container">
-            <h3 class="sub-heading">{{slide.text1}}</h3>
-            <h3 class="slide-heading">{{slide.text2}}</h3>
-          </div>
+          <a href="{{ slide.url }}">
+            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          </a>
+          <a href="{{ slide.url }}">
+            <div class="heading-container">
+              <h3 class="sub-heading">{{slide.text1}}</h3>
+              <h3 class="slide-heading">{{slide.text2}}</h3>
+            </div>
+          </a>
         </div>
         {% endif %}
       {% endfor %}
@@ -62,13 +70,13 @@ slides:
 <section class="container content-marg">
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <a href="{{ page.baseurl }}volleyball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
         <div id="track" class="baseball slick games" ></div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News <a href="{{ page.baseurl }}volleyball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% for post in site.posts %}

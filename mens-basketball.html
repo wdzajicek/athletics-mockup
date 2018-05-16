@@ -7,27 +7,27 @@ sport: 7
 slides:
   - image: uploads/basketball-team_D51_4006.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-slide-5_DSC_2602.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-slide-4_DSC_3172.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-slide-3_DSC_2595.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/basketball-3_DSC_2889.jpg
     alt-text: ""
-    url: 'http://www.kcc.edu'
+    url: '#'
     text1: Apply here
     text2: Ipsum Lorem
 ---
@@ -38,19 +38,27 @@ slides:
       {% for slide in page.slides %}
         {% if forloop.first == true %}
         <div>
-          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
-          <div class="heading-container">
-            <h3 class="sub-heading">{{slide.text1}}</h3>
-            <h3 class="slide-heading">{{slide.text2}}</h3>
-          </div>
+          <a href="{{ slide.url }}">
+            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          </a>
+          <a href="{{ slide.url }}">
+            <div class="heading-container">
+              <h3 class="sub-heading">{{slide.text1}}</h3>
+              <h3 class="slide-heading">{{slide.text2}}</h3>
+            </div>
+          </a>
         </div>
         {% else %}
         <div>
-          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
-          <div class="heading-container">
-            <h3 class="sub-heading">{{slide.text1}}</h3>
-            <h3 class="slide-heading">{{slide.text2}}</h3>
-          </div>
+          <a href="{{ slide.url }}">
+            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          </a>
+          <a href="{{ slide.url }}">
+            <div class="heading-container">
+              <h3 class="sub-heading">{{slide.text1}}</h3>
+              <h3 class="slide-heading">{{slide.text2}}</h3>
+            </div>
+          </a>
         </div>
         {% endif %}
       {% endfor %}
@@ -60,15 +68,17 @@ slides:
 
 <!--  Content  -->
 <section class="container content-marg">
+<!--  "Upcoming Games" slider  -->
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <a href="{{ page.baseurl }}mens-basketball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
         <div id="track" class="baseball slick games" ></div>
       </div>
     </div>
     <div class="row news-social-row">
+      <!--  News rollup  -->
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News</h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News <a href="{{ page.baseurl }}mens-basketball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% for post in site.posts %}
@@ -92,6 +102,7 @@ slides:
             </ul>
           </div>
       </div>
+      <!--  Social Media  -->
       <div class="col-md-4">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
         <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
