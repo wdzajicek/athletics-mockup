@@ -40,7 +40,7 @@ slides:
       {% for slide in page.slides %}
         {% if forloop.first == true %}
         <div>
-          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           <div class="heading-container">
             <h3 class="sub-heading">{{slide.text1}}</h3>
             <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -48,7 +48,7 @@ slides:
         </div>
         {% else %}
         <div>
-          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+          <img src="assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           <div class="heading-container">
             <h3 class="sub-heading">{{slide.text1}}</h3>
             <h3 class="slide-heading">{{slide.text2}}</h3>
@@ -78,7 +78,7 @@ slides:
                   <li class="no-bullet news__list-item">
                     <div class="news__cell-left">
                       <a href="{{ post.url }}" class="news__link">
-                        <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="">
+                        <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="" />
                       </a>
                     </div>
                     <div class="news__cell-right">
@@ -86,7 +86,7 @@ slides:
                         <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
                         <h4 class="news__heading">{{ post.title }}<h4>
                         <p class="news__paragraph">{{ post.description }}</p>
-                      </a>
+                      </h4></h4></a>
                     </div>
                   </li>
                 {% endif %}
@@ -138,7 +138,7 @@ slides:
     <div class="row">
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="{{page.baseurl}}uploads/todd-post.jpg" alt="Photo of Head Coach Todd Post" class="img-fluid coach-img modal-link editable" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="../uploads/todd-post.jpg" alt="Photo of Head Coach Todd Post" class="img-fluid coach-img modal-link editable" title="Photo of Head Coach Todd Post" /></a></div>
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach1" class="modal-link"><h5 class="coach-name editable">Todd Post</h5>
             <h6 class="coach-title editable">Head Coach</h6></a>
@@ -152,7 +152,7 @@ slides:
       </div>
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach2"><img src="{{page.baseurl}}uploads/bryce-shafer.jpg" alt="Photo of Assistant Bryce Shafer" class="img-fluid coach-img modal-link editable" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach2"><img src="../uploads/bryce-shafer.jpg" alt="Photo of Assistant Bryce Shafer" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Bryce Shafer" /></a></div>
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach2" class="modal-link"><h5 class="coach-name editable">Bryce Shafer</h5>
             <h6 class="coach-title editable">Assistant Coach</h6></a>
@@ -177,7 +177,7 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/todd-post.jpg" alt="Photo of Head Coach Todd Post" class="img-fluid float-left coach-modal-img editable" />
+        <img src="../uploads/todd-post.jpg" alt="Photo of Head Coach Todd Post" class="img-fluid float-left coach-modal-img editable" title="Photo of Head Coach Todd Post" />
         <h5 class="coach-name editable">Todd Post</h5>
         <h6 class="coach-title editable">Head Coach</h6>
       
@@ -208,7 +208,7 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/bryce-shafer.jpg" alt="Photo of Assistant Coach Bryce Shafer" class="img-fluid float-left coach-modal-img editable" />
+        <img src="../uploads/bryce-shafer.jpg" alt="Photo of Assistant Coach Bryce Shafer" class="img-fluid float-left coach-modal-img editable" title="Photo of Assistant Coach Bryce Shafer" />
         <h5 class="coach-name editable">Bryce Shafer</h5>
         <h6 class="coach-title editable">Assistant Coach</h6>
      
