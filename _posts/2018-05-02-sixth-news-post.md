@@ -1,11 +1,8 @@
 ---
-layout: post
 title:  "Volleyball News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: volleyball news
 sport-category: Volleyball
-permalink: /:categories/:title/
-baseurl: ../../../
 news_thumb_image: /uploads/volleyball_thumb.jpg
 description: Vestibulum accumsan semper sagittis. Nam lobortis neque vel diam consequat, vitae ornare enim iaculis. Nulla facilisi. In eget sem orci.
 ---

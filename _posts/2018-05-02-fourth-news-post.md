@@ -1,11 +1,8 @@
 ---
-layout_hide_content: post
 title:  "Men's Basketball News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: mens-basketball news
 sport-category: Men's Basketball
-permalink: /:categories/:title/
-baseurl: ../../../
 news_thumb_image: /uploads/basketball-news_thumb.jpg
 description: Praesent dictum ultrices nisl, non sagittis metus varius mattis.
 ---

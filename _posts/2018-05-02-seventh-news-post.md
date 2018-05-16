@@ -1,11 +1,8 @@
 ---
-layout: post
 title:  "General Athletics News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: news general
 sport-category: Sports News
-permalink: /:categories/:title/
-baseurl: ../../../
 news_thumb_image: /assets/img/16-9_thumb.png
 description: Curabitur fermentum elit sapien, ac mollis mauris finibus et.
 ---

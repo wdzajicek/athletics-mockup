@@ -1,13 +1,10 @@
 ---
-layout: post
 title: Soccer News Posts!
 date: 2018-04-01 22:16:00
 categories:
   - soccer
   - news
 sport-category: Soccer
-permalink: '/:categories/:title/'
-baseurl: ../../../
 news_thumb_image: /uploads/soccer-news_thumb.jpg
 ---
 
