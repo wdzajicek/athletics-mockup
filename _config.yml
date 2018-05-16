@@ -4,12 +4,6 @@ collections:
     output: true
     _hide_content: true
 defaults:
-  - type: ''
-values:
-  _comments:
-      layout: Do NOT modify layouts. It may break things.
-      baseurl: Do NOT modify baseurl. It WILL break all page links.
-      categories: "CATEGORIES MUST BE ORDERED IN THE FOLLOWING WAY <br> If news is sport-specific: 1.) First enter the sport's category from this list, 2.) followed by the \"news\" category. (e.g. mens-basketball news) <br>If news is general (applying to all sports): 1.) Enter \"news\" category first, 2.) followed by the \"general\" category. (e.g. news general)"
 - scope:
     path: ''
     type: posts
