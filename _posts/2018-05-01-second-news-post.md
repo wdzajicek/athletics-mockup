@@ -1,7 +1,9 @@
 ---
 title:  "Softball News Posts!"
 date:   2018-05-01 16:16:01 -0600
-categories: softball news
+categories:
+  - softball
+  - news
 sport-category: Softball
 news_thumb_image: /uploads/softball-news_thumb.jpg
 ---

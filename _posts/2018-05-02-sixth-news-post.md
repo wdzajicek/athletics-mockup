@@ -1,7 +1,9 @@
 ---
 title:  "Volleyball News Posts!"
 date:   2018-05-01 16:16:01 -0600
-categories: volleyball news
+categories:
+  - volleyball
+  - news
 sport-category: Volleyball
 news_thumb_image: /uploads/volleyball_thumb.jpg
 description: Vestibulum accumsan semper sagittis. Nam lobortis neque vel diam consequat, vitae ornare enim iaculis. Nulla facilisi. In eget sem orci.

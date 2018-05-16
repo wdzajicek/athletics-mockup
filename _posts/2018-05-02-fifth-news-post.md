@@ -1,7 +1,9 @@
 ---
 title:  "Women's Basketball News Posts!"
 date:   2018-05-01 16:16:01 -0600
-categories: womens-basketball news
+categories:
+  - womens-basketball
+  - news
 sport-category: Women's Basketball
 news_thumb_image: /uploads/wbasketball-news_thumb.jpg
 ---
