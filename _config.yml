@@ -60,4 +60,7 @@ exclude:
 _comments:
   layout: Do NOT modify layouts. It may break things.
   baseurl: Do NOT modify baseurl. It WILL break all page links.
-  categories: "CATEGORIES MUST BE ORDERED IN THE FOLLOWING WAY <br/>If news is sport-specific: 1.) First enter the sport's category from this list, 2.) followed by the \"news\" category. (e.g. mens-basketball news) <br/>If news is general (applying to all sports): 1.) Enter \"news\" category first, 2.) followed by the \"general\" category. (e.g. news general)"
+  categories: "FOR CATEGORIES <br/>SPORTS-SPECIFIC: <br/>1.) First enter the sport's category from this list <br/>2.) followed by the \"news\" category. <br/>(e.g. mens-basketball news) <br/>GENERAL NEWS: <br/>1.) Enter \"news\" category first <br/>2.) followed by the \"general\" category. <br/>(e.g. news general)"
+  sport_category: Sport for which news item pertains. Gets pulled into news rollup.
+  news_thumb_image: Must be 16:9 ratio image. Preferably 200px wide.
+  sport: "# Value dictates which schedule is pulled: <br/>\"1\" = All sports <br/>\"2\" = Baseball <br/>\"3\" = Softball <br/>\"4\" = Volleyball <br/>\"5\" = Soccer <br/>\"6\" = Women's Basketball <br/>\"7\" = Men's Basketball"
