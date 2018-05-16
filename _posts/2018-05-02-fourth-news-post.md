@@ -1,5 +1,5 @@
 ---
-layout: post
+layout_hide_content: post
 title:  "Men's Basketball News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: mens-basketball news
