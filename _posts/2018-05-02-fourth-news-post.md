@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mens Basketball News Posts!"
+title:  "Men's Basketball News Posts!"
 date:   2018-05-01 16:16:01 -0600
 categories: mens-basketball news
 sport-category: Men's Basketball
