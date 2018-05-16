@@ -9,12 +9,9 @@ defaults:
     type: posts
   values:
     layout: post
-    _hide_content: true
     title: ''
     permalink: /:categories/:title/
-    _hide_content: true
     baseurl: ../../../
-    _hide_content: true
     categories: news
 - scope:
     path: ''
