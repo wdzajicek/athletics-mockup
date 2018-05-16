@@ -65,7 +65,20 @@ slides:
 <section class="container content-marg">
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <button href="#" type="button" class="btn btn-primary">Primary</button></h2>
+        <h2 class="main-heading"><img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games
+          <div class="btn-group schedule__button-margin" role="group">
+            <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">View All Schedules</button>
+            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+              <a class="dropdown-item" href="{{ page.baseurl }}/baseball/schedule">Baseball Schedule</a>
+              <a class="dropdown-item" href="{{ page.baseurl }}/mens-basketball/schedule">Men's Basketball Schedule</a>
+              <a class="dropdown-item" href="{{ page.baseurl }}/womens-basketball/schedule">Women's Basketball Schedule</a>
+              <a class="dropdown-item" href="{{ page.baseurl }}/soccer/schedule">Soccer Schedule</a>
+              <a class="dropdown-item" href="{{ page.baseurl }}/softball/schedule">Softball Schedule</a>
+              <a class="dropdown-item" href="{{ page.baseurl }}/volleyball/schedule">Volleyball Schedule</a>
+            </div>
+          </div>
+        </div>
+        </h2>
         <div id="track" class="slick games" ></div>
       </div>
     </div>
