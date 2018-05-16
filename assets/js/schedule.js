@@ -56,7 +56,6 @@ var Schedule = (function scheduleLoading() {
         },
       ]
     });
-    Youtube_carousel.init();
   }
 
   //Only list games as long as they have not been played
@@ -65,7 +64,8 @@ var Schedule = (function scheduleLoading() {
     var d = new Date().toISOString(),
       months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec' ],
       dateOfGame,
-      slideString=[];
+      slideString=[],
+      slideStringLength;
 
     $.each(sortGames, function() {
       var that = this;
@@ -79,8 +79,16 @@ var Schedule = (function scheduleLoading() {
         slideString.push('<div class="slick slide"><div id="carousel_date" class="'+ scheduledGame[0] +'"><span class="schedule-carousel__date-month">'+months[-1+parseInt(arr[1],10)]+'</span><br><span class="schedule-carousel__date-day">'+arr[2].slice(0,2)+'</span></div><div><h3 class="schedule-carousel__sport"> ' + that.gsx$sport.$t + '</h3><p><span class="video-carousel__title">vs. ' + vsSchool + '</span><br>'+ scheduledGame[1] +'<br>'+ ((that.gsx$summary.$t).split('M: ')[0]).split('at ')[1] + 'M</p></div></div>');
       }
     });
-    document.querySelector('#track').innerHTML = slideString.join('');
-    slickOptions();
+
+    slideStringLength = slideString.length;
+    if(slideStringLength > 0 && slideStringLength <= 3) {
+      document.querySelector('#track').innerHTML = slideString.join('');
+      slickOptions();
+      Youtube_carousel.init();
+    } else if (slideStringLength === 0){
+      document.querySelector('#track').innerHTML = '<p style="margin:10px;font-weight:bold;">Currently there are no upcoming games.</p>';
+      Youtube_carousel.init();
+    }
   }
 
   return {
