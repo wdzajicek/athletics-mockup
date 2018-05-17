@@ -14,6 +14,17 @@
   margin-left: -20px;
 }
 
+// News rollup Styles
+// =========================================
 .news__link {
   text-decoration: none !important; // IMPORTANT NEEDED TO PREVENT UNDERLINE ON LINK HOVER
+}
+
+// Change the news heading's color to blue when hovering any part of the news item
+.news__cell-left:hover .news__heading, //this selector isn't functioning properly on hover
+.news__cell-right:hover .news__heading,
+.news__cell-left:focus .news__heading, //this selector isn't functioning properly on hover
+.news__cell-right:focus .news__heading {
+// Change the news headings color to blue when hovering any part of the news item
+  color: $primary-blue;
 }
