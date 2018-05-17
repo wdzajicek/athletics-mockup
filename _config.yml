@@ -1,8 +1,10 @@
 title: "Kankakee Community College"
 collections:
   posts:
-    output: true
+    output: false
     _hide_content: true
+  alerts:
+    output: false
 defaults:
 - scope:
     path: ''
@@ -13,6 +15,11 @@ defaults:
     permalink: /:categories/:title/
     baseurl: ../../../
     categories: news
+- scope:
+    path: ''
+    type: alerts
+  values:
+    title: ''
 - scope:
     path: ''
     type: releases
