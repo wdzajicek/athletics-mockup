@@ -9,7 +9,7 @@ slides:
     alt-text: >-
       Photo of the Cavaliers baseball team celebrating their 2017 NJCAA Division
       II National Championship victory.
-    url: '#'
+    url: 'http://www.kcc.edu'
     text1: 'June 6, 2017 | Baseball'
     text2: 2017 NJCAA DIVISION II <br>NATIONAL CHAMPIONS
   - image: uploads/baseball-hero2.jpg
@@ -41,7 +41,7 @@ slides:
         {% if forloop.first == true %}
         <div>
           <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           </a>
           <a href="{{ slide.url }}">
             <div class="heading-container">
@@ -53,7 +53,7 @@ slides:
         {% else %}
         <div>
           <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           </a>
           <a href="{{ slide.url }}">
             <div class="heading-container">
