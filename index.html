@@ -63,6 +63,11 @@ slides:
 </div>
 
 <section class="container content-marg">
+  {% for alert in site.alerts %}
+    {% if alert.display_alert == true %}
+      {% include athletics-alert.html %}
+    {% endif %}
+  {% endfor %}
     <div class="row schedule-row">
       <div class="col-md-12">
         <h2 class="main-heading"><img src="assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games

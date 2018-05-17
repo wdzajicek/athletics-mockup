@@ -68,6 +68,11 @@ slides:
 
 <!--  Content  -->
 <section class="container content-marg">
+  {% for alert in site.alerts %}
+    {% if alert.display_alert == true %}
+      {% include athletics-alert.html %}
+    {% endif %}
+  {% endfor %}
     <div class="row schedule-row">
       <div class="col-md-12">
         <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <a href="{{ page.baseurl }}volleyball/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
@@ -199,7 +204,7 @@ slides:
         <h5 class="coach-name editable">TBD</h5>
         <h6 class="coach-title editable">Assistant Coach</h6>
         <div class="editable">
-          
+
         </div>
       </div>
       <div class="modal-footer">
