@@ -62,7 +62,7 @@ var Schedule = (function scheduleLoading() {
   //Sort each item returned by the date
   function sortedSports(sortGames){
     var d = new Date().toISOString(),
-      months = [ 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec' ],
+      months = [ 'Jan', 'Feb', 'March', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec' ],
       dateOfGame,
       slideString=[],
       slideStringLength;
@@ -76,7 +76,7 @@ var Schedule = (function scheduleLoading() {
           at = that.gsx$vs.$t,
           vsSchool = (at.indexOf('at ') >= 0) ? (that.gsx$title.$t).split('vs. ')[1]:(that.gsx$title.$t).split('vs. ')[0],
           scheduledGame = whereIsGame(at);
-        slideString.push('<div class="slick slide"><div id="carousel_date" class="'+ scheduledGame[0] +'"><span class="schedule-carousel__date-month">'+months[-1+parseInt(arr[1],10)]+'</span><br><span class="schedule-carousel__date-day">'+arr[2].slice(0,2)+'</span></div><div><h3 class="schedule-carousel__sport"> ' + that.gsx$sport.$t + '</h3><p><span class="video-carousel__title">vs. ' + vsSchool + '</span><br>'+ scheduledGame[1] +'<br>'+ ((that.gsx$summary.$t).split('M: ')[0]).split('at ')[1] + 'M</p></div></div>');
+        slideString.push('<div class="slick slide"><div id="carousel_date" class="'+ scheduledGame[0] +'"><span class="schedule-carousel__date-month">'+months[-1+parseInt(arr[1],10)]+'</span><br><span class="schedule-carousel__date-day">'+arr[2].slice(0,2)+'</span></div><div><h3 class="schedule-carousel__sport"> ' + that.gsx$sport.$t + '</h3><p><span class="schedule-carousel__title">vs. ' + vsSchool + '</span><br>'+ scheduledGame[1] +'<br><span class="schedule-carousel__time">'+ ((that.gsx$summary.$t).split('M: ')[0]).split('at ')[1] + '.M.<span></p></div></div>');
       }
     });
 
