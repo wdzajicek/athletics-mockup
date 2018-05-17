@@ -13,6 +13,12 @@
   }
 }
 
+p {
+  color: $grey-1;
+  font-family: $basefont-stack;
+  font-size: $base-font-size;
+}
+
 h3 {
   font-size: 1.6em;
 }
@@ -191,4 +197,12 @@ p.general-p {
   color: #666;
   font-family: $basefont-stack;
   font-size: 1rem;
+}
+
+// ALERT TYPOGRAPHY SHIT HERE
+// ==========================
+.alert__title {
+  color: $primary-red;
+  font-family: $secondaryfont-stack;
+  font-size: 1.2em;
 }
