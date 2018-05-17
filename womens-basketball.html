@@ -81,20 +81,8 @@ slides:
             <ul class="news__list">
               {% for post in site.posts %}
                 {% if post.categories contains 'womens-basketball' or post.categories contains 'general' %}
-                <li class="no-bullet news__list-item">
-                  <div class="news__cell-left">
-                    <a href="{{ post.url }}" class="news__link">
-                      <img src="{{ post.news_thumb_image }}" class="news__thumb" alt="">
-                    </a>
-                  </div>
-                  <div class="news__cell-right">
-                    <a href="{{ post.url }}" class="news__link">
-                      <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
-                      <h4 class="news__heading">{{ post.title }}<h4>
-                      <p class="news__paragraph">{{ post.description }}</p>
-                    </a>
-                  </div>
-                </li>
+                  {% include news-item.html %}
+                  {% include news-item-modal.html %}
                 {% endif %}
               {% endfor %}
             </ul>
@@ -189,7 +177,7 @@ slides:
         <img src="{{page.baseurl}}uploads/10-ddenson-coach.jpg" alt="Photo of Head Coach" class="img-fluid float-left coach-modal-img editable">
         <h5 class="coach-name editable">Donnie Denson</h5>
         <h6 class="coach-title editable">Head Coach</h6>
-   
+
       <br>
         <div class="editable">
           <p>A native of the Peoria area, Donnie Denson has worked at KCC for the past 25 years, and is proud to call Kankakee home.</p>
