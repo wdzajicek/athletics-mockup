@@ -42,6 +42,7 @@ future: true
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - liquid-md5
 
 exclude:
   - "gulpfile.js"
