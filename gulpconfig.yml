@@ -53,7 +53,8 @@ javascript:
     - "!assets/js/schedule-pages.js" # needed for schedule pages only
     - "!assets/js/initSchedulePage.js" # needed to initiate schedules (used in schedule-page-script.html)
     - "!assets/js/lazyLoadOnly.js" # needed to lazyload on pages with no youtube slider (youtube-carousel.js calls the lazyload function on those pages)
-    # These are buit into all.min.js:
+    - "!assets/js/StickyTableHeader.js" # Small sticky table header jquery library for on schedule pages only
+    - "!assets/js/StickyTableCustom.js" # Custom JS to initiate the afforementioned small sticky table header jquery library 
     - "assets/js/sliders.js" # custom slick slider JS
     - "assets/js/schedule.js" # Custom JS for schedule pages
     - "assets/js/youtube-carousel.js" # Custom JS for YouTube video carousel
@@ -71,7 +72,7 @@ watch: # 'Watch' for changes in all the following:
   sass: "assets/scss/**/*.scss"
   pages:
     - "*.{md,html,yml,xml}"
-    - "{_data,_includes,_layouts,_pages,_posts}/**/*.{md,html,yml,xml}"
+    - "{_data,_includes,_layouts,_pages,_posts,_alerts}/**/*.{md,html,yml,xml}"
     # All these subfolders are added because the watch task was not looking deep enough
     - "about/**/*.*"
     - "baseball/**/*.*"
