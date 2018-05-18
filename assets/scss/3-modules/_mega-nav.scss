@@ -170,52 +170,32 @@
   padding-top: 50px;
 }
 
-
-.cavs-logo {
-  height: auto;
-  position: absolute;
-  top: 15px;
-  width: 150px;
-  z-index: 9999;
-}
-
-@media screen and (min-width: 992px) {
-  .cavs-logo {
-    top: 10px;
-    width: 15%;
-  }
-}
-
 .nav-split {
   margin-right: 340px !important;
 }
 
 .center-logo {
-  left: 98%;
-  margin-left: -105px;
-  margin-top: -95px;
+  right: 30px;
   position: absolute;
+  top: 10px;
   width: 100px;
 }
 
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 375px) {
   .center-logo {
-    margin-left: -110px;
+    right: 20px;
   }
 }
 
 @media screen and (min-width: 488px) {
   .center-logo {
-    margin-left: -130px;
+    top: 5px;
     width: 110px;
   }
 }
 
 @media screen and (min-width: 576px) {
   .center-logo {
-    left: 98%;
-    margin-left: -150px;
-    margin-top: -100px;
     width: 130px;
   }
 }
