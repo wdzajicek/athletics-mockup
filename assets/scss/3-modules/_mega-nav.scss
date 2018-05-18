@@ -245,3 +245,10 @@
 .recruit-pad {
   padding-top: 20px;
 }
+
+@supports (-webkit-overflow-scrolling: touch) and (max-width: 414px) {
+  // CSS specific to iOS devices
+  .center-logo {
+    margin-top: -55px;
+  }
+}
