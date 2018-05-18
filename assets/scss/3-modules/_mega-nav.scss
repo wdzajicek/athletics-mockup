@@ -202,6 +202,7 @@
 
 @media screen and (min-width: 992px) {
   .center-logo {
+    top: auto;
     left: 50%; // center the absolutely positioned item
     margin-left: -105px;  // offset the width of the item to make true center
     margin-top: -115px; // position it vertically
