@@ -175,13 +175,13 @@
 }
 
 .center-logo {
-  right: 30px;
+  right: 10px;
   position: absolute;
   top: 10px;
   width: 100px;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 360px) {
   .center-logo {
     right: 20px;
   }
