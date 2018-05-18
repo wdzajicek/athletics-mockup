@@ -26,17 +26,28 @@
 .news__thumb {
   clear: both;
   float: left;
-  max-width: 200px;
+  max-width: 140px;
   vertical-align: baseline;
+}
+
+@media screen and (min-width: 992px) {
+  .news__modal-thumb {
+    max-width: 200px;
+  }
 }
 
 .news__scroll {
   background-color: $white;
   height: 495px;
-  margin-right: -15px;
   margin-top: -13px;
   max-height: 495px;
   overflow-y: scroll;
+}
+
+@media screen and (min-width: 992px) {
+  .news__scroll {
+    margin-right: -15px;
+  }
 }
 
 .news__sub-heading--spacing {
