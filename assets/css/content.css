@@ -1,5 +1,5 @@
 /* Predefined styles available for content editors in CloudCannon */
-h2.section-heading {
+h2.content__heading {
   color: #666;
   font-family: "Roboto", sans-serif;
   font-size: 1.4em;
