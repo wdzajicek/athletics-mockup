@@ -9,6 +9,4 @@ news_thumb_image: /uploads/jmccleary.jpg
 description: Jacob makes KCC proud
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `bundle exec jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+ANOTHER FINE DAY FOR THE KCC MEN’s Soccer program! Congratulations to Jacob McCleary on being selected as a member of the All-Illinois Academic Team, a special recognition based on outstanding academic performance and service to the college and community. One honoree is Jacob McCleary of Bourbonnais, who will receive an Associate in Science transfer degree. He will attend the University of Illinois at Chicago.
