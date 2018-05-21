@@ -1,35 +1,35 @@
 ---
 layout: sub-nav-landing-fb
 baseurl: ../
-title: "Softball"
+title: Softball
 base: softball
 sport: 3
 slides:
   - image: uploads/softball-team_D51_2702.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: 2017-2018
+    text2: Lady Cavaliers Softball
   - image: uploads/softball-slide-2_D51_3562.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: Sophomore
+    text2: Marissa West
   - image: uploads/softball-slide-3_D51_3377.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: Sophomore
+    text2: Cheyenne Koehne
   - image: uploads/softball-slide-4_D51_3301.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: Catcher
+    text2: Lady Cavalier
   - image: uploads/softball-slide-5_D51_3077.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1:
+    text2:
 ---
 
 <div class="container slider-container sub-nav-marg">
@@ -39,7 +39,7 @@ slides:
         {% if forloop.first == true %}
         <div>
           <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           </a>
           <a href="{{ slide.url }}">
             <div class="heading-container">
@@ -51,7 +51,7 @@ slides:
         {% else %}
         <div>
           <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           </a>
           <a href="{{ slide.url }}">
             <div class="heading-container">
@@ -75,13 +75,13 @@ slides:
   {% endfor %}
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
-        <div id="track" class="baseball slick games" ></div>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
+        <div id="track" class="baseball slick games"></div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News <a href="{{ page.baseurl }}softball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News <a href="{{ page.baseurl }}softball/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% for post in site.posts %}
@@ -94,14 +94,14 @@ slides:
           </div>
       </div>
       <div class="col-md-4">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon">&#160;Social Media</h2>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/social-icon.svg" class="icon-middle" alt="Social media icon" />&#160;Social Media</h2>
         <div class="fb-page" data-href="https://www.facebook.com/KankakeeCommunityCollege/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/KankakeeCommunityCollege/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/KankakeeCommunityCollege/">Kankakee Community College</a></blockquote></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="wrapper">
-          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon">&#160;Videos</h2>
+          <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/video.svg" class="icon-middle" alt="Video icon" />&#160;Videos</h2>
         	<div id="yt_list" class="yt_list">
         	</div>
         		<a class="btn btn-primary yt-button" href="https://www.youtube.com/user/KankakeeCommCollege" target="_blank" rel="noopener">More Athletics Videos</a>
@@ -132,7 +132,7 @@ slides:
 <section class="coach-section">
   <div class="container">
     <div class="row text-left">
-      <h4 id="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="">&#160;&#160;Coaches</h4>
+      <h4 id="coaches" class="coaches-heading link__offset"><img src="{{page.baseurl}}assets/img/baseball.svg" class="icon-middle" alt="" />&#160;&#160;Coaches</h4>
     </div>
     <!-- ========================================================================================
     =============================================================================================
@@ -148,12 +148,12 @@ slides:
         <!-- Coach 1 row -->
         <div class="row">
           <!-- Coach 1 left image div (inner-left column) -->
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="{{page.baseurl}}uploads/18-kcooper-coach.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid coach-img modal-link editable"></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach1"><img src="{{page.baseurl}}uploads/18-kcooper-coach.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid coach-img modal-link editable" /></a></div>
           <!-- Coach 1 right info div (inner-right column) -->
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach1" class="modal-link"><h5 class="coach-name editable">Keith Cooper</h5>
             <h6 class="coach-title editable">Head Coach</h6></a>
-            <p class="editable">815&#8209;802&#8209;8606<br>
+            <p class="editable">815&#8209;802&#8209;8606<br />
             kcooper@kcc.edu</p>
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach1">View Bio</a>
           </div>
@@ -208,7 +208,7 @@ slides:
       ==================================================================================
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach5"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach5"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></div>
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach5" class="modal-link"><h5 class="coach-name editable">Coach 5 Name</h5>
             <h6 class="coach-title editable">Coach 5 Title</h6></a>
@@ -219,7 +219,7 @@ slides:
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach5">View Bio</a>
           </div>
         </div>
-      </div>
+      
       uncomment to here for Coach 5
       =====================================================================================  -->
 
@@ -229,7 +229,7 @@ slides:
       ==================================================================================
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach6"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach6"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" />
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach6" class="modal-link"><h5 class="coach-name editable">Coach 6 Name</h5>
             <h6 class="coach-title editable">Coach 6 Title</h6></a>
@@ -239,14 +239,14 @@ slides:
             </p>
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach6">View Bio</a>
           </div>
-        </div>
-      </div>
+        
+      
       uncomment to here for Coach 6
       =====================================================================================  -->
 
-    </div>
+    
 
-  </div>
+  
   <!-- Coach Modals -->
 <div class="modal fade" id="modalCoach1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -257,10 +257,10 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/18-kcooper-coach.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable">
+        <img src="{{page.baseurl}}uploads/18-kcooper-coach.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable" />
         <h5 class="coach-name editable">Keith Cooper</h5>
         <h6 class="coach-title editable">Head Coach</h6>
-      <br>
+      <br />
         <div class="editable">
           <p>Head Coach Keith Cooper is in his first season coaching the Lady Cavaliers softball program after taking over for retired Hall of Fame Coach Dennis Clark.</p>
           <p>Coach Cooper has been coaching various levels of players in youth sports for 23 years. He held multiple positions on local league boards of directors, as well as being president of the Kankakee Knights of Columbus Little League, Knights of Columbus Bronco League, Kankakee Elks Pony League and the Kankakee Valley Colt and Palomino League. He has been a coach at tournaments at Illinois State University in Normal and Central Michigan University in Mt. Pleasant, Mich. He also has coached teams in three NSA State Fast Pitch Softball Tournaments in Illinois.</p>
@@ -284,10 +284,10 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable">
+        <img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable" />
         <h5 class="coach-name editable">Heidi Senor</h5>
         <h6 class="coach-title editable">Assistant Coach</h6>
-      <br>
+      <br />
         <div class="editable">
           <p>Coach Bio</p>
         </div>
@@ -307,10 +307,10 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable">
+        <img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable" />
         <h5 class="coach-name editable">Joe Powers</h5>
         <h6 class="coach-title editable">Assistant Coach</h6>
-      <br>
+      <br />
         <div class="editable">
           <p>Coach Bio</p>
         </div>
@@ -330,10 +330,10 @@ slides:
         </button>
       </div>
       <div class="modal-body">
-        <img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable">
+        <img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Head Coach Keith Cooper" class="img-fluid float-left coach-modal-img editable" />
         <h5 class="coach-name editable">Charlie Riner</h5>
         <h6 class="coach-title editable">Assistant Coach</h6>
-      <br>
+      <br />
         <div class="editable">
           <p>Coach Bio</p>
         </div>
@@ -364,13 +364,13 @@ if adding a 5th Coach un-comment this modal
         <div class="editable">
             <p>Coach 5 Bio</p>
         </div>
-      </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
-    </div>
-  </div>
-</div>
+    
+  
+
 for 5th coach un-comment to here
 =========================================================================================== -->
 
@@ -393,13 +393,13 @@ if adding a 6th Coach un-comment this modal
         <div class="editable">
             <p>Coach 6 Bio</p>
         </div>
-      </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
-    </div>
-  </div>
-</div>
+    
+  
+
 for 6th coach un-comment to here
 =========================================================================================== -->
 
