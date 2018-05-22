@@ -1,32 +1,32 @@
 ---
 layout: sub-nav-landing-fb
 baseurl: ../
-title: "Soccer"
+title: Soccer
 base: soccer
 sport: 5
 slides:
   - image: uploads/soccer-team-2_D51_3805.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: Soccer
+    text2: 2017 Sophomores
   - image: uploads/soccer-slide-2_D72_9565.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
     text1: Apply here
     text2: Ipsum Lorem
   - image: uploads/soccer-slide-3_D72_0245.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: Connor Blanchette
+    text2: Goal Keeper
   - image: uploads/soccer-team_D51_3818.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
-    text1: Apply here
-    text2: Ipsum Lorem
+    text1: '2017'
+    text2: KCC Soccer Team
   - image: uploads/soccer-slide-5_D51_3186.jpg
-    alt-text: ""
+    alt-text:
     url: '#'
     text1: Apply here
     text2: Ipsum Lorem!
@@ -39,7 +39,7 @@ slides:
         {% if forloop.first == true %}
         <div>
           <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+            <img src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           </a>
           <a href="{{ slide.url }}">
             <div class="heading-container">
@@ -51,7 +51,7 @@ slides:
         {% else %}
         <div>
           <a href="{{ slide.url }}">
-            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}">
+            <img src="{{page.baseurl}}assets/img/placeholder.png" data-src="{{page.baseurl}}{{slide.image}}" class="img-fluid slide-img" alt="{{slide.alt-text}}" />
           </a>
           <a href="{{ slide.url }}">
             <div class="heading-container">
@@ -75,13 +75,13 @@ slides:
   {% endfor %}
     <div class="row schedule-row">
       <div class="col-md-12">
-        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon">&#160;Upcoming Games <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
-        <div id="track" class="baseball slick games" ></div>
+        <h2 class="main-heading"><img src="{{page.baseurl}}assets/img/calendar.svg" class="icon-middle" alt="Calendar icon" />&#160;Upcoming Games <a href="{{ page.baseurl }}soccer/schedule" class="btn btn-primary schedule__button-margin">View Full Schedule</a></h2>
+        <div id="track" class="baseball slick games"></div>
       </div>
     </div>
     <div class="row news-social-row">
       <div class="col-md-8 news-feed">
-        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon">&#160;News <a href="{{ page.baseurl }}soccer/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
+        <h2 class="main-heading grey-bg"><img src="{{page.baseurl}}assets/img/news.svg" class="icon-middle" alt="News icon" />&#160;News <a href="{{ page.baseurl }}soccer/news" class="btn btn-primary schedule__button-margin">View All News</a></h2>
           <div class="news__scroll">
             <ul class="news__list">
               {% for post in site.posts %}
@@ -204,7 +204,7 @@ slides:
     ==================================================================================
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach4"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach4"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></div>
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach4" class="modal-link"><h5 class="coach-name editable">Coach 4 Name</h5>
             <h6 class="coach-title editable">Coach 4 Title</h6></a>
@@ -214,8 +214,8 @@ slides:
             </p>
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach4">View Bio</a>
           </div>
-        </div>
-      </div>
+        
+      
       uncomment to here for Coach 4
       =====================================================================================  -->
 
@@ -225,7 +225,7 @@ slides:
       ==================================================================================
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach5"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach5"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" />
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach5" class="modal-link"><h5 class="coach-name editable">Coach 5 Name</h5>
             <h6 class="coach-title editable">Coach 5 Title</h6></a>
@@ -235,8 +235,8 @@ slides:
             </p>
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach5">View Bio</a>
           </div>
-        </div>
-      </div>
+        
+      
       uncomment to here for Coach 5
       =====================================================================================  -->
 
@@ -246,7 +246,7 @@ slides:
       ==================================================================================
       <div class="col-md-4">
         <div class="row">
-          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach6"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" /></a></div>
+          <div class="col-6 float-left"><a data-toggle="modal" href="#modalCoach6"><img src="{{page.baseurl}}uploads/blank-male-avatar.jpg" alt="Photo of Assistant Coach" class="img-fluid coach-img modal-link editable" title="Photo of Assistant Coach" />
           <div class="col-6 float-right">
             <a data-toggle="modal" href="#modalCoach6" class="modal-link"><h5 class="coach-name editable">Coach 6 Name</h5>
             <h6 class="coach-title editable">Coach 6 Title</h6></a>
@@ -256,8 +256,8 @@ slides:
             </p>
             <a data-toggle="modal" class="btn btn-primary" href="#modalCoach6">View Bio</a>
           </div>
-        </div>
-      </div>
+        
+      
       uncomment to here for Coach 6
       =====================================================================================  -->
 
@@ -266,7 +266,7 @@ slides:
     </div>
     ======================================================== -->
 
-  </div>
+  
   <!-- Coach Modals -->
 <div class="modal fade" id="modalCoach1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -359,13 +359,13 @@ if adding a 4th Coach un-comment this modal
         <div class="editable">
             <p>Coach 4 Bio</p>
         </div>
-      </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
-    </div>
-  </div>
-</div>
+    
+  
+
 for 4th coach un-comment to here
 =========================================================================================== -->
 
@@ -388,13 +388,13 @@ if adding a 5th Coach un-comment this modal
         <div class="editable">
             <p>Coach 5 Bio</p>
         </div>
-      </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
-    </div>
-  </div>
-</div>
+    
+  
+
 for 5th coach un-comment to here
 =========================================================================================== -->
 
@@ -417,13 +417,13 @@ if adding a 6th Coach un-comment this modal
         <div class="editable">
             <p>Coach 6 Bio</p>
         </div>
-      </div>
+      
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
-    </div>
-  </div>
-</div>
+    
+  
+
 for 6th coach un-comment to here
 =========================================================================================== -->
 
