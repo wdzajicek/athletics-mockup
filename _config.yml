@@ -45,7 +45,6 @@ github_username:  jekyll
 #   - "_posts"
 
 future: true
-incremental: true
 # Build settings
 markdown: kramdown
 plugins:
