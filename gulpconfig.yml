@@ -66,6 +66,8 @@ sitemap:
     - "_site/*.html"
     - "_site/**/*.html"
     - "_site/**/**/*.html"
+    - "_site/**/*.pdf"
+    - "_site/**/**/*.pdf"
   siteUrl:
     - "http://athletics.kcc.edu"
 

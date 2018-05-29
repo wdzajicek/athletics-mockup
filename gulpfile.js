@@ -79,7 +79,7 @@ gulp.task('sitemap', function () {
     read: false
   })
     .pipe(sitemap({
-      siteUrl: (config.sitemap.siteUrl)
+      siteUrl: (config.sitemap.siteUrl),
     }))
     .pipe(gulp.dest('./'))
     .pipe(gulp.dest('./_site'));
