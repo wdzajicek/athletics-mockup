@@ -15,6 +15,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var imagemin = require('gulp-imagemin');
+var sitemap = require('gulp-sitemap');
 
 // ALL THE CRAP BELLOW IS RUN WHEN YOU RUN `$ gulp` OR `$ gulp --production`
 
@@ -70,7 +71,18 @@ gulp.task('jekyll-build', function(done) { // Runs the jekyll build
 });
 
 gulp.task('build', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
-  sequence( 'clean', 'jekyll-build', ['sass', 'javascript'], 'copy', done);
+  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'javascript'], 'copy', done);
+});
+
+gulp.task('sitemap', function () {
+  gulp.src((config.sitemap.src), {
+    read: false
+  })
+    .pipe(sitemap({
+      siteUrl: (config.sitemap.siteUrl)
+    }))
+    .pipe(gulp.dest('./'))
+    .pipe(gulp.dest('./_site'));
 });
 
 gulp.task('browser-sync', function() { // BrowserSync ist wunderbar! Changes to HTML, MD, SASS, and JS files get updated on saving of those files

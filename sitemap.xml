@@ -1,407 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>http://athletics.kcc.edu/</loc>
-  <lastmod>2018-05-24T21:08:23+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/sports/</loc>
-  <lastmod>2018-05-24T20:35:38+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/baseball/</loc>
-  <lastmod>2018-05-25T15:00:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/baseball/schedule/</loc>
-  <lastmod>2018-05-24T20:35:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/baseball/roster/</loc>
-  <lastmod>2018-05-24T20:35:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/baseball/news/</loc>
-  <lastmod>2018-05-24T21:08:25+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/mens-basketball/</loc>
-  <lastmod>2018-05-25T21:05:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/mens-basketball/schedule/</loc>
-  <lastmod>2018-05-24T20:35:35+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/mens-basketball/roster/</loc>
-  <lastmod>2018-05-24T20:35:34+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/mens-basketball/news/</loc>
-  <lastmod>2018-05-24T21:08:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/soccer/</loc>
-  <lastmod>2018-05-25T15:00:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/soccer/schedule/</loc>
-  <lastmod>2018-05-24T20:35:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/soccer/roster/</loc>
-  <lastmod>2018-05-24T20:35:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/soccer/news/</loc>
-  <lastmod>2018-05-24T21:08:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/womens-basketball/</loc>
-  <lastmod>2018-05-25T15:00:22+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/womens-basketball/schedule/</loc>
-  <lastmod>2018-05-24T20:35:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/womens-basketball/roster/</loc>
-  <lastmod>2018-05-24T20:35:46+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/womens-basketball/news/</loc>
-  <lastmod>2018-05-24T21:08:37+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/softball/</loc>
-  <lastmod>2018-05-25T15:00:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/softball/schedule/</loc>
-  <lastmod>2018-05-24T20:35:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/softball/roster/</loc>
-  <lastmod>2018-05-24T20:35:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/softball/news/</loc>
-  <lastmod>2018-05-24T21:08:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/volleyball/</loc>
-  <lastmod>2018-05-25T15:00:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/volleyball/schedule/</loc>
-  <lastmod>2018-05-24T20:35:45+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/volleyball/roster/</loc>
-  <lastmod>2018-05-24T20:35:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/volleyball/news/</loc>
-  <lastmod>2018-05-24T21:08:36+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/facilities/</loc>
-  <lastmod>2018-05-24T20:35:30+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/facilities/fitness-center/</loc>
-  <lastmod>2018-05-24T20:35:31+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/facilities/sports-facilities/</loc>
-  <lastmod>2018-05-24T20:35:32+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/recruitment/</loc>
-  <lastmod>2018-05-24T20:35:33+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/support/</loc>
-  <lastmod>2018-05-24T20:35:39+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/support/cash-bash/</loc>
-  <lastmod>2018-05-24T20:57:07+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/support/cavalier-club/</loc>
-  <lastmod>2018-05-24T20:57:08+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/support/donate/</loc>
-  <lastmod>2018-05-24T20:57:09+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/about/</loc>
-  <lastmod>2018-05-24T20:35:27+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/about/student-athletes/</loc>
-  <lastmod>2018-05-24T20:35:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/about/equity/</loc>
-  <lastmod>2018-05-24T20:35:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/about/staff/</loc>
-  <lastmod>2018-05-24T20:35:29+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/news/</loc>
-  <lastmod>2018-05-24T21:08:28+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/baseball/stats/</loc>
-  <lastmod>2018-05-25T15:00:14+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/mens-basketball/stats/</loc>
-  <lastmod>2018-05-24T20:35:36+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/soccer/stats/</loc>
-  <lastmod>2018-05-24T20:35:37+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/womens-basketball/stats/</loc>
-  <lastmod>2018-05-24T20:35:47+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/softball/stats/</loc>
-  <lastmod>2018-05-24T20:35:40+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/volleyball/stats/</loc>
-  <lastmod>2018-05-24T20:35:46+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/fitnesscenter-re-enroll.pdf</loc>
-  <lastmod>2018-05-24T19:46:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/cashbashreg.pdf</loc>
-  <lastmod>2018-05-24T19:23:25+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/EADA_REPORT_FOR_ATHLETICS_FY17.pdf</loc>
-  <lastmod>2018-04-24T21:55:41+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Career%20Hitting.pdf</loc>
-  <lastmod>2018-05-23T20:23:34+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Career%20Pitching.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Player%20Awards%20and%20Honors.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Pro%20Players%20and%20Form%20Cavs.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Season%20Hitting.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Season%20Pitching.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Team%20Championships%20and%20Awards.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Team%20Hitting.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Baseball%20-%20Team%20Pitching.pdf</loc>
-  <lastmod>2018-05-23T20:40:20+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Mens%20BBall%20-%20All%20Americans.pdf</loc>
-  <lastmod>2018-05-23T21:20:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Mens%20Basketball%20Records%20-%20Career.pdf</loc>
-  <lastmod>2018-05-23T21:20:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Mens%20Basketball%20Records%20-%20Individual.pdf</loc>
-  <lastmod>2018-05-23T21:20:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Mens%20Basketball%20Records%20-%20Team-by-Team.pdf</loc>
-  <lastmod>2018-05-23T21:20:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Mens%20Basketball%20Records%20-%20Team.pdf</loc>
-  <lastmod>2018-05-23T21:20:19+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Soccer%20-%20Records.pdf</loc>
-  <lastmod>2018-05-23T21:38:00+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Women%E2%80%99s%20Basketball%20-%20All%20Americans.pdf</loc>
-  <lastmod>2018-05-23T21:55:02+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Womens%20BBall%20career%20records.pdf</loc>
-  <lastmod>2018-05-23T21:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Womens%20Basketball%20-%20National%20Statistics.pdf</loc>
-  <lastmod>2018-05-23T21:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Womens%20Basketball%20-%20Program%20History.pdf</loc>
-  <lastmod>2018-05-23T21:55:02+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Women's%20Basketball%20-%20Where%20are%20They%20Now.pdf</loc>
-  <lastmod>2018-05-23T21:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Softball%20-%20All%20Americans.pdf</loc>
-  <lastmod>2018-05-23T21:43:41+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Softball%20Records%20-%20Career%20Records.pdf</loc>
-  <lastmod>2018-05-23T21:43:41+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Softball%20Records%20-%20Individual%20Hitting.pdf</loc>
-  <lastmod>2018-05-23T21:43:42+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Softball%20Records%20-%20Individual%20Pitching.pdf</loc>
-  <lastmod>2018-05-23T21:43:42+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Softball%20-%20Program%20History.pdf</loc>
-  <lastmod>2018-05-23T21:43:41+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Softball%20Records%20-%20Team%20Hitting.pdf</loc>
-  <lastmod>2018-05-23T21:43:42+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Volleyball%20-%20All%20Americans.pdf</loc>
-  <lastmod>2018-05-23T21:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Volleyball%20-%20Individual%20Career.pdf</loc>
-  <lastmod>2018-05-23T21:55:00+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Volleyball%20-%20Individual%20Season.pdf</loc>
-  <lastmod>2018-05-23T21:55:00+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Volleyball%20-%20Program%20History.pdf</loc>
-  <lastmod>2018-05-23T21:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>http://athletics.kcc.edu/uploads/Volleyball%20-%20Team%20Records.pdf</loc>
-  <lastmod>2018-05-23T21:55:01+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://athletics.kcc.edu/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/about/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/baseball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/facilities/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/mens-basketball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/recruitment/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/soccer/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/softball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/sports/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/support/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/volleyball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/womens-basketball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/about/equity/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/about/staff/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/about/student-athletes/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/baseball/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/baseball/roster/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/baseball/schedule/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/baseball/stats/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/facilities/fitness-center/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/facilities/sports-facilities/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/mens-basketball/roster/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/mens-basketball/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/mens-basketball/schedule/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/mens-basketball/stats/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/soccer/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/soccer/roster/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/soccer/schedule/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/soccer/stats/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/softball/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/softball/roster/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/softball/schedule/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/softball/stats/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/support/cash-bash/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/support/cavalier-club/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/support/donate/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/volleyball/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/volleyball/roster/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/volleyball/schedule/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/volleyball/stats/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/womens-basketball/news/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/womens-basketball/roster/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/womens-basketball/schedule/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/womens-basketball/stats/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/baseball/baseball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/baseball/baseball-comes-to-a-close/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/baseball/cavs-wind/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/general/new-website/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/mens-basketball/rebuilding-a-legacy/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/soccer/soccer-pride/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/softball/congratulations-softball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/volleyball/volleyball-honor-roll-list/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
+    <url>
+        <loc>http://athletics.kcc.edu/news/womens-basketball/womens-basketball/</loc>
+        <lastmod>2018-05-29T20:28:12.000Z</lastmod>
+    </url>
 </urlset>
