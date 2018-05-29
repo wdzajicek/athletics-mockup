@@ -75,4 +75,4 @@ _comments:
   sport_category: Sport for which news item pertains. Gets pulled into news rollup.
   news_thumb_image: Must be 16:9 ratio image. Preferably 200px wide.
   sport: "# Value dictates which schedule is pulled: <br/>\"1\" = All sports <br/>\"2\" = Baseball <br/>\"3\" = Softball <br/>\"4\" = Volleyball <br/>\"5\" = Soccer <br/>\"6\" = Women's Basketball <br/>\"7\" = Men's Basketball"
-  description: "Descriptions are seen by search engines like Google and displayed in search results"
+  description: "Descriptions are seen by search engines like Google and displayed in search results."
