@@ -4,11 +4,6 @@
 
 Development of the new KCC Athletics site based off of design mockups
 
-
-## [Live Github Pages example](https://kankakeecommunitycollege.github.io/athletics-mockup/):
-
-#### <https://kankakeecommunitycollege.github.io/athletics-mockup/>
-
 ## Requirements
 	- Jekyll - `$ gem install jekyll bundler`
 	- Bundler - `$ gem install bundler`
@@ -20,6 +15,14 @@ Development of the new KCC Athletics site based off of design mockups
 ## Installation
 	$ git clone https://github.com/KankakeeCommunityCollege/athletics-mockup.git
 	$ cd athletics-mockup
+
+### Wait a second! I need a Gemfile:
+This project intentionally has no Gemfile to make CloudCannon builds faster. However, to properly install this project, you need a Gemfile. Rename Gemfile.txt as your Gemfile using the following command in terminal:
+
+	$ cp Gemfile.txt Gemfile
+
+Now you can proceed with installation:
+
 	$ npm install		// May need to prefix command with sudo (if not using NVM)
 	$ bundle install
 
