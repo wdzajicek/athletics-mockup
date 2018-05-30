@@ -119,10 +119,54 @@
 
 @media screen and (min-width: 992px) {
   .nav-row {
-    border-bottom: 2px $primary-blue solid;
+    // border-bottom: 2px $primary-blue solid;
     line-height: .5em;
     margin-bottom: 10px;
   }
+}
+
+.mega-nav__nav-row--bottom-border {
+  // Set to relative for using :before pseudo-class to make border-bottom shorter than element
+  // (So the bottom border doesn't span the full length)
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .mega-nav__nav-row--bottom-border::before {
+    // Styling to make bottom-border not the full width of element per design mockups
+    border-bottom-color: $primary-blue;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 20px;
+    position: absolute;
+    width: 77%;
+  }
+}
+
+.mega-nav__nav-row--half-bottom-border {
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .mega-nav__nav-row--half-bottom-border::before {
+    // Styling to make bottom-border not the full width of element per design mockups
+    border-bottom-color: $primary-blue;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    bottom: 0;
+    content: "";
+    height: 1px;
+    left: 20px;
+    position: absolute;
+    width: 50%;
+  }
+}
+
+.mega-nav__sport-name--margin-right {
+  margin-right: 15px;
 }
 
 .dark-text {
