@@ -47,9 +47,6 @@ github_username:  jekyll
 future: true
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed
-  - liquid-md5
 
 exclude:
   - "gulpfile.js"
