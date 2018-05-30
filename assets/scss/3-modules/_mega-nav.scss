@@ -29,8 +29,9 @@
   }
 }
 // adds some margin below the link sets
+// bad copy-paste selector here:
 .navbar .dropdown-menu div[class*="col"] {
-  margin-bottom: 1rem;
+  margin-bottom: .8rem;
 }
 
 .navbar .dropdown-menu {
@@ -121,7 +122,7 @@
   .nav-row {
     // border-bottom: 2px $primary-blue solid;
     line-height: .5em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
   }
 }
 
