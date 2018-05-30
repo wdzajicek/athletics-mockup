@@ -1,5 +1,5 @@
 <!--  News item modal  -->
-<div class="modal fade" id="{{ post.title | escape | remove: " " | remove: "&" | remove: "." | remove: "," | remove: "!" | remove: "?" | remove: "/" | remove: "@" | remove: "\" | remove: "#" | remove: "$" | remove: "%" | remove: "^" | remove: "*" | remove: "(" | remove: ")" | remove: "-" | remove: "_" | remove: "+" | remove: "=" | remove: "<" | remove: ">" | remove: "~" | remove: "`" | remove: "[" | remove: "]" | remove: ";" | remove: ":" | remove: "|" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="{{ post.post_title | escape | remove: " " | remove: "&" | remove: "." | remove: "," | remove: "!" | remove: "?" | remove: "/" | remove: "@" | remove: "\" | remove: "#" | remove: "$" | remove: "%" | remove: "^" | remove: "*" | remove: "(" | remove: ")" | remove: "-" | remove: "_" | remove: "+" | remove: "=" | remove: "<" | remove: ">" | remove: "~" | remove: "`" | remove: "[" | remove: "]" | remove: ";" | remove: ":" | remove: "|" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -10,7 +10,7 @@
       <div class="modal-body">
         <img src="{{ page.baseurl }}{{ post.news_thumb_image }}" alt="{{ post.thumb_alt }}" class="img-fluid float-left news__modal-thumb"/>
         <h5 class="news__sub-heading news__sub-heading--spacing"> {{ post.sport-category }} &#183; <span class="news__date"> {{ post.date | date: "%B %-d, %Y" }} </span></h5>
-        <h4 class="news__heading">{{ post.title }}</h4>
+        <h4 class="news__heading">{{ post.post_title }}</h4>
         <p class="news__paragraph">{{ post.content }}</p>
       </div>
       <div class="modal-footer">

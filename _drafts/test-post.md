@@ -1,5 +1,5 @@
 ---
-title: test post
+post_title: test post
 date: 2018-05-23 09:00:00
 categories:
   - baseball

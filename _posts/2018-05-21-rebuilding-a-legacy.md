@@ -1,5 +1,5 @@
 ---
-title: Rebuilding a Legacy
+post_title: Rebuilding a Legacy
 date: 2018-05-21 09:00:00
 categories:
   - mens-basketball
