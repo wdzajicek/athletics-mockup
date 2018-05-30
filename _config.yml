@@ -12,7 +12,7 @@ defaults:
     type: posts
   values:
     layout: post
-    title: ''
+    post_title: ''
     permalink: /:categories/:title/
     baseurl: ../../../
     categories: news
@@ -66,6 +66,7 @@ uploads_dir: # specifies the default uploads directory for CloudCannon
   - "uploads/"
 
 _comments:
+  title: This is the page title. <br/>Please don't change page titles without talking to web services first. <br/> Changing the page title may affect search engine results.
   layout: Do NOT modify layouts. It may break things.
   baseurl: Do NOT modify baseurl. It WILL break all page links.
   categories: "FOR CATEGORIES <br/>SPORTS-SPECIFIC: <br/>1.) First enter the sport's category from this list <br/>2.) followed by the \"news\" category. <br/>(e.g. mens-basketball news) <br/>GENERAL NEWS: <br/>1.) Enter \"news\" category first <br/>2.) followed by the \"general\" category. <br/>(e.g. news general)"
@@ -73,3 +74,4 @@ _comments:
   news_thumb_image: Must be 16:9 ratio image. Preferably 200px wide.
   sport: "# Value dictates which schedule is pulled: <br/>\"1\" = All sports <br/>\"2\" = Baseball <br/>\"3\" = Softball <br/>\"4\" = Volleyball <br/>\"5\" = Soccer <br/>\"6\" = Women's Basketball <br/>\"7\" = Men's Basketball"
   description: "Descriptions are seen by search engines like Google and displayed in search results"
+  post_title: Create a unique title for your news post. <br/> Do NOT use curly braces "{ }" in post titles. <br/> Do NOT use the same post title for different posts.
