@@ -47,6 +47,21 @@ h3 {
     }
 }
 
+.typography__nav-link-secondary {
+  font-family: $secondaryfont-stack;
+  font-size: 1em;
+  font-weight: $secondaryfont-weight-regular;
+  letter-spacing: .06em;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media screen and (max-width: 1080px) {
+  .typography__nav-link-secondary {
+    font-size: .9em;
+  }
+}
+
 .sub-nav-link {
   color: $sub-nav-heading;
   font-family: $secondaryfont-stack;
