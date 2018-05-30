@@ -1,5 +1,5 @@
 <!--  News item modal  -->
-<div class="modal fade" id="{{ post.title | md5 }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="{{ post.title | escape | remove: " " | remove: "&" | remove: "." | remove: "," | remove: "!" | remove: "?" | remove: "/" | remove: "@" | remove: "\" | remove: "#" | remove: "$" | remove: "%" | remove: "^" | remove: "*" | remove: "(" | remove: ")" | remove: "-" | remove: "_" | remove: "+" | remove: "=" | remove: "<" | remove: ">" | remove: "~" | remove: "`" | remove: "[" | remove: "]" | remove: ";" | remove: ":" | remove: "|" }}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
