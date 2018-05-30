@@ -21,17 +21,17 @@ defaults:
     type: alerts
   values:
     title: ''
-- scope:
-    path: ''
-    type: releases
-  values:
-    layout: news-page
-    title:
-    description:
-    news-release_date:
-    release_thumb_path: "/siteicon.png"
-    for_media: true
-    expires_date:
+#- scope:
+#    path: ''
+#    type: releases
+#  values:
+#    layout: news-page
+#    title:
+#    description:
+#    news-release_date:
+#    release_thumb_path: "/siteicon.png"
+#    for_media: true
+#    expires_date:
 permalink: pretty
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
@@ -44,6 +44,7 @@ github_username:  jekyll
 #   - "_pages"
 #   - "_posts"
 
+# Output posts with dates that havent happened (future posts):
 future: true
 # Build settings
 markdown: kramdown
