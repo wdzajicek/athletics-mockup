@@ -193,12 +193,17 @@
   }
 }
 
+// Custom hamburger menu color
+// Custom color is needed to make hamburger menu display against the dark blue background color behind it
+// Without the .custom-toggler class the hamburger menu will not be visible
 .custom-toggler.navbar-toggler {
+  // Border color of the hamburger menu
   border-color: $navbar-toggler-border-color;
 }
 
 .custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  // Color of the 3 lines that make up the hamburger (stroke='rgba(255,255,255,0.7)')
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .dark-text {
