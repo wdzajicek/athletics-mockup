@@ -81,8 +81,8 @@ gulp.task('sitemap', function () {
     .pipe(sitemap({
       siteUrl: (config.sitemap.siteUrl),
     }))
-    .pipe(gulp.dest('./'))
-    .pipe(gulp.dest('./_site'));
+    .pipe(gulpif(PRODUCTION, gulp.dest('./')))
+    .pipe(gulpif(PRODUCTION, gulp.dest('./_site')));
 });
 
 gulp.task('browser-sync', function() { // BrowserSync ist wunderbar! Changes to HTML, MD, SASS, and JS files get updated on saving of those files
