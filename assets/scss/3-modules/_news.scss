@@ -26,8 +26,14 @@
 .news__thumb {
   clear: both;
   float: left;
-  max-width: 140px;
+  width: 140px;
   vertical-align: baseline;
+}
+
+@media screen and (min-width: 992px) {
+  .news__thumb {
+    width: 230px;
+  }
 }
 
 @media screen and (min-width: 992px) {
