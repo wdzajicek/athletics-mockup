@@ -102,7 +102,7 @@
 .dropdown:hover,
 .dropdown:hover a.nav-link {
   background-color: #f5f6f8;
-  color: $primary-blue !important;
+  color: $primary-blue;
 }
 
 @media screen and (min-width: 992px) {
@@ -143,7 +143,7 @@
     height: 1px;
     left: 20px;
     position: absolute;
-    width: 77%;
+    width: 75%;
   }
 }
 
@@ -160,7 +160,7 @@
     bottom: 0;
     content: "";
     height: 1px;
-    left: 20px;
+    left: 10px;
     position: absolute;
     width: 50%;
   }
@@ -177,6 +177,30 @@
   margin-right: 15px;
 }
 
+@media screen and (min-width: 992px) {
+  // brings the two "Men's Sports" and "Women's Sports" ul.flex-columns more toward the center of their dropdown menus
+  .mega-nav__flex-column-left--margin {
+    margin-left: 80px;
+    margin-right: -80px; // offsets the scrunching that the margin-left causes
+  }
+}
+
+@media screen and (min-width: 992px) {
+  // brings the two "Men's Sports" and "Women's Sports" ul.flex-columns more toward the center of their dropdown menus
+  .mega-nav__flex-column-right--margin {
+    margin-left: 40px;
+    margin-right: -40px; // offsets the scrunching that the margin-left causes
+  }
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: $navbar-toggler-border-color;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .dark-text {
   color: $primary-blue !important;
 }
@@ -186,13 +210,18 @@
 }
 
 .nav-img {
-  margin-left: -10px;
+  margin-left: 0;
   margin-top: 20px;
 }
 
 @media screen and (min-width: 1100px) {
   .nav-img {
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .nav-img {
     margin-left: -20px;
   }
 }
@@ -222,8 +251,10 @@
   padding-top: 50px;
 }
 
-.nav-split {
-  margin-right: 340px !important;
+@media screen and (min-width: 992px) {
+  .nav-split {
+    margin-right: 340px !important;
+  }
 }
 
 .center-logo {
