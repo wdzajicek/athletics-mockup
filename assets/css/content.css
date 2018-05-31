@@ -1,8 +1,8 @@
 /* Predefined styles available for content editors in CloudCannon */
-h2.content-heading {
+h3.content-heading {
     /* Importants added to test CloudCannon CMS */
-  color: #666 !important;
-  font-family: "Roboto", sans-serif !important;
-  font-size: 1.4em !important;
-  font-weight: 400 !important;
+  color: #666;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
 }
