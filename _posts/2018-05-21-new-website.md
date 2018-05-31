@@ -5,7 +5,7 @@ categories:
   - news
   - general
 sport-category: General News
-news_thumb_image: /siteicon.png
+news_thumb_image: /assets/img/16-9_thumb.png
 description: Website revamped!
 ---
 
