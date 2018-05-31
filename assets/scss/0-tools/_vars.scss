@@ -34,6 +34,12 @@ $slide-bg: $white;            // Background color for the upcoming games slick s
 $sub-nav-heading: $white;     // Font color for h1.page-heading heading of sub-nav
 $nav-link: $white;            // Color for nav-link-main links in mega-nav
 
+// $navbar-toggler-border-color will only change the border color around the hamburger menu:
+// The 3 hamburger lines are coloured in a url(data:...) svg. SCSS cannot inject a variable color into the url(data:svg)
+// You will find the 3 hamburger lines colour defined in _mega-nav.scss under the '.custom-toggler .navbar-toggler-icon {...}' selector
+// Why yes, I did just spell 'colour' the british way.
+$navbar-toggler-border-color: rgba(255,255,255,0.7);
+
 html,
 body {
   overflow-x: hidden;
