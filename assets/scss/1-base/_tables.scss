@@ -1,0 +1,14 @@
+// Table styles
+// Needed for consistent table creation through CloudCannon CMS
+// ============================================================
+
+td {
+  color: $grey-1;
+  font-family: $basefont-stack;
+}
+
+th {
+  color: $primary-red;
+  font-family: $secondaryfont-stack;
+  font-weight: $secondaryfont-weight-bold;
+}
