@@ -43,6 +43,13 @@ h3.blue-heading {
   font-weight: $secondaryfont-weight-bold;
 }
 
+h4.blue-heading-small {
+  color: $primary-blue;
+  font-family: $secondaryfont-stack;
+  font-size: 1.25em;
+  font-weight: $secondaryfont-weight-boldish;
+}
+
 // General paragraph text style
 // ================================================================
 p {
