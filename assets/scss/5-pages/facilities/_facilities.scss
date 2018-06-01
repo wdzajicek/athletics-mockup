@@ -5,3 +5,25 @@
 .facilities__text-margin {
   margin-top: 10px;
 }
+
+@media screen and (min-width: 768px) {
+  .facilities__text-margin {
+    margin-top: -20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .facilities__text-margin {
+    margin-top: 10px;
+  }
+}
+
+.facilities__row--bottom-margin {
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 992px) {
+  .facilities__row--bottom-margin {
+    margin-bottom: 0;
+  }
+}
