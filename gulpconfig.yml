@@ -92,6 +92,7 @@ watch: # 'Watch' for changes in all the following:
     - "assets/js/all.min.js"
     - "assets/js/*.js"
   sass: "assets/scss/**/*.scss"
+  contentSass: "assets/scss/**/*.scss"
   pages:
     - "*.{md,html,yml,xml}"
     - "{_data,_includes,_layouts,_pages,_posts,_alerts}/**/*.{md,html,yml,xml}"
