@@ -1,0 +1,52 @@
+// Typography styles used for page content
+// Also used as CloudCannon CMS styles available to content editors
+// ================================================================
+
+// =======================================================================================================================
+//
+// ___________________
+// < THIS IS IMPORTANT >
+// -------------------
+//        \   ^__^
+//         \  (oo)\_______
+//            (__)\       )\/\
+//                ||----w |
+//                ||     ||
+//
+//  CMS STYLES REQUIRE ELEMENT AND CLASS SELECTORS TO WORK (E.G. 'h3.blue-heading')
+//  DO NOT DELETE ELEMENT SELECTORS FROM THEIR CLASS SELECTROS OR IT WILL BREAK CMS OPTIONS AVAILABLE TO CONTENT EDITORS
+//
+// =======================================================================================================================
+
+// h2 level headings
+// ================================================================
+h2.main-heading {
+  color: $grey-heading;
+  font-family: $secondaryfont-stack;
+  font-size: 1.4em;
+  font-weight: $secondaryfont-weight-regular;
+}
+
+@media screen and (min-width: 992px) {
+  h2.main-heading {
+    font-size: 1.8em;
+    font-weight: $secondaryfont-weight-boldish;
+  }
+}
+
+// h3 level headings
+// ================================================================
+h3.blue-heading {
+  color: $primary-blue;
+  font-family: $secondaryfont-stack;
+  font-size: 1.4em;
+  font-weight: $secondaryfont-weight-bold;
+}
+
+// General paragraph text style
+// ================================================================
+p {
+  color: $grey-1;
+  font-family: $basefont-stack;
+  font-size: $base-font-size;
+}

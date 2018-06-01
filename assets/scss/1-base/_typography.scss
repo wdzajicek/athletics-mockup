@@ -1,4 +1,9 @@
-.page-heading { // This class is applied to h1 level headings
+
+@import '1-base/content-typography';
+
+// h1 heading used in sub-nav
+.page-heading {
+  // This class is applied to h1 level headings
   color: $sub-nav-heading;
   font-family: $secondaryfont-stack;
   font-size: 1.1em;
@@ -8,21 +13,14 @@
 }
 
 @media screen and (min-width: 992px) {
+  // Make h1 a little bigger on larger screens
   .page-heading {
     font-size: 1.8em;
   }
 }
 
-p {
-  color: $grey-1;
-  font-family: $basefont-stack;
-  font-size: $base-font-size;
-}
-
-h3 {
-  font-size: 1.6em;
-}
-
+// mega-nav and sub-nav headings
+// =============================================
 .menu-heading {
   color: $primary-red;
   font-family: $secondaryfont-stack;
@@ -75,6 +73,8 @@ h3 {
     font-size: 1em;
   }
 }
+// End mega-nav and sub-nav Heading styles
+// =============================================
 
 .footer-heading {
   font-family: $secondaryfont-stack;
@@ -82,7 +82,11 @@ h3 {
   font-weight: $secondaryfont-weight-black;
 }
 
+// Carousel-slider heading styles
+// =============================================
+
 .sub-heading {
+  // Small all-caps heading used in carousel slides
   color: $white;
   font-family: $secondaryfont-stack;
   font-size: .7em;
@@ -112,6 +116,7 @@ h3 {
 }
 
 .slide-heading {
+  // Bold main-slide headings used in carousel slides
   color: $white;
   font-family: $secondaryfont-stack;
   font-size: 1em;
@@ -141,35 +146,6 @@ h3 {
 @media screen and (min-width: 1200px) {
   .slide-heading {
     font-size: 3em;
-  }
-}
-
-p {
-  font-family: $basefont-stack;
-}
-
-.blue-heading {
-  color: $primary-blue;
-  font-family: $secondaryfont-stack;
-  font-size: 1.4em;
-  font-weight: $secondaryfont-weight-bold;
-}
-
-.f-color {
-  color: $fa-color;  // Sets color for FontAwesome icons
-}
-
-.main-heading {
-  color: $grey-heading;
-  font-family: $secondaryfont-stack;
-  font-size: 1.4em;
-  font-weight: $secondaryfont-weight-regular;
-}
-
-@media screen and (min-width: 992px) {
-  .main-heading {
-    font-size: 1.8em;
-    font-weight: $secondaryfont-weight-boldish;
   }
 }
 
@@ -204,11 +180,8 @@ p {
   font-weight: $secondaryfont-weight-boldish;
 }
 
-p.general-p {
-  font-family: $basefont-stack;
-  font-size: 1rem;
-}
-
+// News roll-up heading styles
+// =============================================
 .news__heading {
   color: $primary-red;
   font-family: $secondaryfont-stack;
@@ -235,7 +208,7 @@ p.general-p {
   font-size: 1rem;
 }
 
-// ALERT TYPOGRAPHY SHIT HERE
+// ALERT TYPOGRAPHY HERE
 // ==========================
 .alert__title {
   color: $primary-red;

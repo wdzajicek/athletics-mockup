@@ -1,0 +1,9 @@
+// Seperate stylesheet used in CloudCannon's CMS
+// Providing content editors with our custom styling
+// Compiled via the contentSass task found in the gulfile
+
+// Variables
+@import '0-tools/vars';
+
+// Typography styles for content editors
+@import '1-base/content-typography';
