@@ -39,16 +39,3 @@ $nav-link: $white;            // Color for nav-link-main links in mega-nav
 // You will find the 3 hamburger lines colour defined in _mega-nav.scss under the '.custom-toggler .navbar-toggler-icon {...}' selector
 // Why yes, I did just spell 'colour' the british way.
 $navbar-toggler-border-color: rgba(255,255,255,0.7);
-
-html,
-body {
-  overflow-x: hidden;
-}
-
-body.landing {
-  background-color: $landing-bg;
-}
-
-body.page {
-  background-color: $default-bg;
-}
