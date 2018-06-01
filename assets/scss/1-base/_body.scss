@@ -1,6 +1,9 @@
 
 html,
 body {
+  // Needed to eliminate horizontal scrolling on mobile devices
+  // I'd say that's pretty important
+  // "That's pretty important" ~ Wes
   overflow-x: hidden;
 }
 
