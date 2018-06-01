@@ -1,0 +1,35 @@
+// Custom styles for Bootstrap accordians
+// ====================================================
+.buttons__btn-link-custom {
+  color: $primary-red;
+  font-family: $secondaryfont-stack;
+  font-size: 1.4rem;
+  font-weight: $secondaryfont-weight-boldish;
+  text-decoration: none !important;  // Important needed to overide link underlining behavior
+  &:hover {
+    color: $primary-blue;
+  }
+}
+
+.buttons__blue-plus {
+  background-color: $primary-blue;
+  border-radius: 50%;
+  color: $white;
+  display: inline-block;
+  font-family: $secondaryfont-stack;
+  font-size: 2rem;
+  font-weight: $secondaryfont-weight-regular;
+  height: 30px;
+  line-height: 30px;  // line-height needed to center text vertically
+  margin-right: 20px;
+  text-decoration: none !important;  // Important needed to overide link underlining behavior
+  vertical-align: middle;
+  width: 30px;
+  &:hover {
+    background: $primary-red;
+  }
+}
+
+.buttons__btn-link-custom:hover .buttons__blue-plus {
+  background-color: $primary-red;
+}
