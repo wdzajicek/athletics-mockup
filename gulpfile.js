@@ -6,6 +6,7 @@ var del = require('del');
 var gulp = require('gulp');
 var spawn = require('cross-spawn');
 var sass = require('gulp-sass');
+var contentSass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var wiredep = require('wiredep').stream;
 var autoprefixer = require('gulp-autoprefixer');
@@ -52,6 +53,18 @@ gulp.task('sass', function() { // Compiling of SASS into CSS is handled here:
     .pipe(browserSync.stream());
 });
 
+gulp.task('contentSass', function() { // Compiling of SASS into CSS is handled here:
+  return gulp.src(config.contentSass.src)
+    .pipe(sourcemaps.init())
+    .pipe(contentSass().on('error', contentSass.logError)) // errors shown in terminal for when you screw up your SASS
+    .pipe(autoprefixer(config.contentSass.compatibility)) // Automatically prefix any CSS that is not compatible with the browsers defined in the gulpconfig
+    .pipe(gulpif(PRODUCTION, cssnano({ zindex: false }))) // {zindex:false} to prevent override of z-index values -- higher z-index's needed to bring objects above bootstrap's default z-index values
+    .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
+    .pipe(gulp.dest(config.contentSass.dest.jekyllRoot))
+    .pipe(gulp.dest(config.contentSass.dest.buildDir))
+    .pipe(browserSync.stream());
+});
+
 gulp.task('javascript', function() {
   browserSync.notify(config.javascript.notification);
   return gulp.src(config.javascript.src)
@@ -71,7 +84,7 @@ gulp.task('jekyll-build', function(done) { // Runs the jekyll build
 });
 
 gulp.task('build', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
-  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'javascript'], 'copy', done);
+  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascript'], 'copy', done);
 });
 
 gulp.task('sitemap', function () {
