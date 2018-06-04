@@ -1,47 +1,173 @@
 <!-- Accordian module still in development -->
-<div id="accordion">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 id="membership3" name="membership" class="mb-0 main-heading">
-        <button class="btn btn-link buttons__btn-link-custom" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          <span class="buttons__blue-plus">+</span>&#160;Membership
-        </button>
-      </h2>
-    </div>
-    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-      <div class="card-body">
-        <div class="editable">
-          <h2 id="membership2" name="membership" class="main-heading">Become a Member</h2>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h2 id="membership" name="membership" class="mb-0 main-heading">
+              <button id="plusButton" class="btn btn-link buttons__btn-link-custom" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <span id="plusMinus" class="buttons__blue-plus">+</span>&#160;Membership
+              </button>
+            </h2>
+          </div>
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+              <div class="editable">
+                <h2 id="membership2" name="membership2" class="main-heading">Become a Member</h2>
+              </div>
+              <p>Sign up at KCC's Accounting Office (second floor of the college) and at the Fitness Center, located in the Ice Valley Centre at 1601 River Road, Kankakee.</p>
+              <br/>
+              <h3 class="blue-heading"><strong>Membership Options</strong></h3>
+              <p>KCC offers the following membership packages to non-student members of the community.</p>
+              <table class="mv-Table-6" cellspacing="0" cellpadding="3" bordercolor="#808080" border="1">
+                  <tbody>
+                      <tr class="mv-TableHeaderRow-6">
+                          <th class="mv-TableHeaderEvenCol-6" rowspan="1" colspan="1">Package</th>
+                          <th class="mv-TableHeaderOddCol-6" rowspan="1" colspan="1">Monthly</th>
+                          <th class="mv-TableHeaderEvenCol-6" rowspan="1" colspan="1">Annual</th>
+                      </tr>
+                      <tr class="mv-TableOddRow-6">
+                          <td class="mv-TableEvenCol-6">Individual (16 - 59 yrs.)</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$25</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$275</td>
+                      </tr>
+                      <tr class="mv-TableEvenRow-6">
+                          <td class="mv-TableEvenCol-6">Couple</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$45</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$495</td>
+                      </tr>
+                      <tr class="mv-TableOddRow-6">
+                          <td class="mv-TableEvenCol-6">Family (up to 2 parents and 3 children,<br />16 yrs. and older)</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$80</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$880</td>
+                      </tr>
+                      <tr class="mv-TableEvenRow-6">
+                          <td class="mv-TableEvenCol-6">Additional dependent</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$15</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$165</td>
+                      </tr>
+                      <tr class="mv-TableOddRow-6">
+                          <td class="mv-TableEvenCol-6">Senior (60 yrs. and older)</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$9</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$99</td>
+                      </tr>
+                      <tr class="mv-TableEvenRow-6">
+                          <td class="mv-TableEvenCol-6">U.S. military veterans</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$9</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$99</td>
+                      </tr>
+                      <tr class="mv-TableOddRow-6">
+                          <td class="mv-TableEvenCol-6">KCC graduates</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$20</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$220</td>
+                      </tr>
+                      <tr class="mv-TableEvenRow-6">
+                          <td class="mv-TableEvenCol-6" rowspan="1">​KCC staff</td>
+                          <td class="mv-TableOddCol-6" rowspan="1" valign="middle" align="center">Free​</td>
+                          <td class="mv-TableEvenCol-6" rowspan="1" valign="middle" align="center">​</td>
+                      </tr>
+                      <tr class="mv-TableOddRow-6">
+                          <td class="mv-TableEvenCol-6">Daily Pass</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$5/day</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">&nbsp;</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p>&nbsp;</p>
+              <h4 class="blue-heading-small">Student Options</h4>
+              <p>KCC students can choose to:</p>
+              <ul>
+                  <li>
+                      <p>sign up as a member</p>
+                  </li>
+                  <li>
+                      <p>enroll in the fitness center course and earn college credit</p>
+                  </li>
+              </ul>
+              <table class="mv-Table-6" cellspacing="0" cellpadding="3" bordercolor="#808080" border="1">
+                  <tbody>
+                      <tr class="mv-TableHeaderRow-6">
+                          <th class="mv-TableHeaderEvenCol-6" rowspan="1" colspan="1">Option<span>​</span><span>​</span></th>
+                          <th class="mv-TableHeaderOddCol-6" rowspan="1" colspan="1">Spring or Fall</th>
+                          <th class="mv-TableHeaderEvenCol-6" rowspan="1" colspan="1">Summer</th>
+                      </tr>
+                      <tr class="mv-TableOddRow-6">
+                          <td class="mv-TableEvenCol-6">KCC students (as member)</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">$80</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">$40</td>
+                      </tr>
+                      <tr class="mv-TableEvenRow-6">
+                          <td class="mv-TableEvenCol-6">KCC students (as course enrollee)</td>
+                          <td class="mv-TableOddCol-6" valign="middle" align="center">current tuition rate<br />for 1 credit hour<br />+ $20 fee</td>
+                          <td class="mv-TableEvenCol-6" valign="middle" align="center">current tuition rate<br />for 1 credit hour<br />+ $20 fee</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <p>&nbsp;</p>
+              <h3 class="blue-heading">Fitness Center for College Credit</h3>
+              <p>You can earn college credit for working out. Your workout schedule is up to you. After an initial orientation, there are no set meeting times. Work out as often as you'd like.</p>
+              <p>Cost</p>
+              <p>The Fitness Center class is the cost of one semester of college credit plus a $20 course fee.</p>
+              <p>Semesters are:</p>
+              <p>Fall: August - December</p>
+              <p>Spring: January - May</p>
+              <p>Summer: June - July</p>
+              <p>High school students earn college credit</p>
+              <p>For high school students, Fitness Center credits can be held in escrow until you graduate, then the credits can be applied as college credits at KCC or another college.</p>
+              <p>Registration</p>
+              <p>To join, register and pay at KCC's Department of Student Services, Riverfront Campus, 100 College Drive, Kankakee, Illinois.</p>
+              <p>First-time registration</p>
+              <p>Students enrolling in the Fitness Center course for the first time must schedule an assessment and orientation session. Contact the Fitness Center at 802-8610 to make an appointment.</p>
+              <p>Orientations usually begin about a week before the semester begins and must be complete before using the Fitness Center. To be considered enrolled in the course, students must begin Fitness Center sessions within the first week of the semester start date.</p>
+              <p>To re-enroll, <a target="_blank" href="/uploads/fitnesscenter-re-enroll.pdf">complete the re-enrollment form </a>(either online or by filling out a printed copy), print and bring with you when you register. Forms are also available in the Fitness Center and Student Services Department.</p>
+              <p>Personal fitness assessment and orientation</p>
+              <p>After you have registered, schedule your 60-minute orientation by phoning 815-802-8610 or stopping by the Fitness Center. Orientation times are 8:30 a.m., 10:30 a.m., 4 p.m. and 5:30 p.m.</p>
+              <p>A member of the Fitness Center staff will take you through a fitness assessment which includes: girth, height, weight, resting heart rate and body fat composition.</p>
+              <p>You will receive a tour of the Fitness Center and locker rooms along with an explanation of our 21 Life Fitness cable-assisted lifting machines.</p>
+              <p>Please allow 60 minutes for the assessment and orientation. The orientation counts toward your fitness center grade.</p>
+              <p>Grades</p>
+              <p>At registration you are asked to choose one of the following grade options:</p>
+              <p>Pass/Fail - to pass, complete 20 hours of exercise throughout the semester</p>
+              <p>Traditional letter grade - to receive an A, complete 25 hours or more of exercise throughout the semester</p>
+              <p>Your grade is based on the option you choose and the amount of time you exercise throughout the semester.</p>
+              <p>A - 25 hours or more</p>
+              <p>B - 22-24:59 hours</p>
+              <p>C - 20-21:59 hours</p>
+              <p>D - 17-19:59 hours</p>
+              <p>F - 16:59 hours or less</p>
+              <p>&nbsp;</p>
+            </div>
+          </div>
         </div>
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingTwo">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </button>
-      </h5>
-    </div>
-    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="card">
-    <div class="card-header" id="headingThree">
-      <h5 class="mb-0">
-        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </button>
-      </h5>
-    </div>
-    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-      <div class="card-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h2 id="personal-trainers" name="personal-trainers" class="mb-0 main-heading">
+              <button id="plusButton2" class="btn btn-link collapsed buttons__btn-link-custom" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <span id="plusMinus2" class="buttons__blue-plus">+</span>&#160;Personal Trainers & Staff
+              </button>
+            </h2>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Collapsible Group Item #3
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
