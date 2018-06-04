@@ -75,6 +75,16 @@ gulp.task('javascript', function() {
     .pipe(gulp.dest(config.javascript.dest.buildDir));
 });
 
+gulp.task('javascriptCustom', function() {
+  browserSync.notify(config.javascriptCustom.notification);
+  return gulp.src(config.javascriptCustom.src)
+    .pipe(sourcemaps.init())
+    .pipe(concat(config.javascriptCustom.filename))
+    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
+    .pipe(gulp.dest(config.javascriptCustom.dest.jekyllRoot))
+    .pipe(gulp.dest(config.javascriptCustom.dest.buildDir));
+});
+
 gulp.task('jekyll-build', function(done) { // Runs the jekyll build
   browserSync.notify(config.jekyll.notification);
   return spawn('jekyll', ['build'], {
@@ -84,7 +94,7 @@ gulp.task('jekyll-build', function(done) { // Runs the jekyll build
 });
 
 gulp.task('build', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
-  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascript'], 'copy', done);
+  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascript', 'javascriptCustom'], 'copy', done);
 });
 
 gulp.task('sitemap', function () {
@@ -118,6 +128,7 @@ gulp.task('default', function(done) { // Default gulp task (run via 'gulp' in te
 gulp.task('watch', function() { // Watch for changes to be piped into browserSync on saving of files:
   gulp.watch(config.watch.pages, ['build', browserSync.reload]); // Watch for new pages and changes.
   gulp.watch(config.watch.javascript, ['javascript', browserSync.reload]); // JS changes
+  gulp.watch(config.watch.javascriptCustom, ['javascriptCustom', browserSync.reload]); // JS changes
   gulp.watch(config.watch.sass, ['sass', browserSync.reload]); // SASS/SCSS changes
   gulp.watch(config.watch.contentSass, ['contentSass', browserSync.reload]); // SASS/SCSS changes
   gulp.watch(config.watch.images, ['copy', browserSync.reload]); // Watch for new static assets like images

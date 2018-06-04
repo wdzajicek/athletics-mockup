@@ -72,6 +72,29 @@ javascript:
     - "assets/js/youtube-carousel.js" # Custom JS for YouTube video carousel
     - "assets/js/init.js" # Initiate the schedule.js
     - "assets/js/lazyload.js" # lazload.js called within youtube-carousel.js
+    - "!assets/js/accordian.js"
+
+javascriptCustom:
+  dest:
+    jekyllRoot: "assets/js/"
+    buildDir: "_site/assets/js/"
+  filename: "noScript.min.js"
+  notification: "Running JavaScript"
+  src:
+    # Exclusions: (!exclaim to exclude)
+    - "!assets/js/all.js"
+    - "!assets/js/schedule-pages.js" # needed for schedule pages only
+    - "!assets/js/initSchedulePage.js" # needed to initiate schedules (used in schedule-page-script.html)
+    - "!assets/js/lazyLoadOnly.js" # needed to lazyload on pages with no youtube slider (youtube-carousel.js calls the lazyload function on those pages)
+    - "!assets/js/StickyTableHeader.js" # Small sticky table header jquery library for on schedule pages only
+    - "!assets/js/StickyTableCustom.js" # Custom JS to initiate the afforementioned small sticky table header jquery library
+    - "!assets/js/sliders.js" # custom slick slider JS
+    - "!assets/js/schedule.js" # Custom JS for schedule pages
+    - "!assets/js/youtube-carousel.js" # Custom JS for YouTube video carousel
+    - "!assets/js/init.js" # Initiate the schedule.js
+    - "assets/js/lazyload.js" # lazload.js called within youtube-carousel.js
+    - "assets/js/accordian.js"
+    - "!assets/js/toggle.js"
 
 sitemap:
   src:
