@@ -12,6 +12,7 @@
 }
 
 .buttons__blue-plus {
+  // Styles to create the circular + buttons
   background-color: $primary-blue;
   border-radius: 50%;
   color: $white;
@@ -21,12 +22,20 @@
   font-weight: $secondaryfont-weight-regular;
   height: 30px;
   line-height: 30px;  // line-height needed to center text vertically
-  margin-right: 20px;
+  margin-left: -20px;
+  margin-right: 10px;
   text-decoration: none !important;  // Important needed to overide link underlining behavior
   vertical-align: middle;
   width: 30px;
   &:hover {
     background: $primary-red;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .buttons__blue-plus {
+    margin-left: 0;
+    margin-right: 20px;
   }
 }
 
