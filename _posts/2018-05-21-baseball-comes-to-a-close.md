@@ -5,7 +5,7 @@ categories:
   - baseball
   - news
 sport-category: Baseball
-news_thumb_image: /uploads/baseball sophomores.jpg
+news_thumb_image: /uploads/baseball-sophomores.jpg
 description:
 ---
 
