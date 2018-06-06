@@ -1,17 +1,17 @@
 // Acordian.JS
 // Allows anchor jump-link to work with with acordian function
 //
-$('#my-link').click(function() {
+$('#membershipLink').click(function() {
   $('#collapseOne').collapse('hide');
   $('#collapseOne').collapse('show');
 });
 
-$('#my-link2').click(function() {
+$('#personalTrainersLink').click(function() {
   $('#collapseTwo').collapse('hide');
   $('#collapseTwo').collapse('show');
 });
 
-$('#my-link3').click(function() {
+$('#testimonialsLink').click(function() {
   $('#collapseThree').collapse('hide');
   $('#collapseThree').collapse('show');
 });
