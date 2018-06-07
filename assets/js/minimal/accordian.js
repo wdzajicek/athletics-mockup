@@ -15,6 +15,7 @@ $('#testimonialsLink').click(function() {
   $('#collapseThree').collapse('hide');
   $('#collapseThree').collapse('show');
 });
+lzFunction();
 
 // function toggleAccordian() {
 //   var plusMinus = document.getElementById('plusMinus');

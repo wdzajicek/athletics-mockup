@@ -1,14 +1,13 @@
 {% include head.html %}
   <body id="page-top" class="page">
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRL8533"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  {% include scripts/tagmanager.html %}
   <!-- End Google Tag Manager (noscript) -->
   {% include global-nav.html %}
   {% include mega-nav.html %}
   {{ content }}
   {% include footer.html %}
-  {% include vendor-scripts.html %}
-  {% include custom-script.html %}
-  <script src="{{page.baseurl}}assets/js/lazyLoadOnly.js"></script>
+  {% include scripts/vendor-scripts.html %}
+  {% include scripts/custom-script.html %}
+  {% include scripts/lazy-load-only.html %}
 {% include foot.html %}

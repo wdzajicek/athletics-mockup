@@ -65,25 +65,58 @@ gulp.task('contentSass', function() { // Compiling of SASS into CSS is handled h
     .pipe(browserSync.stream());
 });
 
-gulp.task('javascript', function() {
-  browserSync.notify(config.javascript.notification);
-  return gulp.src(config.javascript.src)
-    .pipe(sourcemaps.init())
-    .pipe(concat(config.javascript.filename))
-    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
-    .pipe(gulp.dest(config.javascript.dest.jekyllRoot))
-    .pipe(gulp.dest(config.javascript.dest.buildDir));
+gulp.task('javascriptAll', function () {
+  var javascriptVars = ['custom', 'minimal', 'schedule', 'lazy'];
+  for(var i = 0; i < javascriptVars.length; i++)
+  {var tasks = 'config.' + javascriptVars[i];
+    browserSync.notify(tasks.notification);
+    return gulp.src(tasks.src)
+      .pipe(sourcemaps.init())
+      .pipe(concat(config.javascriptVars.filename))
+      .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
+      .pipe(gulp.dest(tasks.dest.jekyllRoot))
+      .pipe(gulp.dest(tasks.dest.buildDir));}
 });
 
-gulp.task('javascriptCustom', function() {
-  browserSync.notify(config.javascriptCustom.notification);
-  return gulp.src(config.javascriptCustom.src)
-    .pipe(sourcemaps.init())
-    .pipe(concat(config.javascriptCustom.filename))
-    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
-    .pipe(gulp.dest(config.javascriptCustom.dest.jekyllRoot))
-    .pipe(gulp.dest(config.javascriptCustom.dest.buildDir));
-});
+// gulp.task('javascript', function() {
+//  browserSync.notify(config.javascript.notification);
+//  return gulp.src(config.javascript.src)
+//    .pipe(sourcemaps.init())
+//    .pipe(concat(config.javascript.filename))
+//    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
+//    .pipe(gulp.dest(config.javascript.dest.jekyllRoot))
+//    .pipe(gulp.dest(config.javascript.dest.buildDir));
+//});
+
+//gulp.task('javascriptCustom', function() {
+//  browserSync.notify(config.javascriptCustom.notification);
+//  return gulp.src(config.javascriptCustom.src)
+//    .pipe(sourcemaps.init())
+//    .pipe(concat(config.javascriptCustom.filename))
+//    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
+//    .pipe(gulp.dest(config.javascriptCustom.dest.jekyllRoot))
+//    .pipe(gulp.dest(config.javascriptCustom.dest.buildDir));
+//});
+
+//gulp.task('scheduleJavascript', function() {
+//  browserSync.notify(config.scheduleJavascript.notification);
+//  return gulp.src(config.scheduleJavascript.src)
+//    .pipe(sourcemaps.init())
+//    .pipe(concat(config.scheduleJavascript.filename))
+//    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
+//    .pipe(gulp.dest(config.scheduleJavascript.dest.jekyllRoot))
+//    .pipe(gulp.dest(config.scheduleJavascript.dest.buildDir));
+//});
+
+//gulp.task('lazyJavascript', function() {
+//  browserSync.notify(config.lazyJavascript.notification);
+//  return gulp.src(config.lazyJavascript.src)
+//    .pipe(sourcemaps.init())
+//    .pipe(concat(config.lazyJavascript.filename))
+//    .pipe(gulpif(PRODUCTION, uglify())) // Uglify me captain! (on production builds only)
+//    .pipe(gulp.dest(config.lazyJavascript.dest.jekyllRoot))
+//    .pipe(gulp.dest(config.lazyJavascript.dest.buildDir));
+//});
 
 gulp.task('jekyll-build', function(done) { // Runs the jekyll build
   browserSync.notify(config.jekyll.notification);
@@ -94,7 +127,7 @@ gulp.task('jekyll-build', function(done) { // Runs the jekyll build
 });
 
 gulp.task('build', function(done) { // This runs the following tasks (above): clean (cleans _site/), jekyll-build (jekyll does its thing), SASS and JS tasks (compile them), copy (copies static assets like images to the site build)
-  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascript', 'javascriptCustom'], 'copy', done);
+  sequence( 'clean', 'jekyll-build', 'sitemap', ['sass', 'contentSass', 'javascriptAll'], 'copy', done);
 });
 
 gulp.task('sitemap', function () {
@@ -128,7 +161,9 @@ gulp.task('default', function(done) { // Default gulp task (run via 'gulp' in te
 gulp.task('watch', function() { // Watch for changes to be piped into browserSync on saving of files:
   gulp.watch(config.watch.pages, ['build', browserSync.reload]); // Watch for new pages and changes.
   gulp.watch(config.watch.javascript, ['javascript', browserSync.reload]); // JS changes
-  gulp.watch(config.watch.javascriptCustom, ['javascriptCustom', browserSync.reload]); // JS changes
+  gulp.watch(config.watch.javascript, ['javascriptCustom', browserSync.reload]); // JS changes
+  gulp.watch(config.watch.javascript, ['scheduleJavascript', browserSync.reload]); // JS changes
+  gulp.watch(config.watch.javascript, ['lazyJavascript', browserSync.reload]); // JS changes
   gulp.watch(config.watch.sass, ['sass', browserSync.reload]); // SASS/SCSS changes
   gulp.watch(config.watch.contentSass, ['contentSass', browserSync.reload]); // SASS/SCSS changes
   gulp.watch(config.watch.images, ['copy', browserSync.reload]); // Watch for new static assets like images
